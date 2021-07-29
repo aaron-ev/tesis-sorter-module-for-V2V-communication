@@ -1,0 +1,10 @@
+
+module mul2ab#(parameter WIDTH = 8)
+(
+	input [WIDTH-1:0] a,
+	input [WIDTH-1:0] b, 
+	output reg[2*WIDTH-1:0]out
+);
+
+assign out = (a * b) + (a * b);
+endmodule 

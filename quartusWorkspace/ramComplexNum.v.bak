@@ -1,0 +1,53 @@
+
+module ramComplexNum#(parameter WIDTH = 8)
+(
+	input clk,
+	input rst,
+	// complex number 1
+	input [WIDTH-1:0]din_aReal,
+	input [WIDTH-1:0]din_aImag,
+	input we_aReal,
+	input we_aImag,
+	input [ADDR_WIDTH-1:0]w_addr_aReal,
+	input [ADDR_WIDTH-1:0]w_addr_aImag,
+	input [ADDR_WIDTH-1:0]r_addr_aReal,
+	input [ADDR_WIDTH-1:0]r_addr_aImag,
+	output reg [WIDTH-1:0] dout_aReal,
+	output reg [WIDTH-1:0] dout_aImag
+	// complex number 2
+	input [WIDTH-1:0]din_bReal,
+	input [WIDTH-1:0]din_bImag,
+	input we_bReal,
+	input we_bImag,
+	input [ADDR_WIDTH-1:0]w_addr_bReal,
+	input [ADDR_WIDTH-1:0]w_addr_bImag,
+	input [ADDR_WIDTH-1:0]r_addr_bReal,
+	input [ADDR_WIDTH-1:0]r_addr_bImag,
+	output reg [WIDTH-1:0] dout_bReal,
+	output reg [WIDTH-1:0] dout_bImag
+	// complex number 3
+	input [WIDTH-1:0]din_bReal,
+	input [WIDTH-1:0]din_bImag,
+	input we_bReal,
+	input we_bImag,
+	input [ADDR_WIDTH-1:0]w_addr_bReal,
+	input [ADDR_WIDTH-1:0]w_addr_bImag,
+	input [ADDR_WIDTH-1:0]r_addr_bReal,
+	input [ADDR_WIDTH-1:0]r_addr_bImag,
+	output reg [WIDTH-1:0] dout_bReal,
+	output reg [WIDTH-1:0] dout_bImag	
+	// complex number 4
+	input [WIDTH-1:0]din_bReal,
+	input [WIDTH-1:0]din_bImag,
+	input we_bReal,
+	input we_bImag,
+	input [ADDR_WIDTH-1:0]w_addr_bReal,
+	input [ADDR_WIDTH-1:0]w_addr_bImag,
+	input [ADDR_WIDTH-1:0]r_addr_bReal,
+	input [ADDR_WIDTH-1:0]r_addr_bImag,
+	output reg [WIDTH-1:0] dout_bReal,
+	output reg [WIDTH-1:0] dout_bImag	
+);
+
+
+endmodule

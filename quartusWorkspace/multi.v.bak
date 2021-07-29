@@ -1,0 +1,12 @@
+
+
+module multi#(parameter QI = 5,parameter QF = 11,parameter OP = 1)
+(
+	input [QI-1:-QF] a,
+	input [QI-1:-QF] b, 
+	output c
+);
+
+assign c = OP ? a - b: a + b; 
+
+endmodule 

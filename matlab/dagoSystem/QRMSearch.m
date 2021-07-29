@@ -1,11 +1,11 @@
 function [s_est nodos] = QRMSearch(yp,R,conste,nstd,QRM,P,N)
-global maxValue; 
+
 [rows nt] = size(R);
 
 dim = length(conste);
 nodos=1;
 
-% se realiza la detección del nivel Nt
+% se realiza la detección del nivel Nt (line  6 in seudocodigo)
 error=abs(yp(nt) - R(nt,nt)*conste).*abs(yp(nt) - R(nt,nt)*conste);
 [dist ord]=sort(error);
 
@@ -31,8 +31,7 @@ for k=nt-1:-1:1,
         error = (abs(rm(k,1) - R(k,k)*conste).*abs(rm(k,1) - R(k,k)*conste));
         distt= distp + error;
         [dist2 ord2]=sort(distt);
-        maxValue =[maxValue;max(distt)]
-        for p=1:QRM, % se guardan las M ramas de cada uno de los QRM puntos por nivel
+        for p=1:QRM % se guardan las M ramas de cada uno de los QRM puntos por nivel
             parent_node2(k,col)= conste(ord2(p));
             parent_node2(k+1:nt,col)= sest;
             parent_symb2(k,col)= ord2(p)-1;

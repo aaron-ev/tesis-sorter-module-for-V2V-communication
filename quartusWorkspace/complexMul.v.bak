@@ -1,0 +1,9 @@
+
+module comlexMul#(parameter WIDTH = 8) 
+(
+	input [WIDTH-1:0]aReal, 
+	input [WIDTH-1:0]aImag, 
+	input [WITDH-1:0]bReal,
+	input [WIDTH-1:0]bImag,
+	output []
+);

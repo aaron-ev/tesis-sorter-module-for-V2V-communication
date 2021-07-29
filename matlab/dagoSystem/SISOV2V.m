@@ -1,8 +1,5 @@
 %% Programa para implementar un sistema SISO-OFDM para escenarios V2V
-%% se definen parámetros  para simulación
-clear all;
-global maxValue;
-maxValue = [];
+clc,clear;
 %% Estructura de punto fijo
 Signed = 1;
 Word_Length = 16;
@@ -29,7 +26,7 @@ errth = 20; % numero m?ximo de errores por SNR a simular
 pot1 = 1; % potencia por antena transmisora
 num_V2V = 48; % numero de portadoras de datos por cada simbolo V2V
 QRM = 4; % numero de sobrevivientes en el esquema NML
-M = 256; % M-QAM -> tamaño de la constelación
+M = 4; % M-QAM -> tamaño de la constelación
 N = log2(M); % número de bits enviados por simbolo por portadora de datos
 tipo = 0; % usa zero-forcing(tipo=0) o MMSE (tipo=1) en la sorted QR
 symbols = 5; % numero de simbolos OFDM por trama enviados
