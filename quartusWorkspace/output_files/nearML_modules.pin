@@ -75,146 +75,146 @@ CHIP  "nearML_modules"  ASSIGNED TO AN: EP4CGX30CF23C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-din_aReal[4]                 : A1        : input  : 2.5 V             :         : 8         : N              
-dout_aImag[2]                : A2        : output : 2.5 V             :         : 8         : N              
-r_addr_aImag[1]              : A3        : input  : 2.5 V             :         : 8         : N              
-dout_aReal[2]                : A4        : output : 2.5 V             :         : 8         : N              
-din_aReal[3]                 : A5        : input  : 2.5 V             :         : 8         : N              
-dout_aReal[3]                : A6        : output : 2.5 V             :         : 8         : N              
-dout_aImag[3]                : A7        : output : 2.5 V             :         : 8         : N              
-we_aImag                     : A8        : input  : 2.5 V             :         : 8         : N              
-din_cReal[5]                 : A9        : input  : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 7         :                
-dout_dReal[3]                : A11       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A12       :        :                   :         : 7         :                
-din_dImag[5]                 : A13       : input  : 2.5 V             :         : 7         : N              
-din_dReal[1]                 : A14       : input  : 2.5 V             :         : 7         : N              
-din_dReal[5]                 : A15       : input  : 2.5 V             :         : 7         : N              
-din_dReal[2]                 : A16       : input  : 2.5 V             :         : 7         : N              
-r_addr_dImag[0]              : A17       : input  : 2.5 V             :         : 7         : N              
-din_dImag[3]                 : A18       : input  : 2.5 V             :         : 7         : N              
-w_addr_dImag[1]              : A19       : input  : 2.5 V             :         : 7         : N              
-dout_bImag[4]                : A20       : output : 2.5 V             :         : 6         : N              
-din_bReal[4]                 : A21       : input  : 2.5 V             :         : 6         : N              
-din_bImag[7]                 : A22       : input  : 2.5 V             :         : 6         : N              
+indImag[5]                   : A1        : input  : 2.5 V             :         : 8         : N              
+outdReal[12]                 : A2        : output : 2.5 V             :         : 8         : N              
+outdReal[11]                 : A3        : output : 2.5 V             :         : 8         : N              
+outdImag[2]                  : A4        : output : 2.5 V             :         : 8         : N              
+outdImag[7]                  : A5        : output : 2.5 V             :         : 8         : N              
+outdReal[6]                  : A6        : output : 2.5 V             :         : 8         : N              
+indImag[6]                   : A7        : input  : 2.5 V             :         : 8         : N              
+outdReal[13]                 : A8        : output : 2.5 V             :         : 8         : N              
+indReal[3]                   : A9        : input  : 2.5 V             :         : 7         : N              
+outbImag[1]                  : A10       : output : 2.5 V             :         : 7         : N              
+outbImag[12]                 : A11       : output : 2.5 V             :         : 7         : N              
+outbImag[6]                  : A12       : output : 2.5 V             :         : 7         : N              
+outbReal[14]                 : A13       : output : 2.5 V             :         : 7         : N              
+outbReal[15]                 : A14       : output : 2.5 V             :         : 7         : N              
+outbReal[1]                  : A15       : output : 2.5 V             :         : 7         : N              
+outbReal[11]                 : A16       : output : 2.5 V             :         : 7         : N              
+outbReal[9]                  : A17       : output : 2.5 V             :         : 7         : N              
+inbReal[1]                   : A18       : input  : 2.5 V             :         : 7         : N              
+incReal[4]                   : A19       : input  : 2.5 V             :         : 7         : N              
+outcReal[8]                  : A20       : output : 2.5 V             :         : 6         : N              
+incReal[2]                   : A21       : input  : 2.5 V             :         : 6         : N              
+outcReal[3]                  : A22       : output : 2.5 V             :         : 6         : N              
 GND                          : AA1       : gnd    :                   :         :           :                
 GND                          : AA2       : gnd    :                   :         :           :                
 NC                           : AA3       :        :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   :         : 3         :                
 GND                          : AA5       : gnd    :                   :         :           :                
-dout_aReal[1]                : AA6       : output : 2.5 V             :         : 3         : N              
-din_aReal[1]                 : AA7       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 3         :                
 GND                          : AA8       : gnd    :                   :         :           :                
-we_aReal                     : AA9       : input  : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA9       :        :                   :         : 3         :                
+outdReal[10]                 : AA10      : output : 2.5 V             :         : 3         : N              
 GND                          : AA11      : gnd    :                   :         :           :                
 GND+                         : AA12      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 4         :                
 GND                          : AA14      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA15      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :         : 4         :                
+outcImag[9]                  : AA15      : output : 2.5 V             :         : 4         : N              
+outaReal[12]                 : AA16      : output : 2.5 V             :         : 4         : N              
 GND                          : AA17      : gnd    :                   :         :           :                
-w_addr_cImag[1]              : AA18      : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4         :                
-dout_cImag[3]                : AA20      : output : 2.5 V             :         : 4         : N              
-we_cReal                     : AA21      : input  : 2.5 V             :         : 4         : N              
-dout_cImag[2]                : AA22      : output : 2.5 V             :         : 4         : N              
+outcImag[11]                 : AA18      : output : 2.5 V             :         : 4         : N              
+inaImag[0]                   : AA19      : input  : 2.5 V             :         : 4         : N              
+outaImag[7]                  : AA20      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 4         :                
 RREF                         : AB1       :        :                   :         :           :                
 GND                          : AB2       : gnd    :                   :         :           :                
 ~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AB3       : output : 2.5 V             :         : 3         : N              
-dout_aImag[0]                : AB4       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 3         :                
-dout_aReal[0]                : AB7       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB8       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB9       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB10      :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB7       :        :                   :         : 3         :                
+outdImag[12]                 : AB8       : output : 2.5 V             :         : 3         : N              
+outdImag[1]                  : AB9       : output : 2.5 V             :         : 3         : N              
+indReal[6]                   : AB10      : input  : 2.5 V             :         : 3         : N              
+indImag[1]                   : AB11      : input  : 2.5 V             :         : 3         : N              
 GND+                         : AB12      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB14      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB15      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB16      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB17      :        :                   :         : 4         :                
-r_addr_dReal[0]              : AB18      : input  : 2.5 V             :         : 4         : N              
-dout_cReal[0]                : AB19      : output : 2.5 V             :         : 4         : N              
-w_addr_cReal[0]              : AB20      : input  : 2.5 V             :         : 4         : N              
-dout_cReal[2]                : AB21      : output : 2.5 V             :         : 4         : N              
-w_addr_cReal[1]              : AB22      : input  : 2.5 V             :         : 4         : N              
-din_aImag[5]                 : B1        : input  : 2.5 V             :         : 8         : N              
+inbImag[3]                   : AB13      : input  : 2.5 V             :         : 4         : N              
+inbImag[2]                   : AB14      : input  : 2.5 V             :         : 4         : N              
+outcImag[1]                  : AB15      : output : 2.5 V             :         : 4         : N              
+incImag[4]                   : AB16      : input  : 2.5 V             :         : 4         : N              
+outaReal[9]                  : AB17      : output : 2.5 V             :         : 4         : N              
+inaReal[3]                   : AB18      : input  : 2.5 V             :         : 4         : N              
+outaReal[7]                  : AB19      : output : 2.5 V             :         : 4         : N              
+outaReal[2]                  : AB20      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4         :                
+indReal[5]                   : B1        : input  : 2.5 V             :         : 8         : N              
 GND                          : B2        : gnd    :                   :         :           :                
-r_addr_aImag[0]              : B3        : input  : 2.5 V             :         : 8         : N              
-din_aImag[2]                 : B4        : input  : 2.5 V             :         : 8         : N              
+outdReal[5]                  : B3        : output : 2.5 V             :         : 8         : N              
+outdImag[5]                  : B4        : output : 2.5 V             :         : 8         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-din_aImag[3]                 : B6        : input  : 2.5 V             :         : 8         : N              
-dout_aImag[7]                : B7        : output : 2.5 V             :         : 8         : N              
+indReal[7]                   : B6        : input  : 2.5 V             :         : 8         : N              
+outdReal[2]                  : B7        : output : 2.5 V             :         : 8         : N              
 GND                          : B8        : gnd    :                   :         :           :                
-din_cImag[5]                 : B9        : input  : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 7         :                
+indReal[2]                   : B9        : input  : 2.5 V             :         : 7         : N              
+outdReal[9]                  : B10       : output : 2.5 V             :         : 7         : N              
 GND                          : B11       : gnd    :                   :         :           :                
-dout_dImag[4]                : B12       : output : 2.5 V             :         : 7         : N              
-dout_dImag[2]                : B13       : output : 2.5 V             :         : 7         : N              
+outbImag[3]                  : B12       : output : 2.5 V             :         : 7         : N              
+inbImag[5]                   : B13       : input  : 2.5 V             :         : 7         : N              
 GND                          : B14       : gnd    :                   :         :           :                
-dout_dReal[7]                : B15       : output : 2.5 V             :         : 7         : N              
-din_dImag[2]                 : B16       : input  : 2.5 V             :         : 7         : N              
+inbReal[3]                   : B15       : input  : 2.5 V             :         : 7         : N              
+outbReal[4]                  : B16       : output : 2.5 V             :         : 7         : N              
 GND                          : B17       : gnd    :                   :         :           :                
-dout_dImag[5]                : B18       : output : 2.5 V             :         : 7         : N              
-dout_bReal[1]                : B19       : output : 2.5 V             :         : 6         : N              
-r_addr_bImag[2]              : B20       : input  : 2.5 V             :         : 6         : N              
-r_addr_bImag[0]              : B21       : input  : 2.5 V             :         : 6         : N              
-din_bReal[7]                 : B22       : input  : 2.5 V             :         : 6         : N              
-r_addr_aImag[2]              : C1        : input  : 2.5 V             :         : 8         : N              
-din_aReal[5]                 : C2        : input  : 2.5 V             :         : 8         : N              
-w_addr_aReal[0]              : C3        : input  : 2.5 V             :         : 8         : N              
-din_aImag[6]                 : C4        : input  : 2.5 V             :         : 8         : N              
-w_addr_aImag[2]              : C5        : input  : 2.5 V             :         : 8         : N              
-din_aReal[7]                 : C6        : input  : 2.5 V             :         : 8         : N              
-din_aReal[0]                 : C7        : input  : 2.5 V             :         : 8         : N              
-din_aImag[0]                 : C8        : input  : 2.5 V             :         : 8         : N              
-dout_aImag[5]                : C9        : output : 2.5 V             :         : 8         : N              
-dout_dReal[2]                : C10       : output : 2.5 V             :         : 7         : N              
-dout_dReal[0]                : C11       : output : 2.5 V             :         : 7         : N              
-din_dReal[4]                 : C12       : input  : 2.5 V             :         : 7         : N              
-din_dReal[0]                 : C13       : input  : 2.5 V             :         : 7         : N              
-r_addr_dImag[1]              : C14       : input  : 2.5 V             :         : 7         : N              
-r_addr_dImag[2]              : C15       : input  : 2.5 V             :         : 7         : N              
-din_dImag[6]                 : C16       : input  : 2.5 V             :         : 7         : N              
-dout_dImag[7]                : C17       : output : 2.5 V             :         : 7         : N              
-dout_dReal[4]                : C18       : output : 2.5 V             :         : 7         : N              
-r_addr_bReal[2]              : C19       : input  : 2.5 V             :         : 6         : N              
-r_addr_bReal[1]              : C20       : input  : 2.5 V             :         : 6         : N              
+incReal[3]                   : B18       : input  : 2.5 V             :         : 7         : N              
+inbReal[6]                   : B19       : input  : 2.5 V             :         : 6         : N              
+incReal[0]                   : B20       : input  : 2.5 V             :         : 6         : N              
+outcReal[12]                 : B21       : output : 2.5 V             :         : 6         : N              
+outcReal[1]                  : B22       : output : 2.5 V             :         : 6         : N              
+indImag[2]                   : C1        : input  : 2.5 V             :         : 8         : N              
+outdImag[8]                  : C2        : output : 2.5 V             :         : 8         : N              
+indImag[3]                   : C3        : input  : 2.5 V             :         : 8         : N              
+outdImag[11]                 : C4        : output : 2.5 V             :         : 8         : N              
+outdImag[4]                  : C5        : output : 2.5 V             :         : 8         : N              
+indReal[0]                   : C6        : input  : 2.5 V             :         : 8         : N              
+outdImag[14]                 : C7        : output : 2.5 V             :         : 8         : N              
+indImag[7]                   : C8        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
+inbImag[7]                   : C10       : input  : 2.5 V             :         : 7         : N              
+outbImag[2]                  : C11       : output : 2.5 V             :         : 7         : N              
+inbImag[6]                   : C12       : input  : 2.5 V             :         : 7         : N              
+outbReal[13]                 : C13       : output : 2.5 V             :         : 7         : N              
+inbReal[2]                   : C14       : input  : 2.5 V             :         : 7         : N              
+outbReal[5]                  : C15       : output : 2.5 V             :         : 7         : N              
+outbReal[12]                 : C16       : output : 2.5 V             :         : 7         : N              
+outbReal[3]                  : C17       : output : 2.5 V             :         : 7         : N              
+outbReal[7]                  : C18       : output : 2.5 V             :         : 7         : N              
+outcReal[7]                  : C19       : output : 2.5 V             :         : 6         : N              
+incReal[1]                   : C20       : input  : 2.5 V             :         : 6         : N              
 GND                          : C21       : gnd    :                   :         :           :                
-din_bReal[5]                 : C22       : input  : 2.5 V             :         : 6         : N              
+outcReal[15]                 : C22       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D1        : input  : 2.5 V             :         : 9         : N              
 nCE                          : D2        :        :                   :         : 9         :                
 ~ALTERA_DCLK~                : D3        : output : 2.5 V             :         : 9         : N              
-dout_aImag[6]                : D4        : output : 2.5 V             :         : 8         : N              
-w_addr_aReal[2]              : D5        : input  : 2.5 V             :         : 8         : N              
-dout_aImag[4]                : D6        : output : 2.5 V             :         : 8         : N              
-din_aReal[6]                 : D7        : input  : 2.5 V             :         : 8         : N              
-din_aImag[4]                 : D8        : input  : 2.5 V             :         : 8         : N              
-dout_aReal[4]                : D9        : output : 2.5 V             :         : 8         : N              
-dout_aReal[5]                : D10       : output : 2.5 V             :         : 8         : N              
-din_aImag[7]                 : D11       : input  : 2.5 V             :         : 8         : N              
-din_aReal[2]                 : D12       : input  : 2.5 V             :         : 8         : N              
-din_dImag[1]                 : D13       : input  : 2.5 V             :         : 7         : N              
-din_dImag[0]                 : D14       : input  : 2.5 V             :         : 7         : N              
-r_addr_dReal[1]              : D15       : input  : 2.5 V             :         : 7         : N              
-din_dImag[7]                 : D16       : input  : 2.5 V             :         : 7         : N              
-din_dReal[7]                 : D17       : input  : 2.5 V             :         : 7         : N              
+outdImag[15]                 : D4        : output : 2.5 V             :         : 8         : N              
+indImag[0]                   : D5        : input  : 2.5 V             :         : 8         : N              
+outdReal[0]                  : D6        : output : 2.5 V             :         : 8         : N              
+outdImag[3]                  : D7        : output : 2.5 V             :         : 8         : N              
+outdImag[10]                 : D8        : output : 2.5 V             :         : 8         : N              
+outdReal[1]                  : D9        : output : 2.5 V             :         : 8         : N              
+outbImag[5]                  : D10       : output : 2.5 V             :         : 8         : N              
+outdImag[13]                 : D11       : output : 2.5 V             :         : 8         : N              
+outdReal[8]                  : D12       : output : 2.5 V             :         : 8         : N              
+outbReal[8]                  : D13       : output : 2.5 V             :         : 7         : N              
+outbReal[10]                 : D14       : output : 2.5 V             :         : 7         : N              
+inbReal[7]                   : D15       : input  : 2.5 V             :         : 7         : N              
+inbImag[0]                   : D16       : input  : 2.5 V             :         : 7         : N              
+inbReal[5]                   : D17       : input  : 2.5 V             :         : 7         : N              
 GND                          : D18       : gnd    :                   :         :           :                
-r_addr_bImag[1]              : D19       : input  : 2.5 V             :         : 6         : N              
-din_bImag[5]                 : D20       : input  : 2.5 V             :         : 6         : N              
-din_bImag[6]                 : D21       : input  : 2.5 V             :         : 6         : N              
-din_bReal[6]                 : D22       : input  : 2.5 V             :         : 6         : N              
+outcReal[2]                  : D19       : output : 2.5 V             :         : 6         : N              
+incReal[6]                   : D20       : input  : 2.5 V             :         : 6         : N              
+outcReal[10]                 : D21       : output : 2.5 V             :         : 6         : N              
+incReal[7]                   : D22       : input  : 2.5 V             :         : 6         : N              
 GND                          : E1        : gnd    :                   :         :           :                
 GND                          : E2        : gnd    :                   :         :           :                
 TDO                          : E3        : output :                   :         : 9         :                
 TCK                          : E4        : input  :                   :         : 9         :                
-w_addr_aImag[0]              : E5        : input  : 2.5 V             :         : 8         : N              
+outdImag[6]                  : E5        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
 GND                          : E7        : gnd    :                   :         :           :                
-r_addr_aReal[2]              : E8        : input  : 2.5 V             :         : 8         : N              
+outdReal[14]                 : E8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
 VCCIO8                       : E10       : power  :                   : 2.5V    : 8         :                
 VCCIO8                       : E11       : power  :                   : 2.5V    : 8         :                
@@ -223,12 +223,12 @@ VCCIO7                       : E13       : power  :                   : 2.5V    
 VCCIO7                       : E14       : power  :                   : 2.5V    : 7         :                
 VCCIO7                       : E15       : power  :                   : 2.5V    : 7         :                
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
-din_dReal[6]                 : E17       : input  : 2.5 V             :         : 7         : N              
+outbReal[0]                  : E17       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL                     : E18       : power  :                   : 1.2V    :           :                
 GND                          : E19       : gnd    :                   :         :           :                
-din_bReal[1]                 : E20       : input  : 2.5 V             :         : 6         : N              
-din_bReal[3]                 : E21       : input  : 2.5 V             :         : 6         : N              
-din_bImag[2]                 : E22       : input  : 2.5 V             :         : 6         : N              
+incImag[0]                   : E20       : input  : 2.5 V             :         : 6         : N              
+outcReal[11]                 : E21       : output : 2.5 V             :         : 6         : N              
+outcReal[4]                  : E22       : output : 2.5 V             :         : 6         : N              
 GXB_NC                       : F1        :        :                   :         : QL0       :                
 GXB_NC                       : F2        :        :                   :         : QL0       :                
 GND                          : F3        : gnd    :                   :         :           :                
@@ -236,21 +236,21 @@ VCCA                         : F4        : power  :                   : 2.5V    
 TDI                          : F5        : input  :                   :         : 9         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F6        :        :                   :         : 8         :                
 VCCINT                       : F7        : power  :                   : 1.2V    :           :                
-din_aImag[1]                 : F8        : input  : 2.5 V             :         : 8         : N              
+outdReal[4]                  : F8        : output : 2.5 V             :         : 8         : N              
 GND                          : F9        : gnd    :                   :         :           :                
 VCCIO8                       : F10       : power  :                   : 2.5V    : 8         :                
 GND                          : F11       : gnd    :                   :         :           :                
-dout_dImag[3]                : F12       : output : 2.5 V             :         : 7         : N              
+outbImag[14]                 : F12       : output : 2.5 V             :         : 7         : N              
 GND                          : F13       : gnd    :                   :         :           :                
 VCCIO7                       : F14       : power  :                   : 2.5V    : 7         :                
 GND                          : F15       : gnd    :                   :         :           :                
-r_addr_dReal[2]              : F16       : input  : 2.5 V             :         : 7         : N              
-dout_dReal[5]                : F17       : output : 2.5 V             :         : 7         : N              
-we_dImag                     : F18       : input  : 2.5 V             :         : 6         : N              
+inbReal[4]                   : F16       : input  : 2.5 V             :         : 7         : N              
+incReal[5]                   : F17       : input  : 2.5 V             :         : 7         : N              
+outbImag[0]                  : F18       : output : 2.5 V             :         : 6         : N              
 VCCA                         : F19       : power  :                   : 2.5V    :           :                
-din_bReal[0]                 : F20       : input  : 2.5 V             :         : 6         : N              
+outcReal[5]                  : F20       : output : 2.5 V             :         : 6         : N              
 GND                          : F21       : gnd    :                   :         :           :                
-din_bImag[0]                 : F22       : input  : 2.5 V             :         : 6         : N              
+outcReal[13]                 : F22       : output : 2.5 V             :         : 6         : N              
 GND                          : G1        : gnd    :                   :         :           :                
 GND                          : G2        : gnd    :                   :         :           :                
 VCCD_PLL                     : G3        : power  :                   : 1.2V    :           :                
@@ -262,17 +262,17 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :      
 VCCINT                       : G9        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :         : 7         :                
+outbImag[4]                  : G12       : output : 2.5 V             :         : 7         : N              
 VCCINT                       : G13       : power  :                   : 1.2V    :           :                
-din_dImag[4]                 : G14       : input  : 2.5 V             :         : 7         : N              
-w_addr_dReal[0]              : G15       : input  : 2.5 V             :         : 7         : N              
-w_addr_dReal[2]              : G16       : input  : 2.5 V             :         : 6         : N              
+outbImag[10]                 : G14       : output : 2.5 V             :         : 7         : N              
+outbImag[11]                 : G15       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 6         :                
-dout_bReal[6]                : G18       : output : 2.5 V             :         : 6         : N              
-w_addr_dImag[2]              : G19       : input  : 2.5 V             :         : 6         : N              
-din_bImag[3]                 : G20       : input  : 2.5 V             :         : 6         : N              
-din_bReal[2]                 : G21       : input  : 2.5 V             :         : 6         : N              
-din_bImag[1]                 : G22       : input  : 2.5 V             :         : 6         : N              
+outbReal[2]                  : G18       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G19       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G20       :        :                   :         : 6         :                
+outcReal[14]                 : G21       : output : 2.5 V             :         : 6         : N              
+outcReal[0]                  : G22       : output : 2.5 V             :         : 6         : N              
 GXB_GND*                     : H1        :        :                   :         : QL0       :                
 GXB_GND*                     : H2        :        :                   :         : QL0       :                
 VCCH_GXB                     : H3        : power  :                   : 2.5V    :           :                
@@ -280,21 +280,21 @@ nCONFIG                      : H4        :        :                   :         
 GND                          : H5        : gnd    :                   :         :           :                
 VCCINT                       : H6        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
+outdImag[0]                  : H8        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 8         :                
 VCC_CLKIN8A                  : H10       : power  :                   : 2.5V    : 8A        :                
 GND                          : H11       : gnd    :                   :         :           :                
-w_addr_aReal[1]              : H12       : input  : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : H13       :        :                   :         : 7         :                
-dout_dImag[6]                : H14       : output : 2.5 V             :         : 7         : N              
-dout_bReal[4]                : H15       : output : 2.5 V             :         : 6         : N              
+outdReal[3]                  : H12       : output : 2.5 V             :         : 7         : N              
+outbImag[8]                  : H13       : output : 2.5 V             :         : 7         : N              
+inbImag[4]                   : H14       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H15       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H16       :        :                   :         : 6         :                
-din_bImag[4]                 : H17       : input  : 2.5 V             :         : 6         : N              
+outcReal[9]                  : H17       : output : 2.5 V             :         : 6         : N              
 GND                          : H18       : gnd    :                   :         :           :                
 VCCIO6                       : H19       : power  :                   : 2.5V    : 6         :                
-dout_bImag[5]                : H20       : output : 2.5 V             :         : 6         : N              
-dout_bImag[7]                : H21       : output : 2.5 V             :         : 6         : N              
-w_addr_bImag[1]              : H22       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H20       :        :                   :         : 6         :                
+incImag[1]                   : H21       : input  : 2.5 V             :         : 6         : N              
+inaReal[4]                   : H22       : input  : 2.5 V             :         : 6         : N              
 GND                          : J1        : gnd    :                   :         :           :                
 GND                          : J2        : gnd    :                   :         :           :                
 VCCA_GXB                     : J3        : power  :                   : 2.5V    :           :                
@@ -306,17 +306,17 @@ GND                          : J8        : gnd    :                   :         
 VCCINT                       : J9        : power  :                   : 1.2V    :           :                
 GXB_GND*                     : J10       :        :                   :         : 8A        :                
 VCCINT                       : J11       : power  :                   : 1.2V    :           :                
-we_dReal                     : J12       : input  : 2.5 V             :         : 7         : N              
-w_addr_dReal[1]              : J13       : input  : 2.5 V             :         : 7         : N              
-dout_dImag[0]                : J14       : output : 2.5 V             :         : 7         : N              
-w_addr_bReal[1]              : J15       : input  : 2.5 V             :         : 6         : N              
-dout_bImag[6]                : J16       : output : 2.5 V             :         : 6         : N              
+outbImag[13]                 : J12       : output : 2.5 V             :         : 7         : N              
+outbImag[7]                  : J13       : output : 2.5 V             :         : 7         : N              
+inbImag[1]                   : J14       : input  : 2.5 V             :         : 7         : N              
+inaImag[5]                   : J15       : input  : 2.5 V             :         : 6         : N              
+outcReal[6]                  : J16       : output : 2.5 V             :         : 6         : N              
 VCCINT                       : J17       : power  :                   : 1.2V    :           :                
 VCCIO6                       : J18       : power  :                   : 2.5V    : 6         :                
-we_bReal                     : J19       : input  : 2.5 V             :         : 6         : N              
-dout_bReal[3]                : J20       : output : 2.5 V             :         : 6         : N              
-dout_bImag[2]                : J21       : output : 2.5 V             :         : 6         : N              
-r_addr_bReal[0]              : J22       : input  : 2.5 V             :         : 6         : N              
+outaImag[3]                  : J19       : output : 2.5 V             :         : 6         : N              
+outaImag[15]                 : J20       : output : 2.5 V             :         : 6         : N              
+outaImag[2]                  : J21       : output : 2.5 V             :         : 6         : N              
+outcImag[15]                 : J22       : output : 2.5 V             :         : 6         : N              
 GXB_NC                       : K1        :        :                   :         : QL0       :                
 GXB_NC                       : K2        :        :                   :         : QL0       :                
 VCCL_GXB                     : K3        : power  :                   : 1.2V    :           :                
@@ -328,17 +328,17 @@ VCCINT                       : K8        : power  :                   : 1.2V    
 GND                          : K9        : gnd    :                   :         :           :                
 GXB_GND*                     : K10       :        :                   :         : 8A        :                
 GND                          : K11       : gnd    :                   :         :           :                
-dout_dImag[1]                : K12       : output : 2.5 V             :         : 7         : N              
+outbImag[9]                  : K12       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K13       :        :                   :         : 6         :                
-dout_dReal[6]                : K14       : output : 2.5 V             :         : 6         : N              
+outbReal[6]                  : K14       : output : 2.5 V             :         : 6         : N              
 GND                          : K15       : gnd    :                   :         :           :                
 VCCINT                       : K16       : power  :                   : 1.2V    :           :                
-w_addr_bReal[2]              : K17       : input  : 2.5 V             :         : 6         : N              
+inbReal[0]                   : K17       : input  : 2.5 V             :         : 6         : N              
 VCCIO6                       : K18       : power  :                   : 2.5V    : 6         :                
-dout_bImag[3]                : K19       : output : 2.5 V             :         : 6         : N              
-w_addr_bImag[2]              : K20       : input  : 2.5 V             :         : 6         : N              
+outaImag[11]                 : K19       : output : 2.5 V             :         : 6         : N              
+inaImag[7]                   : K20       : input  : 2.5 V             :         : 6         : N              
 GND                          : K21       : gnd    :                   :         :           :                
-w_addr_bImag[0]              : K22       : input  : 2.5 V             :         : 6         : N              
+outaImag[5]                  : K22       : output : 2.5 V             :         : 6         : N              
 GND                          : L1        : gnd    :                   :         :           :                
 GND                          : L2        : gnd    :                   :         :           :                
 VCCL_GXB                     : L3        : power  :                   : 1.2V    :           :                
@@ -351,16 +351,16 @@ VCCINT                       : L9        : power  :                   : 1.2V    
 GND                          : L10       : gnd    :                   :         :           :                
 VCCINT                       : L11       : power  :                   : 1.2V    :           :                
 GND                          : L12       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L13       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L14       :        :                   :         : 5         :                
-w_addr_cImag[0]              : L15       : input  : 2.5 V             :         : 5         : N              
-dout_bImag[0]                : L16       : output : 2.5 V             :         : 5         : N              
+outaReal[5]                  : L13       : output : 2.5 V             :         : 5         : N              
+inaReal[6]                   : L14       : input  : 2.5 V             :         : 5         : N              
+outaReal[6]                  : L15       : output : 2.5 V             :         : 5         : N              
+outcImag[6]                  : L16       : output : 2.5 V             :         : 5         : N              
 VCCINT                       : L17       : power  :                   : 1.2V    :           :                
 GND                          : L18       : gnd    :                   :         :           :                
-dout_bReal[2]                : L19       : output : 2.5 V             :         : 6         : N              
-w_addr_bReal[0]              : L20       : input  : 2.5 V             :         : 6         : N              
-r_addr_aReal[1]              : L21       : input  : 2.5 V             :         : 6         : N              
-r_addr_aReal[0]              : L22       : input  : 2.5 V             :         : 6         : N              
+outaImag[10]                 : L19       : output : 2.5 V             :         : 6         : N              
+inaImag[1]                   : L20       : input  : 2.5 V             :         : 6         : N              
+GND+                         : L21       :        :                   :         : 6         :                
+GND+                         : L22       :        :                   :         : 6         :                
 GXB_GND*                     : M1        :        :                   :         : QL0       :                
 GXB_GND*                     : M2        :        :                   :         : QL0       :                
 GND                          : M3        : gnd    :                   :         :           :                
@@ -371,16 +371,16 @@ GXB_GND*                     : M7        :        :                   :         
 GXB_GND*                     : M8        :        :                   :         : 3B        :                
 GND                          : M9        : gnd    :                   :         :           :                
 VCCINT                       : M10       : power  :                   : 1.2V    :           :                
-GXB_GND*                     : M11       :        :                   :         : 3A        :                
+rst                          : M11       : input  : 2.5 V             :         : 3A        : N              
 VCCINT                       : M12       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M13       :        :                   :         : 5         :                
-dout_cImag[1]                : M14       : output : 2.5 V             :         : 5         : N              
-dout_cReal[5]                : M15       : output : 2.5 V             :         : 5         : N              
-dout_bReal[0]                : M16       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : M17       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M18       :        :                   :         : 5         :                
-dout_bReal[5]                : M19       : output : 2.5 V             :         : 5         : N              
-dout_bImag[1]                : M20       : output : 2.5 V             :         : 5         : N              
+outaImag[12]                 : M13       : output : 2.5 V             :         : 5         : N              
+outaReal[3]                  : M14       : output : 2.5 V             :         : 5         : N              
+outcImag[8]                  : M15       : output : 2.5 V             :         : 5         : N              
+incImag[7]                   : M16       : input  : 2.5 V             :         : 5         : N              
+inaImag[2]                   : M17       : input  : 2.5 V             :         : 5         : N              
+outaImag[1]                  : M18       : output : 2.5 V             :         : 5         : N              
+inaImag[6]                   : M19       : input  : 2.5 V             :         : 5         : N              
+outcImag[14]                 : M20       : output : 2.5 V             :         : 5         : N              
 GND+                         : M21       :        :                   :         : 5         :                
 GND+                         : M22       :        :                   :         : 5         :                
 GND                          : N1        : gnd    :                   :         :           :                
@@ -395,16 +395,16 @@ VCCINT                       : N9        : power  :                   : 1.2V    
 GND                          : N10       : gnd    :                   :         :           :                
 clk                          : N11       : input  : 2.5 V             :         : 3A        : N              
 VCC_CLKIN3A                  : N12       : power  :                   : 2.5V    : 3A        :                
-dout_cImag[0]                : N13       : output : 2.5 V             :         : 5         : N              
-dout_cImag[4]                : N14       : output : 2.5 V             :         : 5         : N              
-din_cImag[3]                 : N15       : input  : 2.5 V             :         : 5         : N              
+outaImag[6]                  : N13       : output : 2.5 V             :         : 5         : N              
+outaReal[11]                 : N14       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N15       :        :                   :         : 5         :                
 VCCINT                       : N16       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N17       :        :                   :         : 5         :                
+outaReal[10]                 : N17       : output : 2.5 V             :         : 5         : N              
 VCCIO5                       : N18       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N19       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N20       :        :                   :         : 5         :                
-dout_bReal[7]                : N21       : output : 2.5 V             :         : 5         : N              
-we_bImag                     : N22       : input  : 2.5 V             :         : 5         : N              
+inaImag[4]                   : N19       : input  : 2.5 V             :         : 5         : N              
+outaImag[8]                  : N20       : output : 2.5 V             :         : 5         : N              
+outaReal[14]                 : N21       : output : 2.5 V             :         : 5         : N              
+outaImag[4]                  : N22       : output : 2.5 V             :         : 5         : N              
 GXB_NC                       : P1        :        :                   :         : QL0       :                
 GXB_NC                       : P2        :        :                   :         : QL0       :                
 VCCH_GXB                     : P3        : power  :                   : 2.5V    :           :                
@@ -417,16 +417,16 @@ GND                          : P9        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 3         :                
 GND                          : P11       : gnd    :                   :         :           :                
 VCCINT                       : P12       : power  :                   : 1.2V    :           :                
-r_addr_cImag[2]              : P13       : input  : 2.5 V             :         : 5         : N              
-din_cReal[6]                 : P14       : input  : 2.5 V             :         : 5         : N              
-din_cImag[2]                 : P15       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P13       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P15       :        :                   :         : 5         :                
 GND                          : P16       : gnd    :                   :         :           :                
 VCCINT                       : P17       : power  :                   : 1.2V    :           :                
 GND                          : P18       : gnd    :                   :         :           :                
 VCCIO5                       : P19       : power  :                   : 2.5V    : 5         :                
-r_addr_cReal[1]              : P20       : input  : 2.5 V             :         : 5         : N              
+outaImag[13]                 : P20       : output : 2.5 V             :         : 5         : N              
 GND                          : P21       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P22       :        :                   :         : 5         :                
+outaReal[8]                  : P22       : output : 2.5 V             :         : 5         : N              
 GND                          : R1        : gnd    :                   :         :           :                
 GND                          : R2        : gnd    :                   :         :           :                
 VCCA_GXB                     : R3        : power  :                   : 2.5V    :           :                
@@ -435,20 +435,20 @@ MSEL2                        : R5        :        :                   :         
 GND                          : R6        : gnd    :                   :         :           :                
 VCCINT                       : R7        : power  :                   : 1.2V    :           :                
 nSTATUS                      : R8        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
+outcImag[0]                  : R9        : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 3         :                
 GND                          : R12       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R15       :        :                   :         : 4         :                
-din_cReal[1]                 : R16       : input  : 2.5 V             :         : 5         : N              
-w_addr_cReal[2]              : R17       : input  : 2.5 V             :         : 5         : N              
+outcImag[10]                 : R14       : output : 2.5 V             :         : 4         : N              
+outaReal[1]                  : R15       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 5         :                
 VCCIO5                       : R18       : power  :                   : 2.5V    : 5         :                
-din_cImag[6]                 : R19       : input  : 2.5 V             :         : 5         : N              
-r_addr_cReal[0]              : R20       : input  : 2.5 V             :         : 5         : N              
-dout_cReal[7]                : R21       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R22       :        :                   :         : 5         :                
+outaReal[4]                  : R19       : output : 2.5 V             :         : 5         : N              
+outcImag[7]                  : R20       : output : 2.5 V             :         : 5         : N              
+outcImag[4]                  : R21       : output : 2.5 V             :         : 5         : N              
+incImag[2]                   : R22       : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : T1        :        :                   :         : QL0       :                
 GXB_GND*                     : T2        :        :                   :         : QL0       :                
 VCCL_GXB                     : T3        : power  :                   : 1.2V    :           :                
@@ -461,16 +461,16 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :      
 VCCINT                       : T10       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T11       :        :                   :         : 3         :                
 VCCINT                       : T12       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T13       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T14       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
-w_addr_cImag[2]              : T16       : input  : 2.5 V             :         : 4         : N              
-dout_cReal[3]                : T17       : output : 2.5 V             :         : 5         : N              
-din_cReal[7]                 : T18       : input  : 2.5 V             :         : 5         : N              
-din_cReal[4]                 : T19       : input  : 2.5 V             :         : 5         : N              
-din_cImag[0]                 : T20       : input  : 2.5 V             :         : 5         : N              
-dout_cReal[1]                : T21       : output : 2.5 V             :         : 5         : N              
-dout_cImag[6]                : T22       : output : 2.5 V             :         : 5         : N              
+outdReal[15]                 : T13       : output : 2.5 V             :         : 4         : N              
+incImag[6]                   : T14       : input  : 2.5 V             :         : 4         : N              
+outaReal[0]                  : T15       : output : 2.5 V             :         : 4         : N              
+outaImag[14]                 : T16       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T19       :        :                   :         : 5         :                
+outaImag[9]                  : T20       : output : 2.5 V             :         : 5         : N              
+outaReal[13]                 : T21       : output : 2.5 V             :         : 5         : N              
+inaReal[1]                   : T22       : input  : 2.5 V             :         : 5         : N              
 GND                          : U1        : gnd    :                   :         :           :                
 GND                          : U2        : gnd    :                   :         :           :                
 GND                          : U3        : gnd    :                   :         :           :                
@@ -482,17 +482,17 @@ VCCIO3                       : U8        : power  :                   : 2.5V    
 VCCIO3                       : U9        : power  :                   : 2.5V    : 3         :                
 GND                          : U10       : gnd    :                   :         :           :                
 VCCIO3                       : U11       : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U12       :        :                   :         : 3         :                
+outdImag[9]                  : U12       : output : 2.5 V             :         : 3         : N              
 VCCIO4                       : U13       : power  :                   : 2.5V    : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U14       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4         :                
+outcImag[3]                  : U14       : output : 2.5 V             :         : 4         : N              
+inaReal[2]                   : U15       : input  : 2.5 V             :         : 4         : N              
 VCCINT                       : U16       : power  :                   : 1.2V    :           :                
 GND                          : U17       : gnd    :                   :         :           :                
-din_cReal[2]                 : U18       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U18       :        :                   :         : 5         :                
 VCCA                         : U19       : power  :                   : 2.5V    :           :                
-din_cReal[3]                 : U20       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U20       :        :                   :         : 5         :                
 GND                          : U21       : gnd    :                   :         :           :                
-din_cImag[4]                 : U22       : input  : 2.5 V             :         : 5         : N              
+inaImag[3]                   : U22       : input  : 2.5 V             :         : 5         : N              
 GXB_NC                       : V1        :        :                   :         : QL0       :                
 GXB_NC                       : V2        :        :                   :         : QL0       :                
 VCCL_GXB                     : V3        : power  :                   : 1.2V    :           :                
@@ -501,20 +501,20 @@ GND                          : V5        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
 GND                          : V8        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3         :                
+outaImag[0]                  : V9        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : V10       : power  :                   : 2.5V    : 3         :                
 GND                          : V11       : gnd    :                   :         :           :                
 VCCIO3                       : V12       : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4         :                
+incImag[5]                   : V13       : input  : 2.5 V             :         : 4         : N              
 GND                          : V14       : gnd    :                   :         :           :                
 VCCIO4                       : V15       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : V16       : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : V17       : power  :                   : 2.5V    : 4         :                
 VCCD_PLL                     : V18       : power  :                   : 1.2V    :           :                
 GND                          : V19       : gnd    :                   :         :           :                
-r_addr_cImag[0]              : V20       : input  : 2.5 V             :         : 5         : N              
-din_cImag[1]                 : V21       : input  : 2.5 V             :         : 5         : N              
-dout_cReal[4]                : V22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V20       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V21       :        :                   :         : 5         :                
+outcImag[13]                 : V22       : output : 2.5 V             :         : 5         : N              
 GND                          : W1        : gnd    :                   :         :           :                
 GND                          : W2        : gnd    :                   :         :           :                
 VCCA_GXB                     : W3        : power  :                   : 2.5V    :           :                
@@ -523,20 +523,20 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : W5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : W6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   :         : 3         :                
-dout_aReal[7]                : W9        : output : 2.5 V             :         : 3         : N              
-dout_aImag[1]                : W10       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W9        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W11       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W12       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W13       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W14       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W15       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W16       :        :                   :         : 4         :                
-dout_dReal[1]                : W17       : output : 2.5 V             :         : 4         : N              
-we_cImag                     : W18       : input  : 2.5 V             :         : 4         : N              
-din_cImag[7]                 : W19       : input  : 2.5 V             :         : 4         : N              
-r_addr_cImag[1]              : W20       : input  : 2.5 V             :         : 5         : N              
-din_cReal[0]                 : W21       : input  : 2.5 V             :         : 5         : N              
-dout_cImag[5]                : W22       : output : 2.5 V             :         : 5         : N              
+indReal[4]                   : W12       : input  : 2.5 V             :         : 3         : N              
+outdReal[7]                  : W13       : output : 2.5 V             :         : 4         : N              
+outbImag[15]                 : W14       : output : 2.5 V             :         : 4         : N              
+inaReal[5]                   : W15       : input  : 2.5 V             :         : 4         : N              
+outcImag[5]                  : W16       : output : 2.5 V             :         : 4         : N              
+outaReal[15]                 : W17       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W18       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W19       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W20       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W21       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W22       :        :                   :         : 5         :                
 GXB_GND*                     : Y1        :        :                   :         : QL0       :                
 GXB_GND*                     : Y2        :        :                   :         : QL0       :                
 NC                           : Y3        :        :                   :         :           :                
@@ -544,18 +544,18 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : Y4        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   :         : 3         :                
-dout_aReal[6]                : Y8        : output : 2.5 V             :         : 3         : N              
-w_addr_aImag[1]              : Y9        : input  : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y9        :        :                   :         : 3         :                
+indReal[1]                   : Y10       : input  : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y11       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y12       :        :                   :         : 3         :                
+indImag[4]                   : Y12       : input  : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y13       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y14       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y15       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y16       :        :                   :         : 4         :                
-din_dReal[3]                 : Y17       : input  : 2.5 V             :         : 4         : N              
-w_addr_dImag[0]              : Y18       : input  : 2.5 V             :         : 4         : N              
-dout_cImag[7]                : Y19       : output : 2.5 V             :         : 4         : N              
-dout_cReal[6]                : Y20       : output : 2.5 V             :         : 4         : N              
+outcImag[2]                  : Y14       : output : 2.5 V             :         : 4         : N              
+outcImag[12]                 : Y15       : output : 2.5 V             :         : 4         : N              
+incImag[3]                   : Y16       : input  : 2.5 V             :         : 4         : N              
+inaReal[7]                   : Y17       : input  : 2.5 V             :         : 4         : N              
+inaReal[0]                   : Y18       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y19       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y20       :        :                   :         : 4         :                
 GND                          : Y21       : gnd    :                   :         :           :                
-r_addr_cReal[2]              : Y22       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y22       :        :                   :         : 5         :                

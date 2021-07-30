@@ -1,5 +1,41 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="nearML_modules">
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2b|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0" CBX_FILE_NAME="mult_4et.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2c|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|square:square0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2a|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|mul2ab:mul2ab0|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ov82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|complex2In4|complex2:complex2d|squareComplex:squareComplex0|square:square1|lpm_mult:Mult0|mult_4et:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_vvg1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
