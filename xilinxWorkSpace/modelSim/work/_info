@@ -1,0 +1,429 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modeltech64_10.5/examples
+T_opt
+!s110 1627690159
+VXS<6OiD]maeea8W_[31ml0
+Z1 04 13 4 work dotProduct_tb fast 0
+=17-d8c497f47b2f-610494ae-3b9-1b20
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.5;63
+R0
+T_opt1
+!s110 1627777721
+V;6f3:eCNJi93iG<AVRC:f2
+R1
+=26-d8c497f47b2f-6105eab9-1b0-5198
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1627873763
+V2FN32YXJo0WOi96BVg>IF0
+R1
+=10-d8c497f47b2f-610761e3-ac-4c84
+R2
+R3
+n@_opt2
+R4
+vadderSub
+Z5 !s110 1627690155
+!i10b 1
+!s100 E:SNRjo;L>W1T`Cz]CZL11
+Io;:7<[e47WQ2aF7l_3i>J3
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 dC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/modelSim
+w1627682696
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/adderSub.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/adderSub.v
+L0 2
+Z8 OL;L;10.5;63
+r1
+!s85 0
+31
+Z9 !s108 1627690155.000000
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/adderSub.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/adderSub.v|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+nadder@sub
+vcomplex2
+Z11 !s110 1627873760
+!i10b 1
+!s100 0DRib0O@ceeA?fH]_a9fm1
+Ij@n3Pk6YSfeQl<U>Ba3633
+R6
+R7
+w1627710673
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/complex2.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/complex2.v
+L0 2
+R8
+r1
+!s85 0
+31
+Z12 !s108 1627873760.000000
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/complex2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/complex2.v|
+!i113 0
+R10
+R3
+vcomplex2In4
+R5
+!i10b 1
+!s100 @IdVCl<9lL_ZabjM10X1V0
+Ih@P7I<R0aFhHZBkVRcz:13
+R6
+R7
+w1627682482
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complex2In4.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complex2In4.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complex2In4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complex2In4.v|
+!i113 0
+R10
+R3
+ncomplex2@in4
+vcomplexMul
+R5
+!i10b 1
+!s100 79Z6FaaM@3jAL3CoOTg9E3
+IMfn:_mXG]kA?7fCG_PmoE3
+R6
+R7
+w1627522181
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complexMul.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complexMul.v
+L0 5
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complexMul.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complexMul.v|
+!i113 0
+R10
+R3
+ncomplex@mul
+vctrlUnitDotProduct
+R11
+!i10b 1
+!s100 SXzec`V?`V8HFI]?DbCmL3
+IXX8zGC0VCJ2KTCeA@XObU0
+R6
+R7
+w1627848152
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/ctrlUnitDotProduct.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/ctrlUnitDotProduct.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/ctrlUnitDotProduct.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/ctrlUnitDotProduct.v|
+!i113 0
+R10
+R3
+nctrl@unit@dot@product
+vdotProduct
+R11
+!i10b 1
+!s100 lY[QK;?R>IH07?nH=YLXC2
+IO0Ih5JlPY8J=KDcEC[[KL3
+R6
+R7
+w1627768856
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct.v|
+!i113 0
+R10
+R3
+ndot@product
+vdotProduct_tb
+R11
+!i10b 1
+!s100 FD`IEIHI?NYlQDAg_Y4Yj2
+IACf<Vg:5X;H?Z6ZlRhC5>3
+R6
+R7
+w1627871338
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct_tb.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct_tb.v
+L0 5
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct_tb.v|
+!i113 0
+R10
+R3
+ndot@product_tb
+vfourComplex2
+R11
+!i10b 1
+!s100 PgZ@DBo4?K2obD76?Q`m`1
+IOU_LeBGmNz@RIJ3DPMnfT3
+R6
+R7
+w1627713789
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourComplex2.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourComplex2.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourComplex2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourComplex2.v|
+!i113 0
+R10
+R3
+nfour@complex2
+vfourTrueDualPortRam
+R11
+!i10b 1
+!s100 caQSgglfIG@SdPoid?2L31
+IVOK>bfOKJii_1zX3KmNIO1
+R6
+R7
+w1627714539
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourTrueDualPortRam.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourTrueDualPortRam.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourTrueDualPortRam.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourTrueDualPortRam.v|
+!i113 0
+R10
+R3
+nfour@true@dual@port@ram
+vmul2ab
+R5
+!i10b 1
+!s100 1VSg;>M1:Tn^b@NG]bU5I3
+Ig2CLbO766;VD]k5_QA`I@3
+R6
+R7
+w1627682704
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mul2ab.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mul2ab.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mul2ab.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mul2ab.v|
+!i113 0
+R10
+R3
+vmulti
+R5
+!i10b 1
+!s100 ]B1;;]d^nZZkR<;4nPoZA3
+I]FzVPOb4VlnTCIdGHE;>c1
+R6
+R7
+w1627332560
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/multi.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/multi.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/multi.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/multi.v|
+!i113 0
+R10
+R3
+vmux21
+R5
+!i10b 1
+!s100 K8A0D@Mc?lNMPmlcT^m@U1
+IMfX09Q_HKH>?>6]^DAR@H0
+R6
+R7
+w1627521781
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mux21.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mux21.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mux21.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mux21.v|
+!i113 0
+R10
+R3
+vramComplexNum
+R5
+!i10b 1
+!s100 Z9;>EgL7G7?35RPEJVZCf2
+I6TAS1o<Rjo[jn6aE70HD@1
+R6
+R7
+w1627671214
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/ramComplexNum.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/ramComplexNum.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/ramComplexNum.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/ramComplexNum.v|
+!i113 0
+R10
+R3
+nram@complex@num
+vregister
+R5
+!i10b 1
+!s100 7@=RJM>Yb;cDHWgj]V1Y93
+I9h:oT@`GdTASDAbV>S;J61
+R6
+R7
+w1627682376
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/register.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/register.v
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/register.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/register.v|
+!i113 0
+R10
+R3
+vsquare
+Z13 !s110 1627690156
+!i10b 1
+!s100 fhVGmIT?==1lFM=X9]bG_1
+IiKfIM8@9dbdz4h;CcSIgg1
+R6
+R7
+w1627682598
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/square.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/square.v
+L0 2
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/square.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/square.v|
+!i113 0
+R10
+R3
+vsquareComplex
+R13
+!i10b 1
+!s100 ;[M5;[1`I1kDHNB^IeM5g2
+I4lnz0J3En<og51ee=2nK63
+R6
+R7
+w1627682522
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplex.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplex.v
+L0 2
+R8
+r1
+!s85 0
+31
+Z14 !s108 1627690156.000000
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplex.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplex.v|
+!i113 0
+R10
+R3
+nsquare@complex
+vsquareComplexIn4
+R13
+!i10b 1
+!s100 m3E>>6H]`WdLU8oJ:zgXR0
+In[K7KNSJhGWK4P7UzdT3h0
+R6
+R7
+w1627585488
+8C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplexIn4.v
+FC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplexIn4.v
+L0 3
+R8
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplexIn4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplexIn4.v|
+!i113 0
+R10
+R3
+nsquare@complex@in4
+vtrueDualPortRam
+R11
+!i10b 1
+!s100 RoAS0DW711X:L7@6DOEXR2
+I9hjCEEj>aPG6co5kNJ_dj1
+R6
+R7
+w1627873680
+8C:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dotProduct\trueDualPortRam.v
+FC:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dotProduct\trueDualPortRam.v
+L0 3
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dotProduct\trueDualPortRam.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dotProduct\trueDualPortRam.v|
+!i113 0
+R10
+R3
+ntrue@dual@port@ram

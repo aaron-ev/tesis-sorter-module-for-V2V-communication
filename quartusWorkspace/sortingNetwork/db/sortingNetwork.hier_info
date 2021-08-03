@@ -1,0 +1,105 @@
+|halfCleaner
+din[0] => din[0].IN1
+din[1] => din[1].IN1
+din[2] => din[2].IN1
+din[3] => din[3].IN1
+din[4] => din[4].IN1
+din[5] => din[5].IN1
+din[6] => din[6].IN1
+din[7] => din[7].IN1
+din[8] => din[8].IN1
+din[9] => din[9].IN1
+din[10] => din[10].IN1
+din[11] => din[11].IN1
+din[12] => din[12].IN1
+din[13] => din[13].IN1
+din[14] => din[14].IN1
+din[15] => din[15].IN1
+dout[0] <= comparator:conectionProcess[0].comparator_0.min
+dout[1] <= comparator:conectionProcess[0].comparator_0.min
+dout[2] <= comparator:conectionProcess[0].comparator_0.min
+dout[3] <= comparator:conectionProcess[0].comparator_0.min
+dout[4] <= comparator:conectionProcess[1].comparator_0.min
+dout[5] <= comparator:conectionProcess[1].comparator_0.min
+dout[6] <= comparator:conectionProcess[1].comparator_0.min
+dout[7] <= comparator:conectionProcess[1].comparator_0.min
+dout[8] <= comparator:conectionProcess[0].comparator_0.max
+dout[9] <= comparator:conectionProcess[0].comparator_0.max
+dout[10] <= comparator:conectionProcess[0].comparator_0.max
+dout[11] <= comparator:conectionProcess[0].comparator_0.max
+dout[12] <= comparator:conectionProcess[1].comparator_0.max
+dout[13] <= comparator:conectionProcess[1].comparator_0.max
+dout[14] <= comparator:conectionProcess[1].comparator_0.max
+dout[15] <= comparator:conectionProcess[1].comparator_0.max
+
+
+|halfCleaner|comparator:conectionProcess[0].comparator_0
+a[0] => LessThan0.IN4
+a[0] => min.DATAB
+a[0] => max.DATAA
+a[1] => LessThan0.IN3
+a[1] => min.DATAB
+a[1] => max.DATAA
+a[2] => LessThan0.IN2
+a[2] => min.DATAB
+a[2] => max.DATAA
+a[3] => LessThan0.IN1
+a[3] => min.DATAB
+a[3] => max.DATAA
+b[0] => LessThan0.IN8
+b[0] => min.DATAA
+b[0] => max.DATAB
+b[1] => LessThan0.IN7
+b[1] => min.DATAA
+b[1] => max.DATAB
+b[2] => LessThan0.IN6
+b[2] => min.DATAA
+b[2] => max.DATAB
+b[3] => LessThan0.IN5
+b[3] => min.DATAA
+b[3] => max.DATAB
+min[0] <= min.DB_MAX_OUTPUT_PORT_TYPE
+min[1] <= min.DB_MAX_OUTPUT_PORT_TYPE
+min[2] <= min.DB_MAX_OUTPUT_PORT_TYPE
+min[3] <= min.DB_MAX_OUTPUT_PORT_TYPE
+max[0] <= max.DB_MAX_OUTPUT_PORT_TYPE
+max[1] <= max.DB_MAX_OUTPUT_PORT_TYPE
+max[2] <= max.DB_MAX_OUTPUT_PORT_TYPE
+max[3] <= max.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|halfCleaner|comparator:conectionProcess[1].comparator_0
+a[0] => LessThan0.IN4
+a[0] => min.DATAB
+a[0] => max.DATAA
+a[1] => LessThan0.IN3
+a[1] => min.DATAB
+a[1] => max.DATAA
+a[2] => LessThan0.IN2
+a[2] => min.DATAB
+a[2] => max.DATAA
+a[3] => LessThan0.IN1
+a[3] => min.DATAB
+a[3] => max.DATAA
+b[0] => LessThan0.IN8
+b[0] => min.DATAA
+b[0] => max.DATAB
+b[1] => LessThan0.IN7
+b[1] => min.DATAA
+b[1] => max.DATAB
+b[2] => LessThan0.IN6
+b[2] => min.DATAA
+b[2] => max.DATAB
+b[3] => LessThan0.IN5
+b[3] => min.DATAA
+b[3] => max.DATAB
+min[0] <= min.DB_MAX_OUTPUT_PORT_TYPE
+min[1] <= min.DB_MAX_OUTPUT_PORT_TYPE
+min[2] <= min.DB_MAX_OUTPUT_PORT_TYPE
+min[3] <= min.DB_MAX_OUTPUT_PORT_TYPE
+max[0] <= max.DB_MAX_OUTPUT_PORT_TYPE
+max[1] <= max.DB_MAX_OUTPUT_PORT_TYPE
+max[2] <= max.DB_MAX_OUTPUT_PORT_TYPE
+max[3] <= max.DB_MAX_OUTPUT_PORT_TYPE
+
+

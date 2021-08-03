@@ -1,0 +1,46 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct_isim_beh.exe -prj C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct_beh.prj work.dotProduct work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/square.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/mul2ab.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/adderSub.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplex.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/register.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/trueDualPortRam.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complex2.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/ramComplexNum.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/ctrlUnitDotProduct.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/complex2In4.v" into library work
+Analyzing Verilog file "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 56: Size mismatch in connection of port <inaReal>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 57: Size mismatch in connection of port <inaImag>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 58: Size mismatch in connection of port <inbReal>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 59: Size mismatch in connection of port <inbImag>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 60: Size mismatch in connection of port <incReal>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 61: Size mismatch in connection of port <incImag>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 62: Size mismatch in connection of port <indReal>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:189 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 63: Size mismatch in connection of port <indImag>. Formal port size is 8-bit while actual signal size is 16-bit.
+WARNING:HDLCompiler:1016 - "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/squareComplex.v" Line 28: Port carry is not connected to this instance
+Completed static elaboration
+Compiling module register(WIDTH=8)
+Compiling module square(WIDTH=8)
+Compiling module adderSub(WIDTH=16,OP=1)
+Compiling module mul2ab(WIDTH=8)
+Compiling module squareComplex(WIDTH=8)
+Compiling module complex2
+Compiling module complex2In4
+Compiling module trueDualPortRam(WIDTH=16,ADDR_WI...
+Compiling module ramComplexNum
+Compiling module ctrlUnitDotProduct
+Compiling module dotProduct
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct_isim_beh.exe
+Fuse Memory Usage: 28968 KB
+Fuse CPU Usage: 499 ms

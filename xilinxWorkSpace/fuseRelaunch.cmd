@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct_isim_beh.exe" -prj "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct_beh.prj" "work.dotProduct" "work.glbl" 

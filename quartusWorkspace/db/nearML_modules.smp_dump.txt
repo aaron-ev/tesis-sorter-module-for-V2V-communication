@@ -1,6 +1,0 @@
-
-State Machine - |ctrlUnitDotProduct|state
-Name state.LOAD state.DONE state.IDLE 
-state.IDLE 0 0 0 
-state.LOAD 1 0 1 
-state.DONE 0 1 1 

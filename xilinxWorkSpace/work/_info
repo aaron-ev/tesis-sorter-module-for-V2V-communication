@@ -1,0 +1,269 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace
+vadderSub
+Z1 !s110 1627679600
+!i10b 1
+!s100 OO4=bA@IEgW?0BhjgR9Yi2
+I4io3ooc4]B`kKRi1?SW3V0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1627332529
+8adderSub.v
+FadderSub.v
+L0 2
+Z3 OL;L;10.5;63
+r1
+!s85 0
+31
+Z4 !s108 1627679600.000000
+!s107 adderSub.v|
+!s90 -reportprogress|300|adderSub.v|
+!i113 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+nadder@sub
+vcomplex2
+R1
+!i10b 1
+!s100 e7Ff`cB;4B1QLRRWF`L:<0
+IWLnX3W_8;dO9EZE_D1V5z0
+R2
+R0
+w1627584927
+8complex2.v
+Fcomplex2.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 complex2.v|
+!s90 -reportprogress|300|complex2.v|
+!i113 0
+R5
+R6
+vcomplex2In4
+Z7 !s110 1627679601
+!i10b 1
+!s100 =COXK[GmV2i<]1Mdm196G0
+I4nkD8L_^kBjAWS<l]J_B<1
+R2
+R0
+w1627585482
+8complex2In4.v
+Fcomplex2In4.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z8 !s108 1627679601.000000
+!s107 complex2In4.v|
+!s90 -reportprogress|300|complex2In4.v|
+!i113 0
+R5
+R6
+ncomplex2@in4
+vctrlUnitDotProduct
+R7
+!i10b 1
+!s100 ^7YSz7jU4K0fBoNef6F[70
+I`>NWa`^?kTc55ND5fjMLm0
+R2
+R0
+w1627676336
+8ctrlUnitDotProduct.v
+FctrlUnitDotProduct.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 ctrlUnitDotProduct.v|
+!s90 -reportprogress|300|ctrlUnitDotProduct.v|
+!i113 0
+R5
+R6
+nctrl@unit@dot@product
+vdotProduct
+R7
+!i10b 1
+!s100 MHazSdTLmhR6RXA[:HRRe1
+IhXP<[F]oV[^M06C`8:4bV2
+R2
+R0
+w1627678415
+8dotProduct.v
+FdotProduct.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 dotProduct.v|
+!s90 -reportprogress|300|dotProduct.v|
+!i113 0
+R5
+R6
+ndot@product
+vglbl
+R7
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+INz3046GECC=X7FgQ2]FR>3
+R2
+R0
+w1381681120
+8C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 0
+R5
+R6
+vmul2ab
+R1
+!i10b 1
+!s100 T;T3O:7_UOAjWlYX]<F3]2
+ITb2o1mamRbok1cW35^ma21
+R2
+R0
+w1627367929
+8mul2ab.v
+Fmul2ab.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 mul2ab.v|
+!s90 -reportprogress|300|mul2ab.v|
+!i113 0
+R5
+R6
+vramComplexNum
+R7
+!i10b 1
+!s100 Z9;>EgL7G7?35RPEJVZCf2
+I[O7z[e2CWZ4njA^3S9FBR2
+R2
+R0
+w1627671214
+8ramComplexNum.v
+FramComplexNum.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 ramComplexNum.v|
+!s90 -reportprogress|300|ramComplexNum.v|
+!i113 0
+R5
+R6
+nram@complex@num
+vregister
+R1
+!i10b 1
+!s100 3OA=X>8z:K99`jkPnQQaK1
+I<>]QkWP_<@[<OD<Ee3Y4J2
+R2
+R0
+w1627583846
+8register.v
+Fregister.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 register.v|
+!s90 -reportprogress|300|register.v|
+!i113 0
+R5
+R6
+vsquare
+R1
+!i10b 1
+!s100 mDCzQISU^6IB8edOF=4J?3
+IP04jW0QP?_H1^m;baB@W23
+R2
+R0
+w1627365098
+8square.v
+Fsquare.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 square.v|
+!s90 -reportprogress|300|square.v|
+!i113 0
+R5
+R6
+vsquareComplex
+R1
+!i10b 1
+!s100 WgchOm[>K0Zco>5T:me483
+IbkC0`l1MnLkGHzm>nXJ8_1
+R2
+R0
+w1627584674
+8squareComplex.v
+FsquareComplex.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 squareComplex.v|
+!s90 -reportprogress|300|squareComplex.v|
+!i113 0
+R5
+R6
+nsquare@complex
+vtrueDualPortRam
+R1
+!i10b 1
+!s100 g_XVGX@`P2^87j]7jBk:i1
+I=4zdz4N:6_4^ZXRB6XfS<0
+R2
+R0
+w1627531978
+8trueDualPortRam.v
+FtrueDualPortRam.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 trueDualPortRam.v|
+!s90 -reportprogress|300|trueDualPortRam.v|
+!i113 0
+R5
+R6
+ntrue@dual@port@ram

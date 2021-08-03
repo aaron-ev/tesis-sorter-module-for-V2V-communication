@@ -1,0 +1,135 @@
+
+module dist2#(parameter WIDTH = 16,parameter ADDR_WIDTH = 7)
+(
+	input clk, 
+	input rst,
+	input start,
+	input [1:0]M,
+	input [WIDTH-1:0] inaReal,
+	input [WIDTH-1:0] inaImag,
+	input [WIDTH-1:0] inbReal,
+	input [WIDTH-1:0] inbImag,
+	input [WIDTH-1:0] incReal,
+	input [WIDTH-1:0] incImag,	
+	input [WIDTH-1:0] indReal,
+	input [WIDTH-1:0] indImag,
+	
+	output done
+);
+
+wire [WIDTH-1:0] tempOutaReal;
+wire [WIDTH-1:0] tempOutaImag;
+wire [WIDTH-1:0] tempOutbReal;
+wire [WIDTH-1:0] tempOutbImag;
+wire [WIDTH-1:0] tempOutcReal;
+wire [WIDTH-1:0] tempOutcImag;
+wire [WIDTH-1:0] tempOutdReal;
+wire [WIDTH-1:0] tempOutdImag;
+	
+wire [ADDR_WIDTH-1:0]tempOutAddrReal; 
+wire [ADDR_WIDTH-1:0]tempOutAddrImag; 
+wire tempWe; 
+
+norm #(.WIDTH(WIDTH)) norm_0
+(
+	.clk(clk),
+	.rst(rst),
+	.inaReal(inaReal),
+	.inaImag(inaImag),	
+	.inbReal(inbReal),
+	.inbImag(inbImag),
+	.incReal(incReal),
+	.incImag(incImag),
+	.indReal(indReal),
+	.indImag(indImag),
+	
+	.outaReal(tempOutaReal),
+	.outaImag(tempOutaImag),
+	.outbReal(tempOutbReal),
+	.outbImag(tempOutbImag),
+	.outcReal(tempOutcReal),
+	.outcImag(tempOutcImag),
+	.outdReal(tempOutdReal),
+	.outdImag(tempOutdImag)		
+);
+
+
+fourTrueDualPortRam#(.WIDTH(WIDTH),.ADDR_WIDTH(ADDR_WIDTH),.DEPTH(8)) memory
+(
+	.clk(clk),
+	
+	//input
+	.din_aReal(tempOutaReal),
+	.din_aImag(tempOutaImag),
+	.din_bReal(tempOutbReal),
+	.din_bImag(tempOutbImag),
+	.din_cReal(tempOutcReal),
+	.din_cImag(tempOutcImag),
+	.din_dReal(tempOutdReal),
+	.din_dImag(tempOutdImag),	
+	//write enable 
+	.we(tempWe),
+	//write address 
+	.writeAddrReal(tempOutAddrReal),
+	.writeAddrImag(tempOutAddrImag),
+	//read adress 
+	.readAddrReal(inReadAddr),
+	.readAddrImag(inReadAddr+1'd1),
+	/*
+	.we_aReal(tempWe),
+	.we_aImag(tempWe),
+	.we_bReal(tempWe),
+	.we_bImag(tempWe),	
+	.we_cReal(tempWe),
+	.we_cImag(tempWe),
+	.we_dReal(tempWe),
+	.we_dImag(tempWe),
+	*/
+	/*
+	//write address 
+	.w_addr_aReal(tempAddrReal),
+	.w_addr_aImag(tempAddrImag),
+	.w_addr_bReal(tempAddrReal),
+	.w_addr_bImag(tempAddrImag),	
+	.w_addr_cReal(tempAddrReal),
+	.w_addr_cImag(tempAddrImag),	
+	.w_addr_dReal(tempAddrReal),
+	.w_addr_dImag(tempAddrImag),	
+	*/
+	/*
+	//read address
+	.r_addr_aReal(readAddr),
+	.r_addr_aImag(readAddr + 1'd1),
+	.r_addr_bReal(readAddr),
+	.r_addr_bImag(readAddr + 1'd1),	
+	.r_addr_cReal(readAddr),
+	.r_addr_cImag(readAddr + 1'd1),
+	.r_addr_dReal(readAddr),
+	.r_addr_dImag(readAddr + 1'd1),	
+	*/
+	
+	//output 
+	.dout_aReal(outaReal),
+	.dout_aImag(outaImag),
+	.dout_bReal(outbReal),
+	.dout_bImag(outbImag),
+	.dout_cReal(outcReal),
+	.dout_cImag(outcImag),	
+	.dout_dReal(outdReal),
+	.dout_dImag(outdImag)	
+);
+
+ctrlUnitDotProduct#(.ADDR_WIDTH(ADDR_WIDTH)) controlUnit
+(
+	.clk(clk),
+	.rst(rst), 
+	.start(start),
+	.we(tempWe),
+	.M(M),
+	
+	.outAddrReal(tempOutAddrReal),
+	.outAddrImag(tempOutAddrImag),
+	.done(done)
+);
+
+endmodule

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.xst" -ofn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.syr" 
+xst -intstyle ise -ifn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.xst" -ofn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.syr" 

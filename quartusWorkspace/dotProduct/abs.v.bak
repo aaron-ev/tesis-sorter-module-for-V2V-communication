@@ -1,0 +1,27 @@
+
+module abs#(parameter WIDTH = 16)
+(
+	input clk, 
+	input rst,
+	input [WIDTH-1:0] inaReal,
+	input [WIDTH-1:0] inaImag,
+	input [WIDTH-1:0] inbReal,
+	input [WIDTH-1:0] inbImag,
+	input [WIDTH-1:0] incReal,
+	input [WIDTH-1:0] incImag,	
+	input [WIDTH-1:0] indReal,
+	input [WIDTH-1:0] indImag,
+	output reg [WIDTH-1:0] outaAbs,
+	output reg [WIDTH-1:0] outbAbs,
+	output reg [WIDTH-1:0] outcAbs,
+	output reg [WIDTH-1:0] outdAbs,	
+);
+
+always@(posedge clk,negedge rst)
+	begin
+		outaAbs <= inaReal * inaReal + inaImag * inaImag;
+		outbAbs <= inbReal * inbReal + inbImag * inbImag;
+		outcAbs <= incReal * incReal + incImag * incImag;
+		outdAbs <= indReal * indReal + indImag * indImag;
+	end
+endmodule

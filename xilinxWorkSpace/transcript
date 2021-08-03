@@ -1,0 +1,913 @@
+# Reading C:/modeltech64_10.5/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {dotProduct.fdo}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:20 on Jul 30,2021
+# vlog -reportprogress 300 square.v 
+# -- Compiling module square
+# 
+# Top level modules:
+# 	square
+# End time: 14:13:20 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:20 on Jul 30,2021
+# vlog -reportprogress 300 mul2ab.v 
+# -- Compiling module mul2ab
+# 
+# Top level modules:
+# 	mul2ab
+# End time: 14:13:20 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:20 on Jul 30,2021
+# vlog -reportprogress 300 adderSub.v 
+# -- Compiling module adderSub
+# 
+# Top level modules:
+# 	adderSub
+# End time: 14:13:20 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:20 on Jul 30,2021
+# vlog -reportprogress 300 squareComplex.v 
+# -- Compiling module squareComplex
+# 
+# Top level modules:
+# 	squareComplex
+# End time: 14:13:20 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:20 on Jul 30,2021
+# vlog -reportprogress 300 register.v 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 14:13:20 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:20 on Jul 30,2021
+# vlog -reportprogress 300 trueDualPortRam.v 
+# -- Compiling module trueDualPortRam
+# 
+# Top level modules:
+# 	trueDualPortRam
+# End time: 14:13:20 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:20 on Jul 30,2021
+# vlog -reportprogress 300 complex2.v 
+# -- Compiling module complex2
+# 
+# Top level modules:
+# 	complex2
+# End time: 14:13:20 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:21 on Jul 30,2021
+# vlog -reportprogress 300 ramComplexNum.v 
+# -- Compiling module ramComplexNum
+# 
+# Top level modules:
+# 	ramComplexNum
+# End time: 14:13:21 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:21 on Jul 30,2021
+# vlog -reportprogress 300 ctrlUnitDotProduct.v 
+# -- Compiling module ctrlUnitDotProduct
+# 
+# Top level modules:
+# 	ctrlUnitDotProduct
+# End time: 14:13:21 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:21 on Jul 30,2021
+# vlog -reportprogress 300 complex2In4.v 
+# -- Compiling module complex2In4
+# 
+# Top level modules:
+# 	complex2In4
+# End time: 14:13:21 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:21 on Jul 30,2021
+# vlog -reportprogress 300 dotProduct.v 
+# -- Compiling module dotProduct
+# 
+# Top level modules:
+# 	dotProduct
+# End time: 14:13:21 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:13:21 on Jul 30,2021
+# vlog -reportprogress 300 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 14:13:21 on Jul 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.dotProduct glbl 
+# Start time: 14:13:21 on Jul 30,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: dotProduct.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: dotProduct.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: dotProduct.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: dotProduct.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: complex2In4.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: complex2In4.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: complex2In4.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: complex2In4.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: complex2.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: complex2.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: complex2.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: complex2.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: register.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: register.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: register.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: register.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: register.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: register.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: register.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: register.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: squareComplex.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: squareComplex.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: squareComplex.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: squareComplex.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: square.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: square.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: square.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: square.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: square.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: square.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: square.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: square.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: adderSub.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: adderSub.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: adderSub.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: adderSub.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: mul2ab.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ramComplexNum.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ramComplexNum.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ramComplexNum.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ramComplexNum.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'secureip'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'xilinxcorelib_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: trueDualPortRam.v(1): (vopt-2669) Unable to find library 'secureip'.
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./dotProduct.fdo PAUSED at line 38
+# End time: 14:13:32 on Jul 30,2021, Elapsed time: 0:00:11
+# Errors: 312, Warnings: 156

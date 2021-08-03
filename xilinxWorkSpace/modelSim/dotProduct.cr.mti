@@ -1,0 +1,36 @@
+C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/complex2.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/complex2.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module complex2
+
+Top level modules:
+	complex2
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourComplex2.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourComplex2.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module fourComplex2
+
+Top level modules:
+	fourComplex2
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/trueDualPortRam.v {1 {vlog -work work -vopt -stats=none {C:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dotProduct\trueDualPortRam.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module trueDualPortRam
+
+Top level modules:
+	trueDualPortRam
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourTrueDualPortRam.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/fourTrueDualPortRam.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module fourTrueDualPortRam
+
+Top level modules:
+	fourTrueDualPortRam
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dotProduct/dotProduct_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module dotProduct_tb
+
+Top level modules:
+	dotProduct_tb
+
+} {} {}}

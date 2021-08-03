@@ -1,0 +1,93 @@
+ISim log file
+Running: C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\dotProduct_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 7.  For instance dotProduct/complex2In4_0/, width 8 of formal port inaReal is not equal to width 16 of actual signal inaReal.
+WARNING: File "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 8.  For instance dotProduct/complex2In4_0/, width 8 of formal port inaImag is not equal to width 16 of actual signal inaImag.
+WARNING: File "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 9.  For instance dotProduct/complex2In4_0/, width 8 of formal port inbReal is not equal to width 16 of actual signal inbReal.
+WARNING: File "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 10.  For instance dotProduct/complex2In4_0/, width 8 of formal port inbImag is not equal to width 16 of actual signal inbImag.
+WARNING: File "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 11.  For instance dotProduct/complex2In4_0/, width 8 of formal port incReal is not equal to width 16 of actual signal incReal.
+WARNING: File "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 12.  For instance dotProduct/complex2In4_0/, width 8 of formal port incImag is not equal to width 16 of actual signal incImag.
+WARNING: File "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 13.  For instance dotProduct/complex2In4_0/, width 8 of formal port indReal is not equal to width 16 of actual signal indReal.
+WARNING: File "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/dotProduct.v" Line 14.  For instance dotProduct/complex2In4_0/, width 8 of formal port indImag is not equal to width 16 of actual signal indImag.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /dotProduct/clk 1 -radix bin -value 0 -radix bin -time 5 ps -repeat 10 ps
+# run 1.00us
+# isim force add /dotProduct/rst 1 -radix bin
+# run 1.00us
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# isim force add /dotProduct/rst 1 -radix bin
+# run all
+# run all
+# run 1ns
+# step
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1000ns
+# isim force add /dotProduct/rst 0 -radix bin
+# run 1000ns
+# isim force add /dotProduct/clk 1 -radix bin -value 0 -radix bin -time 5 ps -repeat 10 ps
+# run 1000ns
+# isim force add /dotProduct/rst 1 -radix bin
+# run 1000ns
+# isim force add /dotProduct/clk 1 -radix bin -value 0 -radix bin -time 10 ps -repeat 20 ps
+# run 1000ns
+# isim force add /dotProduct/clk 1 -radix bin -value 0 -radix bin -time 1 ns -repeat 2 ns
+# run 1000ns
+# isim force add /dotProduct/start 1 -radix bin
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns
+# run 1000ns

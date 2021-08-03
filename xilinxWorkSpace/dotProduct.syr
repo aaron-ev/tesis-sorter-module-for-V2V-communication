@@ -1,0 +1,631 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: dotProduct.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dotProduct.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dotProduct"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : dotProduct
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\square.v" into library work
+Parsing module <square>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\mul2ab.v" into library work
+Parsing module <mul2ab>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\adderSub.v" into library work
+Parsing module <adderSub>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\squareComplex.v" into library work
+Parsing module <squareComplex>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\register.v" into library work
+Parsing module <register>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\trueDualPortRam.v" into library work
+Parsing module <trueDualPortRam>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\complex2.v" into library work
+Parsing module <complex2>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\ramComplexNum.v" into library work
+Parsing module <ramComplexNum>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\ctrlUnitDotProduct.v" into library work
+Parsing module <ctrlUnitDotProduct>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\complex2In4.v" into library work
+Parsing module <complex2In4>.
+Analyzing Verilog file "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\dotProduct.v" into library work
+Parsing module <dotProduct>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <dotProduct>.
+
+Elaborating module <complex2In4>.
+
+Elaborating module <complex2(WIDTH=16)>.
+
+Elaborating module <register(WIDTH=16)>.
+WARNING:HDLCompiler:1016 - "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\squareComplex.v" Line 28: Port carry is not connected to this instance
+
+Elaborating module <squareComplex(WIDTH=16)>.
+
+Elaborating module <square(WIDTH=16)>.
+
+Elaborating module <adderSub(WIDTH=16,OP=1)>.
+
+Elaborating module <mul2ab(WIDTH=16)>.
+
+Elaborating module <ramComplexNum(WIDTH=16,ADDR_WIDTH=3,DEPTH=8)>.
+
+Elaborating module <trueDualPortRam(WIDTH=16,ADDR_WIDTH=3,DEPTH=8)>.
+
+Elaborating module <ctrlUnitDotProduct>.
+WARNING:HDLCompiler:413 - "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\ctrlUnitDotProduct.v" Line 45: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\ctrlUnitDotProduct.v" Line 46: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <dotProduct>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\dotProduct.v".
+        WIDTH = 16
+        ADDR_WIDTH = 3
+    Summary:
+	no macro.
+Unit <dotProduct> synthesized.
+
+Synthesizing Unit <complex2In4>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\complex2In4.v".
+        WIDTH = 16
+    Summary:
+	no macro.
+Unit <complex2In4> synthesized.
+
+Synthesizing Unit <complex2>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\complex2.v".
+        WIDTH = 16
+    Summary:
+	no macro.
+Unit <complex2> synthesized.
+
+Synthesizing Unit <register>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\register.v".
+        WIDTH = 16
+    Found 16-bit register for signal <dout>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <register> synthesized.
+
+Synthesizing Unit <squareComplex>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\squareComplex.v".
+        WIDTH = 16
+INFO:Xst:3210 - "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\squareComplex.v" line 28: Output port <carry> of the instance <adder0> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <squareComplex> synthesized.
+
+Synthesizing Unit <square>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\square.v".
+        WIDTH = 16
+    Found 16x16-bit multiplier for signal <n0002> created at line 8.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <square> synthesized.
+
+Synthesizing Unit <adderSub>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\adderSub.v".
+        WIDTH = 16
+        OP = 1
+    Found 17-bit subtractor for signal <n0003> created at line 10.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adderSub> synthesized.
+
+Synthesizing Unit <mul2ab>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\mul2ab.v".
+        WIDTH = 16
+    Found 16x16-bit multiplier for signal <n0005> created at line 9.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <mul2ab> synthesized.
+
+Synthesizing Unit <ramComplexNum>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\ramComplexNum.v".
+        WIDTH = 16
+        ADDR_WIDTH = 3
+        DEPTH = 8
+    Summary:
+	no macro.
+Unit <ramComplexNum> synthesized.
+
+Synthesizing Unit <trueDualPortRam>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\trueDualPortRam.v".
+        WIDTH = 16
+        ADDR_WIDTH = 3
+        DEPTH = 8
+    Found 16-bit register for signal <dout_b>.
+    Found 16-bit register for signal <dout_a>.
+    Found 8x16-bit quad-port RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <trueDualPortRam> synthesized.
+
+Synthesizing Unit <ctrlUnitDotProduct>.
+    Related source file is "C:\Users\aaron\Desktop\git_tesis\xilinxWorkSpace\ctrlUnitDotProduct.v".
+        ADDR_WIDTH = 3
+    Found 3-bit register for signal <addrReal>.
+    Found 2-bit register for signal <state>.
+    Found 3-bit register for signal <addrImag>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <addrReal[2]_GND_12_o_add_3_OUT> created at line 45.
+    Found 3-bit adder for signal <addrImag[2]_GND_12_o_add_4_OUT> created at line 46.
+WARNING:Xst:737 - Found 1-bit latch for signal <done>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ctrlUnitDotProduct> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 8x16-bit quad-port RAM                                : 4
+# Multipliers                                          : 12
+ 16x16-bit multiplier                                  : 12
+# Adders/Subtractors                                   : 6
+ 17-bit subtractor                                     : 4
+ 3-bit adder                                           : 2
+# Registers                                            : 18
+ 16-bit register                                       : 16
+ 3-bit register                                        : 2
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 2
+ 3-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <trueDualPortRam>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 16-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we_a>          | high     |
+    |     addrA          | connected to signal <w_addr_a>      |          |
+    |     diA            | connected to signal <din_a>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 16-bit                     |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     weB            | connected to signal <we_b>          | high     |
+    |     addrB          | connected to signal <w_addr_b>      |          |
+    |     diB            | connected to signal <din_b>         |          |
+    -----------------------------------------------------------------------
+    | Port C                                                              |
+    |     aspect ratio   | 8-word x 16-bit                     |          |
+    |     addrC          | connected to signal <r_addr_a>      |          |
+    |     doC            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | Port D                                                              |
+    |     aspect ratio   | 8-word x 16-bit                     |          |
+    |     addrD          | connected to signal <r_addr_b>      |          |
+    |     doD            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <trueDualPortRam> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 8x16-bit quad-port distributed RAM                    : 4
+# Multipliers                                          : 12
+ 16x16-bit multiplier                                  : 12
+# Adders/Subtractors                                   : 6
+ 17-bit subtractor                                     : 4
+ 3-bit adder                                           : 2
+# Registers                                            : 262
+ Flip-Flops                                            : 262
+# Multiplexers                                         : 2
+ 3-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ctrlUnitDotProduct_0/FSM_0> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 11    | 11
+-------------------
+WARNING:Xst:1294 - Latch <done> is equivalent to a wire in block <ctrlUnitDotProduct>.
+WARNING:Xst:1710 - FF/Latch <addrReal_0> (without init value) has a constant value of 0 in block <ctrlUnitDotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addrImag_0> (without init value) has a constant value of 1 in block <ctrlUnitDotProduct>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <dotProduct> ...
+
+Optimizing unit <register> ...
+
+Optimizing unit <trueDualPortRam> ...
+
+Optimizing unit <ctrlUnitDotProduct> ...
+WARNING:Xst:1710 - FF/Latch <ramcomplexNum_0/trueDualPortRam3/ram_FF_112> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam3/ram_FF_80> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam3/ram_FF_48> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam3/ram_FF_16> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam2/ram_FF_112> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam2/ram_FF_80> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam2/ram_FF_48> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam2/ram_FF_16> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam1/ram_FF_112> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam1/ram_FF_80> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam1/ram_FF_48> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam1/ram_FF_16> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam0/ram_FF_112> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam0/ram_FF_80> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam0/ram_FF_48> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ramcomplexNum_0/trueDualPortRam0/ram_FF_16> (without init value) has a constant value of 0 in block <dotProduct>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <ctrlUnitDotProduct_0/addrImag_1> in Unit <dotProduct> is equivalent to the following FF/Latch, which will be removed : <ctrlUnitDotProduct_0/addrReal_1> 
+INFO:Xst:2261 - The FF/Latch <ctrlUnitDotProduct_0/addrImag_2> in Unit <dotProduct> is equivalent to the following FF/Latch, which will be removed : <ctrlUnitDotProduct_0/addrReal_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dotProduct, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 756
+ Flip-Flops                                            : 756
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : dotProduct.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1079
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 65
+#      LUT3                        : 6
+#      LUT4                        : 513
+#      LUT6                        : 240
+#      MUXCY                       : 60
+#      MUXF7                       : 128
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 756
+#      FD                          : 128
+#      FDC                         : 130
+#      FDCE                        : 2
+#      FDE                         : 496
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 265
+#      IBUF                        : 136
+#      OBUF                        : 129
+# DSPs                             : 12
+#      DSP48E1                     : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             756  out of  126800     0%  
+ Number of Slice LUTs:                  825  out of  63400     1%  
+    Number used as Logic:               825  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    953
+   Number with an unused Flip Flop:     197  out of    953    20%  
+   Number with an unused LUT:           128  out of    953    13%  
+   Number of fully used LUT-FF pairs:   628  out of    953    65%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                         266
+ Number of bonded IOBs:                 266  out of    210   126% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                     12  out of    240     5%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 756   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.409ns (Maximum Frequency: 184.887MHz)
+   Minimum input arrival time before clock: 1.200ns
+   Maximum output required time after clock: 0.659ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.409ns (frequency: 184.887MHz)
+  Total number of paths / destination ports: 211885 / 1126
+-------------------------------------------------------------------------
+Delay:               5.409ns (Levels of Logic = 19)
+  Source:            complex2In4_0/complex2d/registerReal/dout_14 (FF)
+  Destination:       ramcomplexNum_0/trueDualPortRam3/ram_FF_111 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: complex2In4_0/complex2d/registerReal/dout_14 to ramcomplexNum_0/trueDualPortRam3/ram_FF_111
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.361   0.289  complex2In4_0/complex2d/registerReal/dout_14 (complex2In4_0/complex2d/registerReal/dout_14)
+     DSP48E1:A14->P0       1   2.823   0.379  complex2In4_0/complex2d/squareComplex0/square0/Mmult_n0002 (complex2In4_0/complex2d/squareComplex0/tempOutSquare0<0>)
+     LUT2:I0->O            1   0.097   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_lut<0> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<0> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<1> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<2> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<3> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<4> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<5> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<6> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<7> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<8> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<9> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<10> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<11> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<12> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<13> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<14> (complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_cy<14>)
+     XORCY:CI->O           4   0.370   0.309  complex2In4_0/complex2d/squareComplex0/adder0/Msub_n0003_xor<15> (tempOutdReal<15>)
+     LUT4:I3->O            1   0.097   0.000  ramcomplexNum_0/trueDualPortRam3/ram_DATAEQN_1111 (ramcomplexNum_0/trueDualPortRam3/ram_DataEqn_111)
+     FDE:D                     0.008          ramcomplexNum_0/trueDualPortRam3/ram_FF_111
+    ----------------------------------------
+    Total                      5.409ns (4.431ns logic, 0.978ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 901 / 389
+-------------------------------------------------------------------------
+Offset:              1.200ns (Levels of Logic = 3)
+  Source:            readAddrImag<1> (PAD)
+  Destination:       ramcomplexNum_0/trueDualPortRam3/dout_b_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: readAddrImag<1> to ramcomplexNum_0/trueDualPortRam3/dout_b_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           128   0.001   0.815  readAddrImag_1_IBUF (readAddrImag_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  ramcomplexNum_0/trueDualPortRam3/inst_LPM_MUX17_3 (ramcomplexNum_0/trueDualPortRam3/inst_LPM_MUX17_3)
+     MUXF7:I1->O           1   0.279   0.000  ramcomplexNum_0/trueDualPortRam3/inst_LPM_MUX17_2_f7 (ramcomplexNum_0/trueDualPortRam3/r_addr_b[2]_read_port_6_OUT<1>)
+     FD:D                      0.008          ramcomplexNum_0/trueDualPortRam3/dout_b_1
+    ----------------------------------------
+    Total                      1.200ns (0.385ns logic, 0.815ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 129 / 129
+-------------------------------------------------------------------------
+Offset:              0.659ns (Levels of Logic = 1)
+  Source:            ctrlUnitDotProduct_0/state_FSM_FFd1 (FF)
+  Destination:       done (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ctrlUnitDotProduct_0/state_FSM_FFd1 to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.361   0.298  ctrlUnitDotProduct_0/state_FSM_FFd1 (ctrlUnitDotProduct_0/state_FSM_FFd1)
+     OBUF:I->O                 0.000          done_OBUF (done)
+    ----------------------------------------
+    Total                      0.659ns (0.361ns logic, 0.298ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.409|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.92 secs
+ 
+--> 
+
+Total memory usage is 4621648 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
