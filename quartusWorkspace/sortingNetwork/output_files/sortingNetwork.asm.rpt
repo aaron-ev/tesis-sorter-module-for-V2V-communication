@@ -1,5 +1,5 @@
 Assembler report for sortingNetwork
-Mon Aug 02 13:29:02 2021
+Tue Aug 03 01:06:54 2021
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -37,11 +37,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Aug 02 13:29:02 2021 ;
+; Assembler Status      ; Successful - Tue Aug 03 01:06:54 2021 ;
 ; Revision Name         ; sortingNetwork                        ;
-; Top-level Entity Name ; halfCleaner                           ;
+; Top-level Entity Name ; sortingNetwork4                       ;
 ; Family                ; Cyclone IV GX                         ;
-; Device                ; EP4CGX15BF14C6                        ;
+; Device                ; EP4CGX30CF23C6                        ;
 +-----------------------+---------------------------------------+
 
 
@@ -91,9 +91,9 @@ applicable agreement for further details.
 +----------------+-----------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                   ;
 +----------------+-----------------------------------------------------------------------------------------------------------+
-; Device         ; EP4CGX15BF14C6                                                                                            ;
-; JTAG usercode  ; 0x000BF73C                                                                                                ;
-; Checksum       ; 0x000BF73C                                                                                                ;
+; Device         ; EP4CGX30CF23C6                                                                                            ;
+; JTAG usercode  ; 0x003E61C7                                                                                                ;
+; Checksum       ; 0x003E61C7                                                                                                ;
 +----------------+-----------------------------------------------------------------------------------------------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Aug 02 13:28:54 2021
+    Info: Processing started: Tue Aug 03 01:06:45 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off sortingNetwork -c sortingNetwork
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4596 megabytes
-    Info: Processing ended: Mon Aug 02 13:29:02 2021
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 4607 megabytes
+    Info: Processing ended: Tue Aug 03 01:06:54 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:08
 
 

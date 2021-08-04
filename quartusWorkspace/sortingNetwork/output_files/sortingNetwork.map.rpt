@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sortingNetwork
-Mon Aug 02 13:28:40 2021
+Tue Aug 03 01:06:16 2021
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -14,11 +14,15 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |halfCleaner
- 10. Parameter Settings for User Entity Instance: comparator:conectionProcess[0].comparator_0
- 11. Parameter Settings for User Entity Instance: comparator:conectionProcess[1].comparator_0
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |sortingNetwork4
+ 10. Parameter Settings for User Entity Instance: comparator:comparator0
+ 11. Parameter Settings for User Entity Instance: comparator:comparator1
+ 12. Parameter Settings for User Entity Instance: comparator:comparator2
+ 13. Parameter Settings for User Entity Instance: comparator:comparator3
+ 14. Parameter Settings for User Entity Instance: comparator:comparator4
+ 15. Parameter Settings for User Entity Instance: comparator:comparator5
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +48,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 02 13:28:40 2021      ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug 03 01:06:16 2021      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; sortingNetwork                             ;
-; Top-level Entity Name              ; halfCleaner                                ;
+; Top-level Entity Name              ; sortingNetwork4                            ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 22                                         ;
-;     Total combinational functions  ; 22                                         ;
+; Total logic elements               ; 288                                        ;
+;     Total combinational functions  ; 288                                        ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 32                                         ;
+; Total pins                         ; 128                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -70,7 +74,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; halfCleaner        ; sortingNetwork     ;
+; Top-level entity name                                                      ; sortingNetwork4    ; sortingNetwork     ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -162,39 +166,43 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
-; comparator.v                     ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sortingNetwork/comparator.v  ;         ;
-; halfCleaner.v                    ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sortingNetwork/halfCleaner.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
+; comparator.v                     ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sortingNetwork/comparator.v      ;         ;
+; sortingNetwork4.v                ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sortingNetwork/sortingNetwork4.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                        ;
-+--------------------------+---------------------------------------------------------+
-; Resource                 ; Usage                                                   ;
-+--------------------------+---------------------------------------------------------+
-; I/O pins                 ; 32                                                      ;
-; DSP block 9-bit elements ; 0                                                       ;
-; Maximum fan-out node     ; comparator:conectionProcess[0].comparator_0|LessThan0~2 ;
-; Maximum fan-out          ; 6                                                       ;
-; Total fan-out            ; 112                                                     ;
-; Average fan-out          ; 1.30                                                    ;
-+--------------------------+---------------------------------------------------------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++--------------------------+-------------------------------------+
+; Resource                 ; Usage                               ;
++--------------------------+-------------------------------------+
+; I/O pins                 ; 128                                 ;
+; DSP block 9-bit elements ; 0                                   ;
+; Maximum fan-out node     ; comparator:comparator0|LessThan0~30 ;
+; Maximum fan-out          ; 32                                  ;
+; Total fan-out            ; 1050                                ;
+; Average fan-out          ; 1.93                                ;
++--------------------------+-------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------+--------------+
-; |halfCleaner                                     ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 32   ; 0            ; |halfCleaner                                             ;              ;
-;    |comparator:conectionProcess[0].comparator_0| ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |halfCleaner|comparator:conectionProcess[0].comparator_0 ;              ;
-;    |comparator:conectionProcess[1].comparator_0| ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |halfCleaner|comparator:conectionProcess[1].comparator_0 ;              ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                          ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
+; |sortingNetwork4            ; 288 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 128  ; 0            ; |sortingNetwork4                        ;              ;
+;    |comparator:comparator0| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sortingNetwork4|comparator:comparator0 ;              ;
+;    |comparator:comparator1| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sortingNetwork4|comparator:comparator1 ;              ;
+;    |comparator:comparator2| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sortingNetwork4|comparator:comparator2 ;              ;
+;    |comparator:comparator3| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sortingNetwork4|comparator:comparator3 ;              ;
+;    |comparator:comparator4| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sortingNetwork4|comparator:comparator4 ;              ;
+;    |comparator:comparator5| ; 48 (48)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |sortingNetwork4|comparator:comparator5 ;              ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -213,34 +221,73 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |halfCleaner ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                     ;
-; N              ; 4     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |sortingNetwork4 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: comparator:conectionProcess[0].comparator_0 ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:comparator0 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: comparator:conectionProcess[1].comparator_0 ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:comparator1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:comparator2 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:comparator3 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:comparator4 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:comparator5 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -249,7 +296,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -259,26 +306,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Aug 02 13:28:35 2021
+    Info: Processing started: Tue Aug 03 01:06:11 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sortingNetwork -c sortingNetwork
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.v
     Info (12023): Found entity 1: comparator
 Info (12021): Found 1 design units, including 1 entities, in source file halfcleaner.v
     Info (12023): Found entity 1: halfCleaner
-Info (12127): Elaborating entity "halfCleaner" for the top level hierarchy
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:conectionProcess[0].comparator_0"
+Info (12021): Found 1 design units, including 1 entities, in source file sortingnetwork4.v
+    Info (12023): Found entity 1: sortingNetwork4
+Info (12127): Elaborating entity "sortingNetwork4" for the top level hierarchy
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:comparator0"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 22 logic cells
+Info (21057): Implemented 416 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 64 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 288 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Mon Aug 02 13:28:40 2021
+    Info: Processing ended: Tue Aug 03 01:06:16 2021
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
 
 

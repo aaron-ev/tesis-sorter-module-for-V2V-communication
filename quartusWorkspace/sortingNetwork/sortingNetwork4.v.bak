@@ -1,0 +1,11 @@
+module sortingNetwork4#(parameter WIDTH = 16)
+(
+	input [WIDTH-1:0]a0, 
+	input	[WIDTH-1:0]a1,
+	input	[WIDTH-1:0]a2,
+	input	[WIDTH-1:0]a3,
+	output reg [WIDTH-1:0]y0,
+	output reg [WIDTH-1:0]y0,
+	output reg [WIDTH-1:0]y0,
+	output reg [WIDTH-1:0]y0
+);
