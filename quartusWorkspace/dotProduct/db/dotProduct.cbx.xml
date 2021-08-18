@@ -1,32 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="dotProduct">
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult3|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_0|lpm_mult:Mult0" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult1|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult4|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_1|lpm_mult:Mult0" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_3|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult0" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult2|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult5|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult1" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult2|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult3|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult5" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_0|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_1|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_3|lpm_mult:Mult0" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult2" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult4|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_1|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult3" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult5|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult1|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|abs:abs_0|lpm_mult:Mult4" CBX_FILE_NAME="mult_1ht.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_0|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_r2h1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|dist2|norm:norm_0|square:square_3|lpm_mult:Mult0|mult_1ht:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_kv82.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

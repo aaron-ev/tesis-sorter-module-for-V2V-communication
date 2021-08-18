@@ -1,0 +1,99 @@
+C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module dist2Sorter
+
+Top level modules:
+	dist2Sorter
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8_row.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8_row.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge4to8_row
+
+Top level modules:
+	merge4to8_row
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/regLoad.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/regLoad.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module regLoad
+
+Top level modules:
+	regLoad
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module dist2
+
+Top level modules:
+	dist2
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge2to4
+
+Top level modules:
+	merge2to4
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge8to16
+
+Top level modules:
+	merge8to16
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module dist2Sorter_tb
+
+Top level modules:
+	dist2Sorter_tb
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/norm.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/norm.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module norm
+
+Top level modules:
+	norm
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/abs.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/abs.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module abs
+
+Top level modules:
+	abs
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge4to8
+
+Top level modules:
+	merge4to8
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4_row.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4_row.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge2to4_row
+
+Top level modules:
+	merge2to4_row
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/square.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/square.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module square
+
+Top level modules:
+	square
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16_row.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16_row.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge8to16_row
+
+Top level modules:
+	merge8to16_row
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/sortingNetwork4.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/sortingNetwork4.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module sortingNetwork4
+
+Top level modules:
+	sortingNetwork4
+
+} {} {}}

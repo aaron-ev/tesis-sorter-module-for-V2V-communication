@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aaron\Desktop\git_tesis\quartusWorkspace\mergeTest\simulation\qsim
+vregLoad
+Z1 !s100 lgWhgYPha16f=XCS9:K:j0
+Z2 I@4ABSM^JATV36e@?L9E063
+Z3 VN6]HaD7i<e^l3HZW`KM0R2
+Z4 dC:\Users\aaron\Desktop\git_tesis\quartusWorkspace\mergeTest\simulation\qsim
+Z5 w1628278182
+Z6 8mergeTest.vo
+Z7 FmergeTest.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|mergeTest.vo|
+Z10 o-work work -O0
+Z11 nreg@load
+!i10b 1
+!s85 0
+Z12 !s108 1628278183.427000
+Z13 !s107 mergeTest.vo|
+!s101 -O0
+vregLoad_vlg_check_tst
+!i10b 1
+Z14 !s100 BBmgJT2MX0jAIl92Q4QO<3
+Z15 I3^6N^KOLGXC:XgPUNLl=B2
+Z16 VLF@K[Gn0LTlA0bki_XX5f2
+R4
+Z17 w1628278179
+Z18 8mergeTest.vt
+Z19 FmergeTest.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z20 !s108 1628278183.495000
+Z21 !s107 mergeTest.vt|
+Z22 !s90 -work|work|mergeTest.vt|
+!s101 -O0
+R10
+Z23 nreg@load_vlg_check_tst
+vregLoad_vlg_sample_tst
+!i10b 1
+Z24 !s100 lPg4;jNc<eQ<4Z0aa4l_l0
+Z25 II?z[]YY;2dSVe26ga7QGR3
+Z26 VnB8j_lVW>71@JM0>N^dO<3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 nreg@load_vlg_sample_tst
+vregLoad_vlg_vec_tst
+!i10b 1
+!s100 ]=Y5>^mzHWC3<3Dk2eckX1
+I5Njj]A@;5YdM@dL0B=QmK2
+Z28 VfBI027]5XKj0?a99hLTMG2
+R4
+R17
+R18
+R19
+Z29 L0 355
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 nreg@load_vlg_vec_tst

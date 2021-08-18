@@ -1,27 +1,23 @@
-function [s_est nodos] = QRMSearch(yp,R,conste,nstd,QRM,P,N)
-
-[rows nt] = size(R);
-
-dim = length(conste);
+function [s_est,nodos] = QRMSearch(yp,R,conste,nstd,QRM,P)
+nt = size(R);
 nodos=1;
 
-% se realiza la detección del nivel Nt (line  6 in seudocodigo)
-error=abs(yp(nt) - R(nt,nt)*conste).*abs(yp(nt) - R(nt,nt)*conste);
-[dist ord]=sort(error);
+error = abs(yp(nt) - R(nt,nt)*conste).*abs(yp(nt) - R(nt,nt)*conste);
+[dist,ord] = sort(error);
 
-for k=1:QRM,
-    parent_node(nt,k) = conste(ord(k));
+for k = 1:QRM
+    parent_ode(nt,k) = conste(ord(k));
     parent_symb(nt,k) = ord(k)-1;
     parent_dist(nt,k) = dist(k);
     parent_yp(:,k) = yp(:,1);
 end
 
 % Se realiza la detección en la Nt-1 capas
-for k=nt-1:-1:1,
+for k = nt-1:-1:1
     Vth1 = 3*(nt-k+1)*nstd^2; % cota para podar arbol en cada nivel
     %% se realiza la detección de la capa Nt-k capas restantes
-    col=1;
-    for l=1:QRM,
+    col = 1;
+    for l = 1:QRM
         distp = parent_dist(k+1,l);
         sest = parent_node(k+1:nt,l);
         symb = parent_symb(k+1:nt,l);
@@ -30,7 +26,7 @@ for k=nt-1:-1:1,
 %         error = (abs(rm(k,1) - R(k,k)*conste).^2);
         error = (abs(rm(k,1) - R(k,k)*conste).*abs(rm(k,1) - R(k,k)*conste));
         distt= distp + error;
-        [dist2 ord2]=sort(distt);
+        [dist2,ord2]=sort(distt);
         for p=1:QRM % se guardan las M ramas de cada uno de los QRM puntos por nivel
             parent_node2(k,col)= conste(ord2(p));
             parent_node2(k+1:nt,col)= sest;
@@ -49,8 +45,8 @@ for k=nt-1:-1:1,
         end
     end
     %% se seleccionan las QRM mejores para este nivel
-    [dist3 ord3] = sort(parent_dist2(k,1:col-1));
-    for l=1:QRM,
+    [dist3,ord3] = sort(parent_dist2(k,1:col-1));
+    for l=1:QRM
         parent_node(:,l) =  parent_node2(:,ord3(l));
         parent_symb(:,l) = parent_symb2(:,ord3(l));
         parent_dist(:,l) =  parent_dist2(:,ord3(l));

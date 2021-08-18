@@ -1,0 +1,401 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/New folder
+T_opt
+!s110 1628181912
+VOcCkg`WAfTmeUn9X?AAkJ1
+Z1 04 14 4 work dist2Sorter_tb fast 0
+=4-d8c497f47b2f-610c1598-1ef-25ec
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.5;63
+R0
+T_opt1
+!s110 1628216502
+VUh19COkT9^YRU=INXg8PM2
+R1
+=1-d8c497f47b2f-610c9cb5-35e-4eb0
+R2
+R3
+n@_opt1
+R4
+T_opt2
+!s110 1628214724
+VFXmH_VK^Tk71CJ6B1dIbg0
+04 11 4 work dist2Sorter fast 0
+=1-d8c497f47b2f-610c95c4-251-3748
+R2
+R3
+n@_opt2
+R4
+R0
+vabs
+Z5 !s110 1628216498
+!i10b 1
+!s100 :j:J:_n9]gBnXlj37>5aF0
+IKj9g:[lX4P8_mobQ2F:9N3
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 dC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/modelSim
+w1628121402
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/abs.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/abs.v
+L0 2
+Z8 OL;L;10.5;63
+r1
+!s85 0
+31
+Z9 !s108 1628216498.000000
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/abs.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/abs.v|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vcomparator
+Z11 !s110 1628216499
+!i10b 1
+!s100 L6KIcWgaD7H5j=eggMWBb3
+IOez8]]?fEW[9Y9fj?4NzS0
+R6
+R7
+w1628124803
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/comparator.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/comparator.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/comparator.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/comparator.v|
+!i113 0
+R10
+R3
+vdist2
+R11
+!i10b 1
+!s100 5XTc[Kfoo=eO5P4i?XgTh1
+IAPa6`Hh:ZN75>I_fV<bXa2
+R6
+R7
+w1628121625
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2.v
+L0 2
+R8
+r1
+!s85 0
+31
+Z12 !s108 1628216499.000000
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2.v|
+!i113 0
+R10
+R3
+vdist2Sorter
+R11
+!i10b 1
+!s100 z^fFO^E=>z>`9bAKZY4_W0
+IQPnZ1LNnhc_bz5?aZRmGk3
+R6
+R7
+w1628214501
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter.v|
+!i113 0
+R10
+R3
+ndist2@sorter
+vdist2Sorter_tb
+Z13 !s110 1628216500
+!i10b 1
+!s100 Lfk6OZ>]eB[2QFLc2jcoI1
+I?c[3PdW3>g5m?WX_L8e950
+R6
+R7
+w1628214873
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter_tb.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter_tb.v
+L0 3
+R8
+r1
+!s85 0
+31
+Z14 !s108 1628216500.000000
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/dist2Sorter_tb.v|
+!i113 0
+R10
+R3
+ndist2@sorter_tb
+vmerge
+R11
+!i10b 1
+!s100 TRl0D:LM8?Va<]1AfUX`;3
+I>]CPR]dPPiDC]X3oDSEkk0
+R6
+R7
+w1628216348
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge.v
+L0 3
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge.v|
+!i113 0
+R10
+R3
+vmerge2to4
+R11
+!i10b 1
+!s100 UAW6iaXBdTPz9KJlal[Ae2
+In3;>aNKkAUFSFQJzI:;Y50
+R6
+R7
+w1628201207
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4.v|
+!i113 0
+R10
+R3
+vmerge2to4_row
+R11
+!i10b 1
+!s100 ZaDf8;ARPdU`hjXm_zG=F1
+IM>Oe5@G>8G[dFje7omScA0
+R6
+R7
+w1628212254
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4_row.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4_row.v
+L0 1
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4_row.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge2to4_row.v|
+!i113 0
+R10
+R3
+vmerge4to8
+R11
+!i10b 1
+!s100 Ali[TSEn]6bUeC26=miPV0
+IjeJ<S3Ph[InM?lS3Dj;>=2
+R6
+R7
+w1628210967
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8.v
+L0 3
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8.v|
+!i113 0
+R10
+R3
+vmerge4to8_row
+R13
+!i10b 1
+!s100 cgGMgj4J5KIQOD[0g5PgL0
+I:HZ7;0mJKP]Z>h_T_2U701
+R6
+R7
+w1628215541
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8_row.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8_row.v
+L0 2
+R8
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8_row.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge4to8_row.v|
+!i113 0
+R10
+R3
+vmerge8to16
+R11
+!i10b 1
+!s100 3KeZi4gK7eX_<Qj63WJ[A0
+I`oec6R5<@khBM^SWMSY<K0
+R6
+R7
+w1628215980
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16.v|
+!i113 0
+R10
+R3
+vmerge8to16_row
+R13
+!i10b 1
+!s100 YFNzT`kSHDo:?[2XjALn61
+ICn;0R?GY9_CLTeQRV0hXN2
+R6
+R7
+w1628215570
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16_row.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16_row.v
+L0 2
+R8
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16_row.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/merge8to16_row.v|
+!i113 0
+R10
+R3
+vnorm
+R11
+!i10b 1
+!s100 =oYkAH:EDO1_mj?kV5M];2
+IEPG7aHl2Lfhk2U`BV8V3E2
+R6
+R7
+w1627946942
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/norm.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/norm.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/norm.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/norm.v|
+!i113 0
+R10
+R3
+vregLoad
+R11
+!i10b 1
+!s100 4Bf?zc=[iblN@@YZo48]a0
+IaF>G2jBzLU]XONU?DzEA91
+R6
+R7
+w1628201502
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/regLoad.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/regLoad.v
+L0 2
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/regLoad.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/regLoad.v|
+!i113 0
+R10
+R3
+nreg@load
+vsortingNetwork4
+R13
+!i10b 1
+!s100 ?WV:>YRQVhK`G^7jZAJTh3
+IT6oL0=?OKLl:Roj[[M;]20
+R6
+R7
+w1628124818
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/sortingNetwork4.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/sortingNetwork4.v
+L0 1
+R8
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/sortingNetwork4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/sortingNetwork4.v|
+!i113 0
+R10
+R3
+nsorting@network4
+vsquare
+R13
+!i10b 1
+!s100 RF7QLHKW[FVn:c@nmWIX53
+I5UVnGl1OH4=fhg4[zGNfE0
+R6
+R7
+w1627943679
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/square.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/square.v
+L0 3
+R8
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/square.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/square.v|
+!i113 0
+R10
+R3
+vtwoTimesMerge1to2
+R5
+!i10b 1
+!s100 oD`Nb8Jgd8db5an6>d2090
+IFh7;=Q8IdE<0?LFQTeTL92
+R6
+R7
+w1628200705
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/twoTimesMerge1to2.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/twoTimesMerge1to2.v
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/twoTimesMerge1to2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/dist2Sorter/twoTimesMerge1to2.v|
+!i113 0
+R10
+R3
+ntwo@times@merge1to2

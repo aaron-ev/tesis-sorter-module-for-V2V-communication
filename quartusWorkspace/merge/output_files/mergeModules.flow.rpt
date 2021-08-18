@@ -1,5 +1,5 @@
 Flow report for mergeModules
-Tue Aug 03 17:08:52 2021
+Wed Aug 04 14:52:47 2021
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,26 +40,24 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Aug 03 17:08:52 2021      ;
+; Flow Status                        ; Successful - Wed Aug 04 14:52:47 2021      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; mergeModules                               ;
 ; Top-level Entity Name              ; merge4to8                                  ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 81 / 21,280 ( < 1 % )                      ;
-;     Total combinational functions  ; 81 / 21,280 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 0 / 21,280 ( 0 % )                         ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 48 / 167 ( 29 % )                          ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0 / 774,144 ( 0 % )                        ;
-; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                             ;
-; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                              ;
-; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                              ;
-; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                              ;
-; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                              ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
-; Device                             ; EP4CGX22CF19C6                             ;
-; Timing Models                      ; Final                                      ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -68,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/03/2021 17:06:45 ;
+; Start date & time ; 08/04/2021 14:52:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mergeModules        ;
 +-------------------+---------------------+
@@ -79,7 +77,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589200.162803560502728 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 10995770589200.162811396604804 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
@@ -91,53 +89,29 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4641 MB             ; 00:00:03                           ;
-; Fitter                    ; 00:00:12     ; 1.0                     ; 5008 MB             ; 00:00:12                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4616 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4621 MB             ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4567 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4576 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4567 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4576 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4576 MB             ; 00:00:03                           ;
-; Total                     ; 00:00:38     ; --                      ; --                  ; 00:00:37                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:03     ; 1.0                     ; 4615 MB             ; 00:00:03                           ;
+; Total                  ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                     ;
++------------------------+------------------+-----------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++------------------------+------------------+-----------+------------+----------------+
+; Analysis & Elaboration ; DESKTOP-92AEKAJ  ; Windows 7 ; 6.2        ; x86_64         ;
++------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off mergeModules -c mergeModules
-quartus_fit --read_settings_files=off --write_settings_files=off mergeModules -c mergeModules
-quartus_asm --read_settings_files=off --write_settings_files=off mergeModules -c mergeModules
-quartus_sta mergeModules -c mergeModules
-quartus_eda --read_settings_files=off --write_settings_files=off mergeModules -c mergeModules
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mergeModules -c mergeModules --vector_source=C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge4to8_tb.vwf --testbench_file=./simulation/qsim/mergeModules.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog mergeModules -c mergeModules
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog mergeModules -c mergeModules --vector_source=C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge4to8_tb.vwf --testbench_file=./simulation/qsim/mergeModules.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog mergeModules -c mergeModules
+quartus_map --read_settings_files=on --write_settings_files=off mergeModules -c mergeModules --analysis_and_elaboration
 
 
 

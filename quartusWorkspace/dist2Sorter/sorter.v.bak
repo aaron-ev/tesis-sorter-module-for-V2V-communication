@@ -1,0 +1,20 @@
+module sorter#
+(
+	parameter WIDTH = 16,
+	parameter n = 8
+	parameter NUM_LOAD = 4;
+)
+(
+	input clk, 
+	input rst,
+	input  [NUM_LOAD-1:0] load,
+	input [WIDTH-1:0] inaReal,
+	input [WIDTH-1:0] inaImag,
+	input [WIDTH-1:0] inbReal,
+	input [WIDTH-1:0] inbImag,
+	input [WIDTH-1:0] incReal,
+	input [WIDTH-1:0] incImag,	
+	input [WIDTH-1:0] indReal,
+	input [WIDTH-1:0] indImag,
+	output []dist 
+);

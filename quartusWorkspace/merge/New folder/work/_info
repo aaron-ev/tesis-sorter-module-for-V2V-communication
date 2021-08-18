@@ -1,0 +1,135 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/modelSim
+T_opt
+!s110 1628111498
+VziJhGY[bThc6]E3GK<PaO1
+04 13 4 work merge8to16_tb fast 0
+=14-d8c497f47b2f-610b028a-31b-2544
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+Z2 OL;O;10.5;63
+R0
+T_opt1
+!s110 1628106910
+VHgMA4[hEbTZ]DI_3YF;8T0
+04 10 4 work merge8to16 fast 0
+=1-d8c497f47b2f-610af09e-275-28dc
+o-quiet -auto_acc_if_foreign -work work
+R1
+n@_opt1
+R2
+R0
+vcomparator
+!s110 1628112144
+!i10b 1
+!s100 nlH;cm:0@UaGSfK4Nzm:B2
+IdVbL@JMMS0_ekXRT_Ae`Y1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 dC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/New folder
+w1628031602
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/comparator.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/comparator.v
+L0 3
+Z5 OL;L;10.5;63
+r1
+!s85 0
+31
+Z6 !s108 1628112144.000000
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/comparator.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/comparator.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vmerge2to4
+Z8 !s110 1628112145
+!i10b 1
+!s100 iWl135a>jfUlYOo5D[UK]0
+I3OZ7W15KJ^fH_dE=53RkM2
+R3
+R4
+w1628103081
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge2to4.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge2to4.v
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge2to4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge2to4.v|
+!i113 0
+R7
+R1
+vmerge4to8
+R8
+!i10b 1
+!s100 N3lNfMEI7=lNeQTU73HEi3
+Il65ZMT;OP`IiabO=8m7X22
+R3
+R4
+w1628104162
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge4to8.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge4to8.v
+L0 2
+R5
+r1
+!s85 0
+31
+Z9 !s108 1628112145.000000
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge4to8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge4to8.v|
+!i113 0
+R7
+R1
+vmerge8to16
+R8
+!i10b 1
+!s100 HPMN[[2@EU0jL7@c?>P;:1
+I>J[AdfK2jZfOUNkT8ln<[2
+R3
+R4
+w1628111350
+8C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge8to16.v
+FC:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge8to16.v
+L0 2
+R5
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge8to16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge8to16.v|
+!i113 0
+R7
+R1
+vmerge8to16_tb
+R8
+!i10b 1
+!s100 O=6g?lWQQV_O6eXm3UE7a2
+I1c^m3n0d1`8oHRb^0b^Gc1
+R3
+R4
+w1628112137
+8C:\Users\aaron\Desktop\git_tesis\quartusWorkspace\merge\New folder\merge8to16_tb.v
+FC:\Users\aaron\Desktop\git_tesis\quartusWorkspace\merge\New folder\merge8to16_tb.v
+L0 6
+R5
+r1
+!s85 0
+31
+R9
+!s107 C:\Users\aaron\Desktop\git_tesis\quartusWorkspace\merge\New folder\merge8to16_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:\Users\aaron\Desktop\git_tesis\quartusWorkspace\merge\New folder\merge8to16_tb.v|
+!i113 0
+R7
+R1

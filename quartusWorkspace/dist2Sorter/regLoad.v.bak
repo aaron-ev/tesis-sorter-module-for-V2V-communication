@@ -1,0 +1,32 @@
+
+module regLoad#(parameter WIDTH = 8,parameter n = 4)
+(
+	input clk,
+	input rst,
+	input load,
+	input [n*WIDTH-1:0]a,
+	input [n*WIDTH-1:0]b,
+	output [n*WIDTH-1:0]outa,
+	output [n*WIDTH-1:0]outb
+);
+
+always@(posedge clk,negedge rst)
+	begin 
+		if(!rst)
+			begin 
+				outa <= 0; 
+				outb <= 0;
+			end
+		else if(load)
+			begin 
+				outa <= a; 
+				outb <= b;
+			end
+		else 
+			begin 
+				outa <= outa;
+				outb <= outb;
+			end
+	end
+
+endmodule

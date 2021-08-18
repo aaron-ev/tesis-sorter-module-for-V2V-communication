@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dist2Sorter\simulation\qsim
+vdist2Sorter
+Z1 !s100 TY7J`oXAmU4@0Z[KEImF@0
+Z2 Ic62JUiL9SGbP2I1?Nld@<3
+Z3 VBOhCRo^8OU?TjZULac0782
+Z4 dC:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dist2Sorter\simulation\qsim
+Z5 w1628145965
+Z6 8dist2Sorter.vo
+Z7 Fdist2Sorter.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|dist2Sorter.vo|
+Z10 o-work work -O0
+Z11 ndist2@sorter
+!i10b 1
+!s85 0
+Z12 !s108 1628145967.032000
+Z13 !s107 dist2Sorter.vo|
+!s101 -O0
+vdist2Sorter_vlg_check_tst
+Z14 !s100 P7Od9c1[7E8md9hUl72d^1
+Z15 I82IIc=F9PFT5h_AZmB;``1
+Z16 VoWD75dYaKmAK6<UC8]n`81
+R4
+Z17 w1628124876
+Z18 8dist2Sorter.vt
+Z19 Fdist2Sorter.vt
+L0 75
+R8
+r1
+31
+Z20 !s108 1628124881.246000
+Z21 !s107 dist2Sorter.vt|
+Z22 !s90 -work|work|dist2Sorter.vt|
+R10
+Z23 ndist2@sorter_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vdist2Sorter_vlg_sample_tst
+Z24 !s100 VGTYOVfaj7YJH4AQ9g=[^3
+Z25 I?I4ENXd^aLQgiVRaRAMPI0
+Z26 VddnMO61_>23NaOkNi?hQh2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 ndist2@sorter_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vdist2Sorter_vlg_vec_tst
+!i10b 1
+Z28 !s100 kk93QXE@na^ek2gfSQnL;3
+Z29 I>JnTd<P_IJb@1f4fh7_1D2
+Z30 V=QhbkncaBMbbB8@mk8nL;2
+R4
+w1628145962
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+!s108 1628145967.104000
+!s107 dist2Sorter.vt|
+R22
+!s101 -O0
+R10
+Z31 ndist2@sorter_vlg_vec_tst
+vmerge2to4_row
+Z32 I`XD?e5?fd19H0UEVM^b]o3
+Z33 VIb1;O5ORBhj5Q:YDBJRfD3
+R4
+Z34 w1628138176
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z35 !s100 RVIO^gK6HS[e<Z?XOWMi81
+Z36 !s108 1628138177.678000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vmerge2to4_row_vlg_check_tst
+Z37 !s100 2Z=jZUgY9T701K@?POWLR3
+Z38 IOS:=JE7Zz0PYm?21A=gn50
+Z39 V2J?2SA@D5c10>kzM]SH;`1
+R4
+Z40 w1628131185
+R18
+R19
+L0 65
+R8
+r1
+31
+Z41 !s108 1628131190.512000
+R21
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vmerge2to4_row_vlg_sample_tst
+Z42 !s100 3>Ro0Q:6fo<[n?WHjmPEW0
+Z43 I8ig3K1>E0e6f54MQnO=M@1
+Z44 VcbfcOZRC0E>TzGkGdRe9B1
+R4
+R40
+R18
+R19
+L0 29
+R8
+r1
+31
+R41
+R21
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vmerge2to4_row_vlg_vec_tst
+Z45 I]hG6@7F95XV8E7Tlja5^k1
+Z46 V=aQ1mDVMz0]ljhzoWIR[M3
+R4
+Z47 w1628138173
+R18
+R19
+L0 29
+R8
+r1
+31
+R22
+R10
+Z48 !s100 cmDDH>[:Ce>53BnH;0[bS0
+Z49 !s108 1628138177.747000
+R21
+!i10b 1
+!s85 0
+!s101 -O0

@@ -1,0 +1,113 @@
+{C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16 _r.v} {1 {vlog -work work -vopt -stats=none {C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16 _r.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge8to16_r
+
+Top level modules:
+	merge8to16_r
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge_tb
+
+Top level modules:
+	merge_tb
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTriQAM16.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTriQAM16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module bufferTriQAM16
+
+Top level modules:
+	bufferTriQAM16
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/ctrlUnit_sorter_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/ctrlUnit_sorter_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ctrlUnit_sorter_tb
+
+Top level modules:
+	ctrlUnit_sorter_tb
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge4to8.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge4to8.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge4to8
+
+Top level modules:
+	merge4to8
+
+} {} {}} {C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge4to8 _r.v} {1 {vlog -work work -vopt -stats=none {C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge4to8 _r.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge4to8_r
+
+Top level modules:
+	merge4to8_r
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge8to16
+
+Top level modules:
+	merge8to16
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/sorter_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/sorter_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module sorter_tb
+
+Top level modules:
+	sorter_tb
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/sortingNetwork4.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/sortingNetwork4.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module sortingNetwork4
+
+Top level modules:
+	sortingNetwork4
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/regLoad.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/regLoad.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module regLoad
+
+Top level modules:
+	regLoad
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTriQPSK.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTriQPSK.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module bufferTriQPSK
+
+Top level modules:
+	bufferTriQPSK
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge
+
+Top level modules:
+	merge
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/muxQAM.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/muxQAM.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module muxQAM
+
+Top level modules:
+	muxQAM
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/comparator.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/comparator.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTri.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTri.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module bufferTri
+
+Top level modules:
+	bufferTri
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge2to4.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge2to4.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge2to4
+
+Top level modules:
+	merge2to4
+
+} {} {}}

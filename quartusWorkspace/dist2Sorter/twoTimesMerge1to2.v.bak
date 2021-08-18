@@ -1,0 +1,12 @@
+
+
+module twoTimesMerge1to2#(parameter WIDTH = 8)
+(
+	input [WIDTH-1:0]a,b,c,d,
+	output [2*WIDTH-1:0]x,y
+);
+
+assign x = a > b ? {a,b}:{b,a}; 
+assign y = c > d ? {c,d}:{d,c}; 
+
+endmodule

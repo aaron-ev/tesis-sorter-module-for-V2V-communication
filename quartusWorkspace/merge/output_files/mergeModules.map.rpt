@@ -1,5 +1,5 @@
-Analysis & Synthesis report for mergeModules
-Tue Aug 03 17:06:47 2021
+Analysis & Elaboration report for mergeModules
+Wed Aug 04 14:52:47 2021
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -7,29 +7,22 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |merge4to8
- 10. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[0].merge2to4_0
- 11. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
- 12. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
- 13. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2
- 14. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[1].merge2to4_1
- 15. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0
- 16. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1
- 17. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2
- 18. Parameter Settings for User Entity Instance: comparator:finalComparators[1].comparator_0
- 19. Parameter Settings for User Entity Instance: comparator:finalComparators[2].comparator_0
- 20. Parameter Settings for User Entity Instance: comparator:finalComparators[3].comparator_0
- 21. Port Connectivity Checks: "merge2to4:oddEvenMerge[1].merge2to4_1"
- 22. Port Connectivity Checks: "merge2to4:oddEvenMerge[0].merge2to4_0"
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |merge4to8
+  5. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[0].merge2to4_0
+  6. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+  7. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+  8. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2
+  9. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[1].merge2to4_1
+ 10. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0
+ 11. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1
+ 12. Parameter Settings for User Entity Instance: merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2
+ 13. Parameter Settings for User Entity Instance: comparator:finalComparators[1].comparator_0
+ 14. Parameter Settings for User Entity Instance: comparator:finalComparators[2].comparator_0
+ 15. Parameter Settings for User Entity Instance: comparator:finalComparators[3].comparator_0
+ 16. Analysis & Elaboration Settings
+ 17. Analysis & Elaboration Messages
 
 
 
@@ -53,113 +46,27 @@ applicable agreement for further details.
 
 
 +---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
+; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug 03 17:06:47 2021      ;
+; Analysis & Elaboration Status      ; Successful - Wed Aug 04 14:52:47 2021      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; mergeModules                               ;
 ; Top-level Entity Name              ; merge4to8                                  ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 81                                         ;
-;     Total combinational functions  ; 81                                         ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 48                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total GXB Receiver Channel PCS     ; 0                                          ;
-; Total GXB Receiver Channel PMA     ; 0                                          ;
-; Total GXB Transmitter Channel PCS  ; 0                                          ;
-; Total GXB Transmitter Channel PMA  ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
 +------------------------------------+--------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; merge4to8          ; mergeModules       ;
-; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -171,67 +78,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                       ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
-; comparator.v                     ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/comparator.v ;         ;
-; merge2to4.v                      ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge2to4.v  ;         ;
-; merge4to8.v                      ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/merge/merge4to8.v  ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary ;
-+--------------------------+------------------+
-; Resource                 ; Usage            ;
-+--------------------------+------------------+
-; I/O pins                 ; 48               ;
-; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; b[8]~input       ;
-; Maximum fan-out          ; 9                ;
-; Total fan-out            ; 358              ;
-; Average fan-out          ; 2.02             ;
-+--------------------------+------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                       ;
-+-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                          ; Library Name ;
-+-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------+--------------+
-; |merge4to8                                          ; 81 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 48   ; 0            ; |merge4to8                                                                                   ;              ;
-;    |comparator:finalComparators[1].comparator_0|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|comparator:finalComparators[1].comparator_0                                       ;              ;
-;    |comparator:finalComparators[2].comparator_0|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|comparator:finalComparators[2].comparator_0                                       ;              ;
-;    |comparator:finalComparators[3].comparator_0|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|comparator:finalComparators[3].comparator_0                                       ;              ;
-;    |merge2to4:oddEvenMerge[0].merge2to4_0|          ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|merge2to4:oddEvenMerge[0].merge2to4_0                                             ;              ;
-;       |comparator:finalComparators[0].comparator_2| ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2 ;              ;
-;       |comparator:oddEvenMerge[0].comparator_0|     ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0     ;              ;
-;       |comparator:oddEvenMerge[1].comparator_1|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1     ;              ;
-;    |merge2to4:oddEvenMerge[1].merge2to4_1|          ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|merge2to4:oddEvenMerge[1].merge2to4_1                                             ;              ;
-;       |comparator:finalComparators[0].comparator_2| ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2 ;              ;
-;       |comparator:oddEvenMerge[0].comparator_0|     ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0     ;              ;
-;       |comparator:oddEvenMerge[1].comparator_1|     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |merge4to8|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1     ;              ;
-+-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
 
 
 +---------------------------------------------------------------------------+
@@ -357,43 +203,100 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "merge2to4:oddEvenMerge[1].merge2to4_1"                                                                                                                                           ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                           ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; a    ; Input ; Warning  ; Input port expression (12 bits) is wider than the input port (6 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; b    ; Input ; Warning  ; Input port expression (12 bits) is wider than the input port (6 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; merge4to8          ; mergeModules       ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "merge2to4:oddEvenMerge[0].merge2to4_0"                                                                                                                                           ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                           ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; a    ; Input ; Warning  ; Input port expression (12 bits) is wider than the input port (6 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; b    ; Input ; Warning  ; Input port expression (12 bits) is wider than the input port (6 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Aug 03 17:06:43 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mergeModules -c mergeModules
+    Info: Processing started: Wed Aug 04 14:52:44 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mergeModules -c mergeModules --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.v
     Info (12023): Found entity 1: comparator
@@ -401,21 +304,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file merge2t
     Info (12023): Found entity 1: merge2to4
 Info (12021): Found 1 design units, including 1 entities, in source file merge4to8.v
     Info (12023): Found entity 1: merge4to8
+Info (12021): Found 1 design units, including 1 entities, in source file merge8to16.v
+    Info (12023): Found entity 1: merge8to16
 Info (12127): Elaborating entity "merge4to8" for the top level hierarchy
 Info (12128): Elaborating entity "merge2to4" for hierarchy "merge2to4:oddEvenMerge[0].merge2to4_0"
 Info (12128): Elaborating entity "comparator" for hierarchy "merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0"
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 129 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 24 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 81 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Tue Aug 03 17:06:47 2021
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4615 megabytes
+    Info: Processing ended: Wed Aug 04 14:52:47 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
