@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter/sorter.xst" -ofn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter/sorter.syr" 
+xst -intstyle ise -ifn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter/sorter.xst" -ofn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter/sorter.syr" 
+xst -intstyle ise -ifn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter/sorter.xst" -ofn "C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter/sorter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 sorter.ngc sorter.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o sorter_map.ncd sorter.ngd sorter.pcf 
+par -w -intstyle ise -ol high -mt off sorter_map.ncd sorter.ncd sorter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sorter.twx sorter.ncd -o sorter.twr sorter.pcf 

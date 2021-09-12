@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY merge
+set_global_assignment -name TOP_LEVEL_ENTITY m_2to4
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:19:09  AUGUST 06, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.0
@@ -47,7 +47,8 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/loadReg_tb.vwf"
+set_global_assignment -name VERILOG_FILE oddEvenUnit.v
+set_global_assignment -name VERILOG_FILE oddEvenInputs.v
 set_global_assignment -name VERILOG_FILE "merge8to16 _r.v"
 set_global_assignment -name VERILOG_FILE "merge4to8 _r.v"
 set_global_assignment -name VERILOG_FILE merge2to4.v
@@ -57,7 +58,10 @@ set_global_assignment -name VERILOG_FILE merge4to8.v
 set_global_assignment -name VERILOG_FILE comparator.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE loadReg_tb.vwf
 set_global_assignment -name VERILOG_FILE merge.v
+set_global_assignment -name VERILOG_FILE m_2to4.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE m_2to4_tb.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_2to4_tb.vwf"

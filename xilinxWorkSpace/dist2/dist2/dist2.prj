@@ -1,0 +1,4 @@
+verilog work "square.v"
+verilog work "abs.v"
+verilog work "norm.v"
+verilog work "dist2.v"

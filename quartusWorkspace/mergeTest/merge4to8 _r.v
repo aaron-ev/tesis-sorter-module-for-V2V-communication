@@ -23,9 +23,14 @@ wire  [(2*n*WIDTH)-1:0]tempba;
 `define b4 tempba[8*WIDTH-1:7*WIDTH]
 
 wire [WIDTH-1:0]a1 = inba[WIDTH-1:0];
-wire [2*WIDTH-1:WIDTH]a2 = inba[2*WIDTH-1:WIDTH];
-wire [3*WIDTH-1:2*WIDTH]b3 = inba[3*WIDTH-1:2*WIDTH];
-wire [4*WIDTH-1:3*WIDTH]b4 = inba[4*WIDTH-1:3*WIDTH];
+wire [WIDTH-1:0]a2 = inba[2*WIDTH-1:WIDTH];
+wire [WIDTH-1:0]a3 = inba[3*WIDTH-1:2*WIDTH];
+wire [WIDTH-1:0]a4 = inba[4*WIDTH-1:3*WIDTH];
+
+wire [WIDTH-1:0]b1 = inba[5*WIDTH-1:4*WIDTH];
+wire [WIDTH-1:0]b2 = inba[6*WIDTH-1:5*WIDTH];
+wire [WIDTH-1:0]b3 = inba[7*WIDTH-1:6*WIDTH];
+wire [WIDTH-1:0]b4 = inba[8*WIDTH-1:7*WIDTH];
 
 wire [(n/2)*WIDTH-1:0] tempAodd = {`a3,`a1}; 
 wire [(n/2)*WIDTH-1:0] tempBodd = {`b3,`b1}; 
@@ -37,11 +42,12 @@ wire [2*(n/2)*WIDTH-1:0] tempbaOdd = {tempBodd,tempAodd};
 wire [2*(n/2)*WIDTH-1:0] tempbaEven = {tempBeven,tempAeven}; 
 
 
+//correct
 wire [n*WIDTH-1:0] tempCodd; 
 wire [n*WIDTH-1:0] tempCeven;
  
-assign c[WIDTH-1:0] = tempCodd[WIDTH-1:0]; 
-assign c[(2*n*WIDTH)-1:(2*n-1)*WIDTH] = tempCeven[n*WIDTH-1:(n-1)*WIDTH]; 
+assign c[WIDTH-1:0] = tempCodd[WIDTH-1:0]; //c1 first output
+assign c[(2*n*WIDTH)-1:(2*n-1)*WIDTH] = tempCeven[n*WIDTH-1:(n-1)*WIDTH];//c2 last output; 
 
 regLoad#(.WIDTH(WIDTH),.n(n)) register
 (

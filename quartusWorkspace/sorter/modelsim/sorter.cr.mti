@@ -1,4 +1,11 @@
-{C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16 _r.v} {1 {vlog -work work -vopt -stats=none {C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16 _r.v}
+C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/ctrlUnit_sorter.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/ctrlUnit_sorter.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ctrlUnit_sorter
+
+Top level modules:
+	ctrlUnit_sorter
+
+} {} {}} {C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16 _r.v} {1 {vlog -work work -vopt -stats=none {C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16 _r.v}
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 -- Compiling module merge8to16_r
 
@@ -11,6 +18,13 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 
 Top level modules:
 	merge_tb
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/sorter.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/sorter.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module sorter
+
+Top level modules:
+	sorter
 
 } {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTriQAM16.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTriQAM16.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -82,12 +96,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	merge
 
-} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/muxQAM.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/muxQAM.v
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTri.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTri.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module muxQAM
+-- Compiling module bufferTri
 
 Top level modules:
-	muxQAM
+	bufferTri
 
 } {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/comparator.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/comparator.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
@@ -96,12 +110,12 @@ Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
 Top level modules:
 	comparator
 
-} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTri.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTri.v
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/muxQAM.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/muxQAM.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
--- Compiling module bufferTri
+-- Compiling module muxQAM
 
 Top level modules:
-	bufferTri
+	muxQAM
 
 } {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge2to4.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge2to4.v
 Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
