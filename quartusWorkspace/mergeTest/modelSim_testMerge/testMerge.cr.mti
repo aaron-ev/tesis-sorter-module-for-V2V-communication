@@ -1,0 +1,71 @@
+C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/regLoad.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/regLoad.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module regLoad
+
+Top level modules:
+	regLoad
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_8to16_r.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_8to16_r.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module m_8to16_r
+
+Top level modules:
+	m_8to16_r
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_4to8.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_4to8.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module m_4to8
+
+Top level modules:
+	m_4to8
+
+} {} {}} {C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16 _r.v} {1 {vlog -work work -vopt -stats=none {C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/merge8to16 _r.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module merge8to16_r
+
+Top level modules:
+	merge8to16_r
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/cableUnit.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/cableUnit.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module cableUnit
+
+Top level modules:
+	cableUnit
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_4to8_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_4to8_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module m_4to8_tb
+
+Top level modules:
+	m_4to8_tb
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_4to8_r.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_4to8_r.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module m_4to8_r
+
+Top level modules:
+	m_4to8_r
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/comparator.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/comparator.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_2to4.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_2to4.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module m_2to4
+
+Top level modules:
+	m_2to4
+
+} {} {}} C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_interface.v {1 {vlog -work work -vopt -stats=none C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_interface.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module m_interface
+
+Top level modules:
+	m_interface
+
+} {} {}}

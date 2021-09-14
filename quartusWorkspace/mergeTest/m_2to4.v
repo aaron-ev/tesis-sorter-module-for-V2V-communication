@@ -24,7 +24,7 @@ assign b1_t = tempbaOdd[2*WIDTH-1:WIDTH];
 assign a2_t = tempbaEven[WIDTH-1:0];
 assign b2_t = tempbaEven[2*WIDTH-1:WIDTH];
 
-oddEvenInputs#(.WIDTH(WIDTH),.n(n)) inInterface
+m_interface#(.WIDTH(WIDTH),.n(n)) inInterface
 (
 	.in(inba),
 	.outOdd(tempbaOdd),

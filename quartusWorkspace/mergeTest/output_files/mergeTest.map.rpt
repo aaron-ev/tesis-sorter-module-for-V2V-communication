@@ -1,5 +1,5 @@
-Analysis & Synthesis report for mergeTest
-Sun Sep 12 01:19:01 2021
+Analysis & Elaboration report for mergeTest
+Sun Sep 12 19:59:19 2021
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -7,24 +7,100 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |m_2to4
- 10. Parameter Settings for User Entity Instance: oddEvenInputs:inInterface
- 11. Parameter Settings for User Entity Instance: oddEvenInputs:inInterface|oddEvenUnit:oddValues[0].unita
- 12. Parameter Settings for User Entity Instance: oddEvenInputs:inInterface|oddEvenUnit:oddValues[0].unitb
- 13. Parameter Settings for User Entity Instance: oddEvenInputs:inInterface|oddEvenUnit:evenValues[1].unita1
- 14. Parameter Settings for User Entity Instance: oddEvenInputs:inInterface|oddEvenUnit:evenValues[1].unitb2
- 15. Parameter Settings for User Entity Instance: comparator:oddEvenMerge[0].comparator_0
- 16. Parameter Settings for User Entity Instance: comparator:oddEvenMerge[1].comparator_1
- 17. Parameter Settings for User Entity Instance: comparator:finalComparators[0].comparator_2
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |m_8to16_r
+  5. Parameter Settings for User Entity Instance: regLoad:register
+  6. Parameter Settings for User Entity Instance: m_interface:inInterface
+  7. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[0].unita
+  8. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[0].unitb
+  9. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[2].unita1
+ 10. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[2].unitb2
+ 11. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[4].unita1
+ 12. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[4].unitb2
+ 13. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[6].unita1
+ 14. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[6].unitb2
+ 15. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[1].unita1
+ 16. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[1].unitb2
+ 17. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[3].unita1
+ 18. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[3].unitb2
+ 19. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[5].unita1
+ 20. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[5].unitb2
+ 21. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[7].unita1
+ 22. Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[7].unitb2
+ 23. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0
+ 24. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface
+ 25. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unita
+ 26. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unitb
+ 27. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[2].unita1
+ 28. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[2].unitb2
+ 29. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unita1
+ 30. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unitb2
+ 31. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[3].unita1
+ 32. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[3].unitb2
+ 33. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0
+ 34. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface
+ 35. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unita
+ 36. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unitb
+ 37. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unita1
+ 38. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unitb2
+ 39. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 40. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 41. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[0].comparator_2
+ 42. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1
+ 43. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface
+ 44. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unita
+ 45. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unitb
+ 46. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unita1
+ 47. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unitb2
+ 48. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:oddEvenMerge[0].comparator_0
+ 49. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:oddEvenMerge[1].comparator_1
+ 50. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[0].comparator_2
+ 51. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[1].comparator_0
+ 52. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[2].comparator_0
+ 53. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[3].comparator_0
+ 54. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1
+ 55. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface
+ 56. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unita
+ 57. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unitb
+ 58. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[2].unita1
+ 59. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[2].unitb2
+ 60. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unita1
+ 61. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unitb2
+ 62. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[3].unita1
+ 63. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[3].unitb2
+ 64. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0
+ 65. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface
+ 66. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unita
+ 67. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unitb
+ 68. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unita1
+ 69. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unitb2
+ 70. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 71. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 72. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[0].comparator_2
+ 73. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1
+ 74. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface
+ 75. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unita
+ 76. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unitb
+ 77. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unita1
+ 78. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unitb2
+ 79. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:oddEvenMerge[0].comparator_0
+ 80. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:oddEvenMerge[1].comparator_1
+ 81. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[0].comparator_2
+ 82. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[1].comparator_0
+ 83. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[2].comparator_0
+ 84. Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[3].comparator_0
+ 85. Parameter Settings for User Entity Instance: comparator:finalComparators[1].comparator_0
+ 86. Parameter Settings for User Entity Instance: comparator:finalComparators[2].comparator_0
+ 87. Parameter Settings for User Entity Instance: comparator:finalComparators[3].comparator_0
+ 88. Parameter Settings for User Entity Instance: comparator:finalComparators[4].comparator_0
+ 89. Parameter Settings for User Entity Instance: comparator:finalComparators[5].comparator_0
+ 90. Parameter Settings for User Entity Instance: comparator:finalComparators[6].comparator_0
+ 91. Parameter Settings for User Entity Instance: comparator:finalComparators[7].comparator_0
+ 92. Analysis & Elaboration Settings
+ 93. Port Connectivity Checks: "m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1"
+ 94. Port Connectivity Checks: "m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0"
+ 95. Analysis & Elaboration Messages
 
 
 
@@ -48,35 +124,935 @@ applicable agreement for further details.
 
 
 +---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
+; Analysis & Elaboration Summary                                                  ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 12 01:19:01 2021      ;
+; Analysis & Elaboration Status      ; Successful - Sun Sep 12 19:59:19 2021      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; mergeTest                                  ;
-; Top-level Entity Name              ; m_2to4                                     ;
+; Top-level Entity Name              ; m_8to16_r                                  ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 34                                         ;
-;     Total combinational functions  ; 34                                         ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 48                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total GXB Receiver Channel PCS     ; 0                                          ;
-; Total GXB Receiver Channel PMA     ; 0                                          ;
-; Total GXB Transmitter Channel PCS  ; 0                                          ;
-; Total GXB Transmitter Channel PMA  ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
 +------------------------------------+--------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |m_8to16_r ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                   ;
+; n              ; 8     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regLoad:register ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                       ;
+; n              ; 8     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                              ;
+; n              ; 8     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[0].unita ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[0].unitb ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[2].unita1 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[2].unitb2 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[4].unita1 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[4].unitb2 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[6].unita1 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:oddValues[6].unitb2 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[1].unita1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[1].unitb2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[3].unita1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[3].unitb2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[5].unita1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[5].unitb2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[7].unita1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_interface:inInterface|cableUnit:evenValues[7].unitb2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                              ;
+; n              ; 4     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unita ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unitb ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[2].unita1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[2].unitb2 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unita1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unitb2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[3].unita1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[3].unitb2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0 ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                              ;
+; n              ; 2     ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unita ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unitb ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unita1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unitb2 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1 ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                              ;
+; n              ; 2     ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unita ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unitb ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unita1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unitb2 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[1].comparator_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[2].comparator_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[3].comparator_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                              ;
+; n              ; 4     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unita ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unitb ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[2].unita1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[2].unitb2 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unita1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unitb2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[3].unita1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[3].unitb2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0 ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                              ;
+; n              ; 2     ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unita ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:oddValues[0].unitb ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unita1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface|cableUnit:evenValues[1].unitb2 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1 ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                              ;
+; n              ; 2     ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unita ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:oddValues[0].unitb ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unita1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|m_interface:inInterface|cableUnit:evenValues[1].unitb2 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|m_2to4:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[1].comparator_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[2].comparator_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: m_4to8:oddEvenMerge[1].m_2to4_1|comparator:finalComparators[3].comparator_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:finalComparators[1].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:finalComparators[2].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:finalComparators[3].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:finalComparators[4].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:finalComparators[5].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:finalComparators[6].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:finalComparators[7].comparator_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 3     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
+; Analysis & Elaboration Settings                                                                                      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; m_2to4             ; mergeTest          ;
+; Top-level entity name                                                      ; m_8to16_r          ; mergeTest          ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,184 +1133,43 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 8      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[1].m_2to4_1"                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a1_t ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; b1_t ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; a2_t ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; b2_t ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                              ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
-; oddEvenUnit.v                    ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/oddEvenUnit.v   ;         ;
-; oddEvenInputs.v                  ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/oddEvenInputs.v ;         ;
-; comparator.v                     ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/comparator.v    ;         ;
-; m_2to4.v                         ; yes             ; User Verilog HDL File  ; C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/mergeTest/m_2to4.v        ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0"                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; a1_t ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; b1_t ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; a2_t ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; b2_t ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                    ;
-+--------------------------+-----------------------------------------------------+
-; Resource                 ; Usage                                               ;
-+--------------------------+-----------------------------------------------------+
-; I/O pins                 ; 48                                                  ;
-; DSP block 9-bit elements ; 0                                                   ;
-; Maximum fan-out node     ; comparator:oddEvenMerge[0].comparator_0|LessThan0~2 ;
-; Maximum fan-out          ; 7                                                   ;
-; Total fan-out            ; 185                                                 ;
-; Average fan-out          ; 1.42                                                ;
-+--------------------------+-----------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------+--------------+
-; Compilation Hierarchy Node                       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Library Name ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------+--------------+
-; |m_2to4                                          ; 34 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 48   ; 0            ; |m_2to4                                             ;              ;
-;    |comparator:finalComparators[0].comparator_2| ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |m_2to4|comparator:finalComparators[0].comparator_2 ;              ;
-;    |comparator:oddEvenMerge[0].comparator_0|     ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |m_2to4|comparator:oddEvenMerge[0].comparator_0     ;              ;
-;    |comparator:oddEvenMerge[1].comparator_1|     ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |m_2to4|comparator:oddEvenMerge[1].comparator_1     ;              ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |m_2to4 ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: oddEvenInputs:inInterface ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                ;
-; n              ; 2     ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: oddEvenInputs:inInterface|oddEvenUnit:oddValues[0].unita ;
-+----------------+-------+------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                         ;
-+----------------+-------+------------------------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                               ;
-+----------------+-------+------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: oddEvenInputs:inInterface|oddEvenUnit:oddValues[0].unitb ;
-+----------------+-------+------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                         ;
-+----------------+-------+------------------------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                               ;
-+----------------+-------+------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: oddEvenInputs:inInterface|oddEvenUnit:evenValues[1].unita1 ;
-+----------------+-------+--------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                           ;
-+----------------+-------+--------------------------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                                 ;
-+----------------+-------+--------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: oddEvenInputs:inInterface|oddEvenUnit:evenValues[1].unitb2 ;
-+----------------+-------+--------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                           ;
-+----------------+-------+--------------------------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                                 ;
-+----------------+-------+--------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: comparator:oddEvenMerge[0].comparator_0 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: comparator:oddEvenMerge[1].comparator_1 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: comparator:finalComparators[0].comparator_2 ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Sep 12 01:18:57 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mergeTest -c mergeTest
+    Info: Processing started: Sun Sep 12 19:59:16 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mergeTest -c mergeTest --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file oddevenunit.v
-    Info (12023): Found entity 1: oddEvenUnit
-Info (12021): Found 1 design units, including 1 entities, in source file oddeveninputs.v
-    Info (12023): Found entity 1: oddEvenInputs
+Info (12021): Found 1 design units, including 1 entities, in source file m_interface.v
+    Info (12023): Found entity 1: m_interface
+Info (12021): Found 1 design units, including 1 entities, in source file cableunit.v
+    Info (12023): Found entity 1: cableUnit
 Info (12021): Found 1 design units, including 1 entities, in source file merge8to16 _r.v
     Info (12023): Found entity 1: merge8to16_r
 Warning (10274): Verilog HDL macro warning at merge4to8 _r.v(16): overriding existing definition for macro "a1", which was defined in "merge8to16 _r.v", line 12
@@ -386,21 +1221,46 @@ Info (12021): Found 1 design units, including 1 entities, in source file merge.v
     Info (12023): Found entity 1: merge
 Info (12021): Found 1 design units, including 1 entities, in source file m_2to4.v
     Info (12023): Found entity 1: m_2to4
-Info (12127): Elaborating entity "m_2to4" for the top level hierarchy
-Info (12128): Elaborating entity "oddEvenInputs" for hierarchy "oddEvenInputs:inInterface"
-Info (12128): Elaborating entity "oddEvenUnit" for hierarchy "oddEvenInputs:inInterface|oddEvenUnit:oddValues[0].unita"
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:oddEvenMerge[0].comparator_0"
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 82 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 34 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4652 megabytes
-    Info: Processing ended: Sun Sep 12 01:19:01 2021
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info (12021): Found 1 design units, including 1 entities, in source file m_4to8_r.v
+    Info (12023): Found entity 1: m_4to8_r
+Info (12021): Found 1 design units, including 1 entities, in source file m_nto2n.v
+    Info (12023): Found entity 1: m_nto2n
+Info (12021): Found 1 design units, including 1 entities, in source file m_8to16_r.v
+    Info (12023): Found entity 1: m_8to16_r
+Info (12021): Found 1 design units, including 1 entities, in source file m_16to32_r.v
+    Info (12023): Found entity 1: m_16to32_r
+Info (12021): Found 1 design units, including 1 entities, in source file m_4to8.v
+    Info (12023): Found entity 1: m_4to8
+Info (12127): Elaborating entity "m_8to16_r" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at m_8to16_r.v(74): object "c1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_8to16_r.v(75): object "c2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_8to16_r.v(76): object "c3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_8to16_r.v(77): object "c4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_8to16_r.v(78): object "c5" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_8to16_r.v(79): object "c6" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_8to16_r.v(80): object "c7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_8to16_r.v(81): object "c8" assigned a value but never read
+Info (12128): Elaborating entity "regLoad" for hierarchy "regLoad:register"
+Info (12128): Elaborating entity "m_interface" for hierarchy "m_interface:inInterface"
+Info (12128): Elaborating entity "cableUnit" for hierarchy "m_interface:inInterface|cableUnit:oddValues[0].unita"
+Info (12128): Elaborating entity "m_4to8" for hierarchy "m_4to8:oddEvenMerge[0].m_2to4_0"
+Warning (10036): Verilog HDL or VHDL warning at m_4to8.v(63): object "c1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_4to8.v(64): object "c2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_4to8.v(65): object "c3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_4to8.v(66): object "c4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_4to8.v(67): object "c5" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_4to8.v(68): object "c6" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_4to8.v(69): object "c7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at m_4to8.v(70): object "c8" assigned a value but never read
+Info (12128): Elaborating entity "m_interface" for hierarchy "m_4to8:oddEvenMerge[0].m_2to4_0|m_interface:inInterface"
+Info (12128): Elaborating entity "m_2to4" for hierarchy "m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0"
+Info (12128): Elaborating entity "m_interface" for hierarchy "m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|m_interface:inInterface"
+Info (12128): Elaborating entity "comparator" for hierarchy "m_4to8:oddEvenMerge[0].m_2to4_0|m_2to4:oddEvenMerge[0].m_2to4_0|comparator:oddEvenMerge[0].comparator_0"
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 51 warnings
+    Info: Peak virtual memory: 4631 megabytes
+    Info: Processing ended: Sun Sep 12 19:59:19 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
