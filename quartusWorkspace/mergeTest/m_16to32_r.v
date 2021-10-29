@@ -40,7 +40,7 @@ generate
 			begin:oddEvenMerge 
 				if(i == 0)
 					begin 
-						m_8to16_r#(.WIDTH(WIDTH)) m_2to4_0
+						m_8to16#(.WIDTH(WIDTH)) m_2to4_0
 						(
 							.inba(tempbaOdd),
 							.c(tempCodd)
@@ -48,7 +48,7 @@ generate
 					end
 				else
 					begin 
-						m_8to16_r#(.WIDTH(WIDTH)) m_2to4_1
+						m_8to16#(.WIDTH(WIDTH)) m_2to4_1
 						(
 							.inba(tempbaEven),
 							.c(tempCeven)

@@ -1,5 +1,5 @@
 Flow report for mergeTest
-Wed Oct 27 15:41:58 2021
+Thu Oct 28 18:52:28 2021
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,10 +40,10 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Oct 27 15:41:58 2021      ;
+; Flow Status                        ; Successful - Thu Oct 28 18:52:27 2021      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; mergeTest                                  ;
-; Top-level Entity Name              ; m_16to32_r                                 ;
+; Top-level Entity Name              ; merge                                      ;
 ; Family                             ; Cyclone IV GX                              ;
 ; Total logic elements               ; N/A until Partition Merge                  ;
 ;     Total combinational functions  ; N/A until Partition Merge                  ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/27/2021 15:41:57 ;
+; Start date & time ; 10/28/2021 18:52:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mergeTest           ;
 +-------------------+---------------------+
@@ -77,15 +77,15 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589200.163537451614104 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 10995770589200.163547232209964 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                       ; --            ; m_16to32_r  ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; m_16to32_r  ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; m_16to32_r  ; Top            ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; merge       ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; merge       ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; merge       ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; m_16to32_r                     ; mergeTest     ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; merge                          ; mergeTest     ; --          ; --             ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
@@ -94,8 +94,8 @@ applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:04     ; 1.0                     ; 4631 MB             ; 00:00:03                           ;
-; Total                  ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
+; Analysis & Elaboration ; 00:00:23     ; 1.0                     ; 4871 MB             ; 00:00:23                           ;
+; Total                  ; 00:00:23     ; --                      ; --                  ; 00:00:23                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
