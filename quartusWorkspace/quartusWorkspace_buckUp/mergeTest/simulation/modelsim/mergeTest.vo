@@ -1,0 +1,1419 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
+
+// DATE "09/12/2021 01:25:48"
+
+// 
+// Device: Altera EP4CGX22CF19C6 Package FBGA324
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module m_2to4 (
+	inba,
+	c,
+	a1_t,
+	b1_t,
+	a2_t,
+	b2_t);
+input 	[15:0] inba;
+output 	[15:0] c;
+output 	[3:0] a1_t;
+output 	[3:0] b1_t;
+output 	[3:0] a2_t;
+output 	[3:0] b2_t;
+
+// Design Ports Information
+// c[0]	=>  Location: PIN_D16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[1]	=>  Location: PIN_D13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[2]	=>  Location: PIN_B15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[3]	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[4]	=>  Location: PIN_L18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[5]	=>  Location: PIN_G17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[6]	=>  Location: PIN_G18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[7]	=>  Location: PIN_D14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[8]	=>  Location: PIN_G15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[9]	=>  Location: PIN_F17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[10]	=>  Location: PIN_H16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[11]	=>  Location: PIN_C14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[12]	=>  Location: PIN_J17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[13]	=>  Location: PIN_J16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[14]	=>  Location: PIN_G16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c[15]	=>  Location: PIN_A18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a1_t[0]	=>  Location: PIN_V16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a1_t[1]	=>  Location: PIN_C13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a1_t[2]	=>  Location: PIN_D10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a1_t[3]	=>  Location: PIN_C10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b1_t[0]	=>  Location: PIN_E12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b1_t[1]	=>  Location: PIN_A14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b1_t[2]	=>  Location: PIN_C12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b1_t[3]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a2_t[0]	=>  Location: PIN_L16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a2_t[1]	=>  Location: PIN_T18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a2_t[2]	=>  Location: PIN_F18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a2_t[3]	=>  Location: PIN_C16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b2_t[0]	=>  Location: PIN_N17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b2_t[1]	=>  Location: PIN_M17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b2_t[2]	=>  Location: PIN_K16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b2_t[3]	=>  Location: PIN_A17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[0]	=>  Location: PIN_V17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[8]	=>  Location: PIN_C15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[11]	=>  Location: PIN_D11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[3]	=>  Location: PIN_A15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[10]	=>  Location: PIN_A16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[2]	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[9]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[1]	=>  Location: PIN_B16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[4]	=>  Location: PIN_L15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[12]	=>  Location: PIN_N18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[15]	=>  Location: PIN_D15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[7]	=>  Location: PIN_C17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[14]	=>  Location: PIN_K15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[6]	=>  Location: PIN_E18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[13]	=>  Location: PIN_M18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// inba[5]	=>  Location: PIN_R17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \oddEvenMerge[0].comparator_0|H[3]~5_combout ;
+wire \c[0]~output_o ;
+wire \c[1]~output_o ;
+wire \c[2]~output_o ;
+wire \c[3]~output_o ;
+wire \c[4]~output_o ;
+wire \c[5]~output_o ;
+wire \c[6]~output_o ;
+wire \c[7]~output_o ;
+wire \c[8]~output_o ;
+wire \c[9]~output_o ;
+wire \c[10]~output_o ;
+wire \c[11]~output_o ;
+wire \c[12]~output_o ;
+wire \c[13]~output_o ;
+wire \c[14]~output_o ;
+wire \c[15]~output_o ;
+wire \a1_t[0]~output_o ;
+wire \a1_t[1]~output_o ;
+wire \a1_t[2]~output_o ;
+wire \a1_t[3]~output_o ;
+wire \b1_t[0]~output_o ;
+wire \b1_t[1]~output_o ;
+wire \b1_t[2]~output_o ;
+wire \b1_t[3]~output_o ;
+wire \a2_t[0]~output_o ;
+wire \a2_t[1]~output_o ;
+wire \a2_t[2]~output_o ;
+wire \a2_t[3]~output_o ;
+wire \b2_t[0]~output_o ;
+wire \b2_t[1]~output_o ;
+wire \b2_t[2]~output_o ;
+wire \b2_t[3]~output_o ;
+wire \inba[0]~input_o ;
+wire \inba[8]~input_o ;
+wire \inba[3]~input_o ;
+wire \inba[10]~input_o ;
+wire \inba[2]~input_o ;
+wire \inba[9]~input_o ;
+wire \oddEvenMerge[0].comparator_0|LessThan0~0_combout ;
+wire \oddEvenMerge[0].comparator_0|LessThan0~1_combout ;
+wire \oddEvenMerge[0].comparator_0|LessThan0~2_combout ;
+wire \oddEvenMerge[0].comparator_0|L[0]~2_combout ;
+wire \inba[1]~input_o ;
+wire \oddEvenMerge[0].comparator_0|L[1]~3_combout ;
+wire \oddEvenMerge[0].comparator_0|L[2]~4_combout ;
+wire \inba[11]~input_o ;
+wire \oddEvenMerge[0].comparator_0|L[3]~5_combout ;
+wire \inba[15]~input_o ;
+wire \inba[7]~input_o ;
+wire \oddEvenMerge[1].comparator_1|L[3]~5_combout ;
+wire \inba[14]~input_o ;
+wire \inba[4]~input_o ;
+wire \inba[13]~input_o ;
+wire \inba[12]~input_o ;
+wire \oddEvenMerge[1].comparator_1|LessThan0~0_combout ;
+wire \inba[6]~input_o ;
+wire \oddEvenMerge[1].comparator_1|LessThan0~1_combout ;
+wire \oddEvenMerge[1].comparator_1|LessThan0~2_combout ;
+wire \oddEvenMerge[1].comparator_1|L[0]~2_combout ;
+wire \oddEvenMerge[1].comparator_1|L[1]~3_combout ;
+wire \oddEvenMerge[0].comparator_0|H[0]~2_combout ;
+wire \finalComparators[0].comparator_2|LessThan0~0_combout ;
+wire \oddEvenMerge[0].comparator_0|H[2]~4_combout ;
+wire \oddEvenMerge[1].comparator_1|L[2]~4_combout ;
+wire \finalComparators[0].comparator_2|LessThan0~1_combout ;
+wire \finalComparators[0].comparator_2|LessThan0~2_combout ;
+wire \finalComparators[0].comparator_2|LessThan0~3_combout ;
+wire \finalComparators[0].comparator_2|L[0]~6_combout ;
+wire \oddEvenMerge[0].comparator_0|H[1]~3_combout ;
+wire \finalComparators[0].comparator_2|L[1]~7_combout ;
+wire \finalComparators[0].comparator_2|L[2]~8_combout ;
+wire \finalComparators[0].comparator_2|L[3]~9_combout ;
+wire \finalComparators[0].comparator_2|H[0]~6_combout ;
+wire \finalComparators[0].comparator_2|H[1]~7_combout ;
+wire \finalComparators[0].comparator_2|H[2]~8_combout ;
+wire \finalComparators[0].comparator_2|H[3]~9_combout ;
+wire \oddEvenMerge[1].comparator_1|H[0]~2_combout ;
+wire \inba[5]~input_o ;
+wire \oddEvenMerge[1].comparator_1|H[1]~3_combout ;
+wire \oddEvenMerge[1].comparator_1|H[2]~4_combout ;
+wire \oddEvenMerge[1].comparator_1|H[3]~5_combout ;
+
+
+// Location: LCCOMB_X43_Y40_N26
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|H[3]~5 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|H[3]~5_combout  = (\inba[11]~input_o ) # (\inba[3]~input_o )
+
+	.dataa(\inba[11]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\inba[3]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|H[3]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|H[3]~5 .lut_mask = 16'hFFAA;
+defparam \oddEvenMerge[0].comparator_0|H[3]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOOBUF_X46_Y41_N9
+cycloneiv_io_obuf \c[0]~output (
+	.i(\oddEvenMerge[0].comparator_0|L[0]~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[0]~output .bus_hold = "false";
+defparam \c[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X41_Y41_N16
+cycloneiv_io_obuf \c[1]~output (
+	.i(\oddEvenMerge[0].comparator_0|L[1]~3_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[1]~output .bus_hold = "false";
+defparam \c[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X41_Y41_N2
+cycloneiv_io_obuf \c[2]~output (
+	.i(\oddEvenMerge[0].comparator_0|L[2]~4_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[2]~output .bus_hold = "false";
+defparam \c[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X29_Y41_N9
+cycloneiv_io_obuf \c[3]~output (
+	.i(\oddEvenMerge[0].comparator_0|L[3]~5_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[3]~output .bus_hold = "false";
+defparam \c[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y19_N9
+cycloneiv_io_obuf \c[4]~output (
+	.i(\finalComparators[0].comparator_2|L[0]~6_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[4]~output .bus_hold = "false";
+defparam \c[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y27_N9
+cycloneiv_io_obuf \c[5]~output (
+	.i(\finalComparators[0].comparator_2|L[1]~7_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[5]~output .bus_hold = "false";
+defparam \c[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y25_N9
+cycloneiv_io_obuf \c[6]~output (
+	.i(\finalComparators[0].comparator_2|L[2]~8_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[6]~output .bus_hold = "false";
+defparam \c[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X43_Y41_N9
+cycloneiv_io_obuf \c[7]~output (
+	.i(\finalComparators[0].comparator_2|L[3]~9_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[7]~output .bus_hold = "false";
+defparam \c[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y28_N9
+cycloneiv_io_obuf \c[8]~output (
+	.i(\finalComparators[0].comparator_2|H[0]~6_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[8]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[8]~output .bus_hold = "false";
+defparam \c[8]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y25_N2
+cycloneiv_io_obuf \c[9]~output (
+	.i(\finalComparators[0].comparator_2|H[1]~7_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[9]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[9]~output .bus_hold = "false";
+defparam \c[9]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y28_N2
+cycloneiv_io_obuf \c[10]~output (
+	.i(\finalComparators[0].comparator_2|H[2]~8_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[10]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[10]~output .bus_hold = "false";
+defparam \c[10]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X43_Y41_N2
+cycloneiv_io_obuf \c[11]~output (
+	.i(\finalComparators[0].comparator_2|H[3]~9_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[11]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[11]~output .bus_hold = "false";
+defparam \c[11]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y23_N9
+cycloneiv_io_obuf \c[12]~output (
+	.i(\oddEvenMerge[1].comparator_1|H[0]~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[12]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[12]~output .bus_hold = "false";
+defparam \c[12]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y23_N2
+cycloneiv_io_obuf \c[13]~output (
+	.i(\oddEvenMerge[1].comparator_1|H[1]~3_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[13]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[13]~output .bus_hold = "false";
+defparam \c[13]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y27_N2
+cycloneiv_io_obuf \c[14]~output (
+	.i(\oddEvenMerge[1].comparator_1|H[2]~4_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[14]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[14]~output .bus_hold = "false";
+defparam \c[14]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X46_Y41_N23
+cycloneiv_io_obuf \c[15]~output (
+	.i(\oddEvenMerge[1].comparator_1|H[3]~5_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c[15]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c[15]~output .bus_hold = "false";
+defparam \c[15]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X43_Y0_N9
+cycloneiv_io_obuf \a1_t[0]~output (
+	.i(\inba[0]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a1_t[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a1_t[0]~output .bus_hold = "false";
+defparam \a1_t[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X36_Y41_N9
+cycloneiv_io_obuf \a1_t[1]~output (
+	.i(\inba[1]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a1_t[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a1_t[1]~output .bus_hold = "false";
+defparam \a1_t[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X29_Y41_N2
+cycloneiv_io_obuf \a1_t[2]~output (
+	.i(\inba[2]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a1_t[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a1_t[2]~output .bus_hold = "false";
+defparam \a1_t[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X25_Y41_N2
+cycloneiv_io_obuf \a1_t[3]~output (
+	.i(\inba[3]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a1_t[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a1_t[3]~output .bus_hold = "false";
+defparam \a1_t[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X41_Y41_N23
+cycloneiv_io_obuf \b1_t[0]~output (
+	.i(\inba[8]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b1_t[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b1_t[0]~output .bus_hold = "false";
+defparam \b1_t[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y41_N2
+cycloneiv_io_obuf \b1_t[1]~output (
+	.i(\inba[9]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b1_t[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b1_t[1]~output .bus_hold = "false";
+defparam \b1_t[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X36_Y41_N2
+cycloneiv_io_obuf \b1_t[2]~output (
+	.i(\inba[10]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b1_t[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b1_t[2]~output .bus_hold = "false";
+defparam \b1_t[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X31_Y41_N9
+cycloneiv_io_obuf \b1_t[3]~output (
+	.i(\inba[11]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b1_t[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b1_t[3]~output .bus_hold = "false";
+defparam \b1_t[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y13_N9
+cycloneiv_io_obuf \a2_t[0]~output (
+	.i(\inba[4]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a2_t[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a2_t[0]~output .bus_hold = "false";
+defparam \a2_t[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y11_N9
+cycloneiv_io_obuf \a2_t[1]~output (
+	.i(\inba[5]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a2_t[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a2_t[1]~output .bus_hold = "false";
+defparam \a2_t[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y30_N2
+cycloneiv_io_obuf \a2_t[2]~output (
+	.i(\inba[6]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a2_t[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a2_t[2]~output .bus_hold = "false";
+defparam \a2_t[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X48_Y41_N2
+cycloneiv_io_obuf \a2_t[3]~output (
+	.i(\inba[7]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\a2_t[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \a2_t[3]~output .bus_hold = "false";
+defparam \a2_t[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y16_N2
+cycloneiv_io_obuf \b2_t[0]~output (
+	.i(\inba[12]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b2_t[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b2_t[0]~output .bus_hold = "false";
+defparam \b2_t[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y15_N9
+cycloneiv_io_obuf \b2_t[1]~output (
+	.i(\inba[13]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b2_t[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b2_t[1]~output .bus_hold = "false";
+defparam \b2_t[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y18_N9
+cycloneiv_io_obuf \b2_t[2]~output (
+	.i(\inba[14]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b2_t[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b2_t[2]~output .bus_hold = "false";
+defparam \b2_t[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X46_Y41_N16
+cycloneiv_io_obuf \b2_t[3]~output (
+	.i(\inba[15]~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\b2_t[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \b2_t[3]~output .bus_hold = "false";
+defparam \b2_t[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X43_Y0_N1
+cycloneiv_io_ibuf \inba[0]~input (
+	.i(inba[0]),
+	.ibar(gnd),
+	.o(\inba[0]~input_o ));
+// synopsys translate_off
+defparam \inba[0]~input .bus_hold = "false";
+defparam \inba[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y41_N8
+cycloneiv_io_ibuf \inba[8]~input (
+	.i(inba[8]),
+	.ibar(gnd),
+	.o(\inba[8]~input_o ));
+// synopsys translate_off
+defparam \inba[8]~input .bus_hold = "false";
+defparam \inba[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y41_N8
+cycloneiv_io_ibuf \inba[3]~input (
+	.i(inba[3]),
+	.ibar(gnd),
+	.o(\inba[3]~input_o ));
+// synopsys translate_off
+defparam \inba[3]~input .bus_hold = "false";
+defparam \inba[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X38_Y41_N1
+cycloneiv_io_ibuf \inba[10]~input (
+	.i(inba[10]),
+	.ibar(gnd),
+	.o(\inba[10]~input_o ));
+// synopsys translate_off
+defparam \inba[10]~input .bus_hold = "false";
+defparam \inba[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X31_Y41_N22
+cycloneiv_io_ibuf \inba[2]~input (
+	.i(inba[2]),
+	.ibar(gnd),
+	.o(\inba[2]~input_o ));
+// synopsys translate_off
+defparam \inba[2]~input .bus_hold = "false";
+defparam \inba[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X31_Y41_N15
+cycloneiv_io_ibuf \inba[9]~input (
+	.i(inba[9]),
+	.ibar(gnd),
+	.o(\inba[9]~input_o ));
+// synopsys translate_off
+defparam \inba[9]~input .bus_hold = "false";
+defparam \inba[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N24
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|LessThan0~0 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|LessThan0~0_combout  = (\inba[1]~input_o  & (\inba[9]~input_o  & (\inba[8]~input_o  & !\inba[0]~input_o ))) # (!\inba[1]~input_o  & ((\inba[9]~input_o ) # ((\inba[8]~input_o  & !\inba[0]~input_o ))))
+
+	.dataa(\inba[1]~input_o ),
+	.datab(\inba[9]~input_o ),
+	.datac(\inba[8]~input_o ),
+	.datad(\inba[0]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|LessThan0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|LessThan0~0 .lut_mask = 16'h44D4;
+defparam \oddEvenMerge[0].comparator_0|LessThan0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N2
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|LessThan0~1 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|LessThan0~1_combout  = (\inba[10]~input_o  & ((\oddEvenMerge[0].comparator_0|LessThan0~0_combout ) # (!\inba[2]~input_o ))) # (!\inba[10]~input_o  & (!\inba[2]~input_o  & \oddEvenMerge[0].comparator_0|LessThan0~0_combout ))
+
+	.dataa(gnd),
+	.datab(\inba[10]~input_o ),
+	.datac(\inba[2]~input_o ),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~0_combout ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|LessThan0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|LessThan0~1 .lut_mask = 16'hCF0C;
+defparam \oddEvenMerge[0].comparator_0|LessThan0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N28
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|LessThan0~2 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|LessThan0~2_combout  = (\inba[11]~input_o  & ((\oddEvenMerge[0].comparator_0|LessThan0~1_combout ) # (!\inba[3]~input_o ))) # (!\inba[11]~input_o  & (!\inba[3]~input_o  & \oddEvenMerge[0].comparator_0|LessThan0~1_combout ))
+
+	.dataa(\inba[11]~input_o ),
+	.datab(\inba[3]~input_o ),
+	.datac(gnd),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~1_combout ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|LessThan0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|LessThan0~2 .lut_mask = 16'hBB22;
+defparam \oddEvenMerge[0].comparator_0|LessThan0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N30
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|L[0]~2 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|L[0]~2_combout  = (\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & (\inba[0]~input_o )) # (!\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & ((\inba[8]~input_o )))
+
+	.dataa(\inba[0]~input_o ),
+	.datab(gnd),
+	.datac(\inba[8]~input_o ),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|L[0]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|L[0]~2 .lut_mask = 16'hAAF0;
+defparam \oddEvenMerge[0].comparator_0|L[0]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X38_Y41_N8
+cycloneiv_io_ibuf \inba[1]~input (
+	.i(inba[1]),
+	.ibar(gnd),
+	.o(\inba[1]~input_o ));
+// synopsys translate_off
+defparam \inba[1]~input .bus_hold = "false";
+defparam \inba[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N16
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|L[1]~3 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|L[1]~3_combout  = (\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & (\inba[1]~input_o )) # (!\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & ((\inba[9]~input_o )))
+
+	.dataa(\inba[1]~input_o ),
+	.datab(gnd),
+	.datac(\inba[9]~input_o ),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|L[1]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|L[1]~3 .lut_mask = 16'hAAF0;
+defparam \oddEvenMerge[0].comparator_0|L[1]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N10
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|L[2]~4 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|L[2]~4_combout  = (\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & ((\inba[2]~input_o ))) # (!\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & (\inba[10]~input_o ))
+
+	.dataa(gnd),
+	.datab(\inba[10]~input_o ),
+	.datac(\inba[2]~input_o ),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|L[2]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|L[2]~4 .lut_mask = 16'hF0CC;
+defparam \oddEvenMerge[0].comparator_0|L[2]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X31_Y41_N1
+cycloneiv_io_ibuf \inba[11]~input (
+	.i(inba[11]),
+	.ibar(gnd),
+	.o(\inba[11]~input_o ));
+// synopsys translate_off
+defparam \inba[11]~input .bus_hold = "false";
+defparam \inba[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X31_Y40_N16
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|L[3]~5 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|L[3]~5_combout  = (\inba[11]~input_o  & \inba[3]~input_o )
+
+	.dataa(gnd),
+	.datab(\inba[11]~input_o ),
+	.datac(gnd),
+	.datad(\inba[3]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|L[3]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|L[3]~5 .lut_mask = 16'hCC00;
+defparam \oddEvenMerge[0].comparator_0|L[3]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X46_Y41_N1
+cycloneiv_io_ibuf \inba[15]~input (
+	.i(inba[15]),
+	.ibar(gnd),
+	.o(\inba[15]~input_o ));
+// synopsys translate_off
+defparam \inba[15]~input .bus_hold = "false";
+defparam \inba[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X48_Y41_N8
+cycloneiv_io_ibuf \inba[7]~input (
+	.i(inba[7]),
+	.ibar(gnd),
+	.o(\inba[7]~input_o ));
+// synopsys translate_off
+defparam \inba[7]~input .bus_hold = "false";
+defparam \inba[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N0
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|L[3]~5 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|L[3]~5_combout  = (\inba[15]~input_o  & \inba[7]~input_o )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\inba[15]~input_o ),
+	.datad(\inba[7]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|L[3]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|L[3]~5 .lut_mask = 16'hF000;
+defparam \oddEvenMerge[1].comparator_1|L[3]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X52_Y18_N1
+cycloneiv_io_ibuf \inba[14]~input (
+	.i(inba[14]),
+	.ibar(gnd),
+	.o(\inba[14]~input_o ));
+// synopsys translate_off
+defparam \inba[14]~input .bus_hold = "false";
+defparam \inba[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X52_Y13_N1
+cycloneiv_io_ibuf \inba[4]~input (
+	.i(inba[4]),
+	.ibar(gnd),
+	.o(\inba[4]~input_o ));
+// synopsys translate_off
+defparam \inba[4]~input .bus_hold = "false";
+defparam \inba[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X52_Y19_N1
+cycloneiv_io_ibuf \inba[13]~input (
+	.i(inba[13]),
+	.ibar(gnd),
+	.o(\inba[13]~input_o ));
+// synopsys translate_off
+defparam \inba[13]~input .bus_hold = "false";
+defparam \inba[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X52_Y16_N8
+cycloneiv_io_ibuf \inba[12]~input (
+	.i(inba[12]),
+	.ibar(gnd),
+	.o(\inba[12]~input_o ));
+// synopsys translate_off
+defparam \inba[12]~input .bus_hold = "false";
+defparam \inba[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N24
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|LessThan0~0 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|LessThan0~0_combout  = (\inba[5]~input_o  & (!\inba[4]~input_o  & (\inba[13]~input_o  & \inba[12]~input_o ))) # (!\inba[5]~input_o  & ((\inba[13]~input_o ) # ((!\inba[4]~input_o  & \inba[12]~input_o ))))
+
+	.dataa(\inba[5]~input_o ),
+	.datab(\inba[4]~input_o ),
+	.datac(\inba[13]~input_o ),
+	.datad(\inba[12]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|LessThan0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|LessThan0~0 .lut_mask = 16'h7150;
+defparam \oddEvenMerge[1].comparator_1|LessThan0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X52_Y30_N8
+cycloneiv_io_ibuf \inba[6]~input (
+	.i(inba[6]),
+	.ibar(gnd),
+	.o(\inba[6]~input_o ));
+// synopsys translate_off
+defparam \inba[6]~input .bus_hold = "false";
+defparam \inba[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N18
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|LessThan0~1 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|LessThan0~1_combout  = (\inba[14]~input_o  & ((\oddEvenMerge[1].comparator_1|LessThan0~0_combout ) # (!\inba[6]~input_o ))) # (!\inba[14]~input_o  & (\oddEvenMerge[1].comparator_1|LessThan0~0_combout  & !\inba[6]~input_o ))
+
+	.dataa(gnd),
+	.datab(\inba[14]~input_o ),
+	.datac(\oddEvenMerge[1].comparator_1|LessThan0~0_combout ),
+	.datad(\inba[6]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|LessThan0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|LessThan0~1 .lut_mask = 16'hC0FC;
+defparam \oddEvenMerge[1].comparator_1|LessThan0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N14
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|LessThan0~2 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|LessThan0~2_combout  = (\inba[15]~input_o  & ((\oddEvenMerge[1].comparator_1|LessThan0~1_combout ) # (!\inba[7]~input_o ))) # (!\inba[15]~input_o  & (\oddEvenMerge[1].comparator_1|LessThan0~1_combout  & !\inba[7]~input_o ))
+
+	.dataa(gnd),
+	.datab(\inba[15]~input_o ),
+	.datac(\oddEvenMerge[1].comparator_1|LessThan0~1_combout ),
+	.datad(\inba[7]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|LessThan0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|LessThan0~2 .lut_mask = 16'hC0FC;
+defparam \oddEvenMerge[1].comparator_1|LessThan0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N28
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|L[0]~2 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|L[0]~2_combout  = (\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & (\inba[4]~input_o )) # (!\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & ((\inba[12]~input_o )))
+
+	.dataa(gnd),
+	.datab(\oddEvenMerge[1].comparator_1|LessThan0~2_combout ),
+	.datac(\inba[4]~input_o ),
+	.datad(\inba[12]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|L[0]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|L[0]~2 .lut_mask = 16'hF3C0;
+defparam \oddEvenMerge[1].comparator_1|L[0]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N14
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|L[1]~3 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|L[1]~3_combout  = (\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & (\inba[5]~input_o )) # (!\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & ((\inba[13]~input_o )))
+
+	.dataa(\inba[5]~input_o ),
+	.datab(\oddEvenMerge[1].comparator_1|LessThan0~2_combout ),
+	.datac(\inba[13]~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|L[1]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|L[1]~3 .lut_mask = 16'hB8B8;
+defparam \oddEvenMerge[1].comparator_1|L[1]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N4
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|H[0]~2 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|H[0]~2_combout  = (\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & ((\inba[8]~input_o ))) # (!\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & (\inba[0]~input_o ))
+
+	.dataa(\inba[0]~input_o ),
+	.datab(gnd),
+	.datac(\inba[8]~input_o ),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|H[0]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|H[0]~2 .lut_mask = 16'hF0AA;
+defparam \oddEvenMerge[0].comparator_0|H[0]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N0
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|LessThan0~0 (
+// Equation(s):
+// \finalComparators[0].comparator_2|LessThan0~0_combout  = (\oddEvenMerge[0].comparator_0|H[1]~3_combout  & (\oddEvenMerge[1].comparator_1|L[0]~2_combout  & (\oddEvenMerge[1].comparator_1|L[1]~3_combout  & !\oddEvenMerge[0].comparator_0|H[0]~2_combout ))) # 
+// (!\oddEvenMerge[0].comparator_0|H[1]~3_combout  & ((\oddEvenMerge[1].comparator_1|L[1]~3_combout ) # ((\oddEvenMerge[1].comparator_1|L[0]~2_combout  & !\oddEvenMerge[0].comparator_0|H[0]~2_combout ))))
+
+	.dataa(\oddEvenMerge[0].comparator_0|H[1]~3_combout ),
+	.datab(\oddEvenMerge[1].comparator_1|L[0]~2_combout ),
+	.datac(\oddEvenMerge[1].comparator_1|L[1]~3_combout ),
+	.datad(\oddEvenMerge[0].comparator_0|H[0]~2_combout ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|LessThan0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|LessThan0~0 .lut_mask = 16'h50D4;
+defparam \finalComparators[0].comparator_2|LessThan0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N18
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|H[2]~4 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|H[2]~4_combout  = (\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & (\inba[10]~input_o )) # (!\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & ((\inba[2]~input_o )))
+
+	.dataa(gnd),
+	.datab(\inba[10]~input_o ),
+	.datac(\inba[2]~input_o ),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|H[2]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|H[2]~4 .lut_mask = 16'hCCF0;
+defparam \oddEvenMerge[0].comparator_0|H[2]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N10
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|L[2]~4 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|L[2]~4_combout  = (\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & ((\inba[6]~input_o ))) # (!\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & (\inba[14]~input_o ))
+
+	.dataa(gnd),
+	.datab(\inba[14]~input_o ),
+	.datac(\oddEvenMerge[1].comparator_1|LessThan0~2_combout ),
+	.datad(\inba[6]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|L[2]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|L[2]~4 .lut_mask = 16'hFC0C;
+defparam \oddEvenMerge[1].comparator_1|L[2]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N12
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|LessThan0~1 (
+// Equation(s):
+// \finalComparators[0].comparator_2|LessThan0~1_combout  = (\finalComparators[0].comparator_2|LessThan0~0_combout  & (\oddEvenMerge[0].comparator_0|H[2]~4_combout  $ (!\oddEvenMerge[1].comparator_1|L[2]~4_combout )))
+
+	.dataa(gnd),
+	.datab(\finalComparators[0].comparator_2|LessThan0~0_combout ),
+	.datac(\oddEvenMerge[0].comparator_0|H[2]~4_combout ),
+	.datad(\oddEvenMerge[1].comparator_1|L[2]~4_combout ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|LessThan0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|LessThan0~1 .lut_mask = 16'hC00C;
+defparam \finalComparators[0].comparator_2|LessThan0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N12
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|LessThan0~2 (
+// Equation(s):
+// \finalComparators[0].comparator_2|LessThan0~2_combout  = (\oddEvenMerge[1].comparator_1|L[2]~4_combout  & ((\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & (!\inba[10]~input_o )) # (!\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & 
+// ((!\inba[2]~input_o )))))
+
+	.dataa(\oddEvenMerge[1].comparator_1|L[2]~4_combout ),
+	.datab(\inba[10]~input_o ),
+	.datac(\inba[2]~input_o ),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|LessThan0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|LessThan0~2 .lut_mask = 16'h220A;
+defparam \finalComparators[0].comparator_2|LessThan0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N22
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|LessThan0~3 (
+// Equation(s):
+// \finalComparators[0].comparator_2|LessThan0~3_combout  = (\oddEvenMerge[0].comparator_0|H[3]~5_combout  & (\oddEvenMerge[1].comparator_1|L[3]~5_combout  & ((\finalComparators[0].comparator_2|LessThan0~1_combout ) # 
+// (\finalComparators[0].comparator_2|LessThan0~2_combout )))) # (!\oddEvenMerge[0].comparator_0|H[3]~5_combout  & ((\oddEvenMerge[1].comparator_1|L[3]~5_combout ) # ((\finalComparators[0].comparator_2|LessThan0~1_combout ) # 
+// (\finalComparators[0].comparator_2|LessThan0~2_combout ))))
+
+	.dataa(\oddEvenMerge[0].comparator_0|H[3]~5_combout ),
+	.datab(\oddEvenMerge[1].comparator_1|L[3]~5_combout ),
+	.datac(\finalComparators[0].comparator_2|LessThan0~1_combout ),
+	.datad(\finalComparators[0].comparator_2|LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|LessThan0~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|LessThan0~3 .lut_mask = 16'hDDD4;
+defparam \finalComparators[0].comparator_2|LessThan0~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N30
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|L[0]~6 (
+// Equation(s):
+// \finalComparators[0].comparator_2|L[0]~6_combout  = (\finalComparators[0].comparator_2|LessThan0~3_combout  & ((\oddEvenMerge[0].comparator_0|H[0]~2_combout ))) # (!\finalComparators[0].comparator_2|LessThan0~3_combout  & 
+// (\oddEvenMerge[1].comparator_1|L[0]~2_combout ))
+
+	.dataa(\finalComparators[0].comparator_2|LessThan0~3_combout ),
+	.datab(\oddEvenMerge[1].comparator_1|L[0]~2_combout ),
+	.datac(gnd),
+	.datad(\oddEvenMerge[0].comparator_0|H[0]~2_combout ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|L[0]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|L[0]~6 .lut_mask = 16'hEE44;
+defparam \finalComparators[0].comparator_2|L[0]~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N8
+cycloneiv_lcell_comb \oddEvenMerge[0].comparator_0|H[1]~3 (
+// Equation(s):
+// \oddEvenMerge[0].comparator_0|H[1]~3_combout  = (\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & ((\inba[9]~input_o ))) # (!\oddEvenMerge[0].comparator_0|LessThan0~2_combout  & (\inba[1]~input_o ))
+
+	.dataa(\inba[1]~input_o ),
+	.datab(gnd),
+	.datac(\inba[9]~input_o ),
+	.datad(\oddEvenMerge[0].comparator_0|LessThan0~2_combout ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[0].comparator_0|H[1]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[0].comparator_0|H[1]~3 .lut_mask = 16'hF0AA;
+defparam \oddEvenMerge[0].comparator_0|H[1]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N8
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|L[1]~7 (
+// Equation(s):
+// \finalComparators[0].comparator_2|L[1]~7_combout  = (\finalComparators[0].comparator_2|LessThan0~3_combout  & ((\oddEvenMerge[0].comparator_0|H[1]~3_combout ))) # (!\finalComparators[0].comparator_2|LessThan0~3_combout  & 
+// (\oddEvenMerge[1].comparator_1|L[1]~3_combout ))
+
+	.dataa(\finalComparators[0].comparator_2|LessThan0~3_combout ),
+	.datab(\oddEvenMerge[1].comparator_1|L[1]~3_combout ),
+	.datac(\oddEvenMerge[0].comparator_0|H[1]~3_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|L[1]~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|L[1]~7 .lut_mask = 16'hE4E4;
+defparam \finalComparators[0].comparator_2|L[1]~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N26
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|L[2]~8 (
+// Equation(s):
+// \finalComparators[0].comparator_2|L[2]~8_combout  = (\finalComparators[0].comparator_2|LessThan0~3_combout  & (\oddEvenMerge[0].comparator_0|H[2]~4_combout )) # (!\finalComparators[0].comparator_2|LessThan0~3_combout  & 
+// ((\oddEvenMerge[1].comparator_1|L[2]~4_combout )))
+
+	.dataa(\finalComparators[0].comparator_2|LessThan0~3_combout ),
+	.datab(gnd),
+	.datac(\oddEvenMerge[0].comparator_0|H[2]~4_combout ),
+	.datad(\oddEvenMerge[1].comparator_1|L[2]~4_combout ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|L[2]~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|L[2]~8 .lut_mask = 16'hF5A0;
+defparam \finalComparators[0].comparator_2|L[2]~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N20
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|L[3]~9 (
+// Equation(s):
+// \finalComparators[0].comparator_2|L[3]~9_combout  = (\inba[15]~input_o  & (\inba[7]~input_o  & ((\inba[11]~input_o ) # (\inba[3]~input_o ))))
+
+	.dataa(\inba[11]~input_o ),
+	.datab(\inba[3]~input_o ),
+	.datac(\inba[15]~input_o ),
+	.datad(\inba[7]~input_o ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|L[3]~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|L[3]~9 .lut_mask = 16'hE000;
+defparam \finalComparators[0].comparator_2|L[3]~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N4
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|H[0]~6 (
+// Equation(s):
+// \finalComparators[0].comparator_2|H[0]~6_combout  = (\finalComparators[0].comparator_2|LessThan0~3_combout  & (\oddEvenMerge[1].comparator_1|L[0]~2_combout )) # (!\finalComparators[0].comparator_2|LessThan0~3_combout  & 
+// ((\oddEvenMerge[0].comparator_0|H[0]~2_combout )))
+
+	.dataa(\finalComparators[0].comparator_2|LessThan0~3_combout ),
+	.datab(\oddEvenMerge[1].comparator_1|L[0]~2_combout ),
+	.datac(gnd),
+	.datad(\oddEvenMerge[0].comparator_0|H[0]~2_combout ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|H[0]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|H[0]~6 .lut_mask = 16'hDD88;
+defparam \finalComparators[0].comparator_2|H[0]~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N6
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|H[1]~7 (
+// Equation(s):
+// \finalComparators[0].comparator_2|H[1]~7_combout  = (\finalComparators[0].comparator_2|LessThan0~3_combout  & (\oddEvenMerge[1].comparator_1|L[1]~3_combout )) # (!\finalComparators[0].comparator_2|LessThan0~3_combout  & 
+// ((\oddEvenMerge[0].comparator_0|H[1]~3_combout )))
+
+	.dataa(\finalComparators[0].comparator_2|LessThan0~3_combout ),
+	.datab(\oddEvenMerge[1].comparator_1|L[1]~3_combout ),
+	.datac(\oddEvenMerge[0].comparator_0|H[1]~3_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|H[1]~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|H[1]~7 .lut_mask = 16'hD8D8;
+defparam \finalComparators[0].comparator_2|H[1]~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N16
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|H[2]~8 (
+// Equation(s):
+// \finalComparators[0].comparator_2|H[2]~8_combout  = (\finalComparators[0].comparator_2|LessThan0~3_combout  & ((\oddEvenMerge[1].comparator_1|L[2]~4_combout ))) # (!\finalComparators[0].comparator_2|LessThan0~3_combout  & 
+// (\oddEvenMerge[0].comparator_0|H[2]~4_combout ))
+
+	.dataa(\finalComparators[0].comparator_2|LessThan0~3_combout ),
+	.datab(gnd),
+	.datac(\oddEvenMerge[0].comparator_0|H[2]~4_combout ),
+	.datad(\oddEvenMerge[1].comparator_1|L[2]~4_combout ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|H[2]~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|H[2]~8 .lut_mask = 16'hFA50;
+defparam \finalComparators[0].comparator_2|H[2]~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X43_Y40_N6
+cycloneiv_lcell_comb \finalComparators[0].comparator_2|H[3]~9 (
+// Equation(s):
+// \finalComparators[0].comparator_2|H[3]~9_combout  = (\inba[11]~input_o ) # ((\inba[3]~input_o ) # ((\inba[15]~input_o  & \inba[7]~input_o )))
+
+	.dataa(\inba[11]~input_o ),
+	.datab(\inba[3]~input_o ),
+	.datac(\inba[15]~input_o ),
+	.datad(\inba[7]~input_o ),
+	.cin(gnd),
+	.combout(\finalComparators[0].comparator_2|H[3]~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \finalComparators[0].comparator_2|H[3]~9 .lut_mask = 16'hFEEE;
+defparam \finalComparators[0].comparator_2|H[3]~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N2
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|H[0]~2 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|H[0]~2_combout  = (\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & ((\inba[12]~input_o ))) # (!\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & (\inba[4]~input_o ))
+
+	.dataa(gnd),
+	.datab(\oddEvenMerge[1].comparator_1|LessThan0~2_combout ),
+	.datac(\inba[4]~input_o ),
+	.datad(\inba[12]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|H[0]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|H[0]~2 .lut_mask = 16'hFC30;
+defparam \oddEvenMerge[1].comparator_1|H[0]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X52_Y11_N1
+cycloneiv_io_ibuf \inba[5]~input (
+	.i(inba[5]),
+	.ibar(gnd),
+	.o(\inba[5]~input_o ));
+// synopsys translate_off
+defparam \inba[5]~input .bus_hold = "false";
+defparam \inba[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N20
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|H[1]~3 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|H[1]~3_combout  = (\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & ((\inba[13]~input_o ))) # (!\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & (\inba[5]~input_o ))
+
+	.dataa(\inba[5]~input_o ),
+	.datab(\oddEvenMerge[1].comparator_1|LessThan0~2_combout ),
+	.datac(\inba[13]~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|H[1]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|H[1]~3 .lut_mask = 16'hE2E2;
+defparam \oddEvenMerge[1].comparator_1|H[1]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X51_Y28_N22
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|H[2]~4 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|H[2]~4_combout  = (\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & (\inba[14]~input_o )) # (!\oddEvenMerge[1].comparator_1|LessThan0~2_combout  & ((\inba[6]~input_o )))
+
+	.dataa(gnd),
+	.datab(\inba[14]~input_o ),
+	.datac(\oddEvenMerge[1].comparator_1|LessThan0~2_combout ),
+	.datad(\inba[6]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|H[2]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|H[2]~4 .lut_mask = 16'hCFC0;
+defparam \oddEvenMerge[1].comparator_1|H[2]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X46_Y40_N0
+cycloneiv_lcell_comb \oddEvenMerge[1].comparator_1|H[3]~5 (
+// Equation(s):
+// \oddEvenMerge[1].comparator_1|H[3]~5_combout  = (\inba[15]~input_o ) # (\inba[7]~input_o )
+
+	.dataa(gnd),
+	.datab(\inba[15]~input_o ),
+	.datac(gnd),
+	.datad(\inba[7]~input_o ),
+	.cin(gnd),
+	.combout(\oddEvenMerge[1].comparator_1|H[3]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \oddEvenMerge[1].comparator_1|H[3]~5 .lut_mask = 16'hFFCC;
+defparam \oddEvenMerge[1].comparator_1|H[3]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign c[0] = \c[0]~output_o ;
+
+assign c[1] = \c[1]~output_o ;
+
+assign c[2] = \c[2]~output_o ;
+
+assign c[3] = \c[3]~output_o ;
+
+assign c[4] = \c[4]~output_o ;
+
+assign c[5] = \c[5]~output_o ;
+
+assign c[6] = \c[6]~output_o ;
+
+assign c[7] = \c[7]~output_o ;
+
+assign c[8] = \c[8]~output_o ;
+
+assign c[9] = \c[9]~output_o ;
+
+assign c[10] = \c[10]~output_o ;
+
+assign c[11] = \c[11]~output_o ;
+
+assign c[12] = \c[12]~output_o ;
+
+assign c[13] = \c[13]~output_o ;
+
+assign c[14] = \c[14]~output_o ;
+
+assign c[15] = \c[15]~output_o ;
+
+assign a1_t[0] = \a1_t[0]~output_o ;
+
+assign a1_t[1] = \a1_t[1]~output_o ;
+
+assign a1_t[2] = \a1_t[2]~output_o ;
+
+assign a1_t[3] = \a1_t[3]~output_o ;
+
+assign b1_t[0] = \b1_t[0]~output_o ;
+
+assign b1_t[1] = \b1_t[1]~output_o ;
+
+assign b1_t[2] = \b1_t[2]~output_o ;
+
+assign b1_t[3] = \b1_t[3]~output_o ;
+
+assign a2_t[0] = \a2_t[0]~output_o ;
+
+assign a2_t[1] = \a2_t[1]~output_o ;
+
+assign a2_t[2] = \a2_t[2]~output_o ;
+
+assign a2_t[3] = \a2_t[3]~output_o ;
+
+assign b2_t[0] = \b2_t[0]~output_o ;
+
+assign b2_t[1] = \b2_t[1]~output_o ;
+
+assign b2_t[2] = \b2_t[2]~output_o ;
+
+assign b2_t[3] = \b2_t[3]~output_o ;
+
+endmodule

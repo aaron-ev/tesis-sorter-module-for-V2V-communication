@@ -1,0 +1,110 @@
+
+module ctrlUnitDotProduct#(parameter ADDR_WIDTH = 7)
+(
+	input clk,
+	input rst, 
+	input start,
+	input [1:0]M,
+	output reg we,
+	output reg [ADDR_WIDTH-1:0] outAddrReal,
+	output [ADDR_WIDTH-1:0] outAddrImag,
+	output reg done
+);
+
+`define QPSK 	2'b00 
+`define QAM16  2'b01 
+`define QAM64  2'b10 
+`define QAM256 2'b11    
+
+localparam IDLE = 2'd0;
+localparam LOAD = 2'd1;
+localparam DONE = 2'd3;
+
+reg [1:0]state;
+reg [1:0] nextState;
+reg [ADDR_WIDTH-1:0]addrToCount;
+reg flagInit = 0; 
+assign outAddrImag = outAddrReal + 1; 
+
+//multiplexor for index M
+always@(M)
+	begin 
+		case(M)
+			`QPSK: addrToCount <= 0;
+			`QAM16: addrToCount <= 4;
+			`QAM64: addrToCount <= 28;
+			`QAM256: addrToCount <= 124;
+			default: addrToCount <= 7'd0; 
+		endcase
+	end
+	
+always@(posedge clk,negedge rst) 
+	begin
+		if(!rst)
+			state <= IDLE;
+		else 
+			state <= nextState;
+	end
+
+always@(posedge clk,negedge rst) 
+	begin
+		if(!rst)
+			outAddrReal <= 0; 
+		else 
+			if(state == DONE)
+				outAddrReal <= 0; 
+			else 
+				begin 
+					if(stflagInit)
+						outAddrReal <= outAddrReal + 2;
+					else 
+						outAddrReal <= outAddrReal;							
+				end
+end
+	
+always @(state,start,outAddrReal,addrToCount,M)
+	begin 
+		case(state)
+			IDLE:	begin
+						we <= 0;
+						done <= 0; 
+						if(start && M == `QPSK)
+							begin 
+								nextState <= DONE;
+							end
+							
+						else if(start)
+							nextState <= LOAD;
+						else 
+							nextState <= IDLE;
+					end
+			LOAD: begin 
+						we <= 1;
+						done <= 0; 
+						flagInit <= 1; 
+						if(outAddrReal == addrToCount)
+							begin 
+								nextState <= DONE;
+							end
+						else 
+							nextState <= LOAD;
+					end
+			DONE: begin 
+						we <= 1;
+						done <= 1;
+						flagInit <= 0; 
+						if(start && M == `QPSK)
+							nextState <= DONE;
+						else if(start)
+							nextState <= LOAD;
+						else 
+							nextState <= IDLE;
+					end	
+			default: begin 
+							we <= 0;
+							nextState <= IDLE;
+						end 
+		endcase
+	end
+	
+endmodule

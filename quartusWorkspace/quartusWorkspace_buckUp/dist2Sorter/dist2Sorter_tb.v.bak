@@ -1,0 +1,130 @@
+
+`timescale 1ns / 1ps
+module dist2Sorter_tb();
+
+parameter WIDTH = 8;
+	reg clk; 
+	reg rst;
+	reg [WIDTH-1:0] inaReal;
+	reg [WIDTH-1:0] inaImag;
+	reg [WIDTH-1:0] inbReal;
+	reg [WIDTH-1:0] inbImag;
+	reg [WIDTH-1:0] incReal;
+	reg [WIDTH-1:0] incImag;	
+	reg [WIDTH-1:0] indReal;
+	reg [WIDTH-1:0] indImag;
+	reg  [4-1:0] load;
+	wire [WIDTH-1:0]c1;
+	wire [WIDTH-1:0]c2;
+	wire [WIDTH-1:0]c3;
+	wire [WIDTH-1:0]c4;
+	wire [WIDTH-1:0]c5;
+	wire [WIDTH-1:0]c6;
+	wire [WIDTH-1:0]c7;
+	wire [WIDTH-1:0]c8;
+	wire [WIDTH-1:0]c9;
+	wire [WIDTH-1:0]c10;
+	wire [WIDTH-1:0]c11;
+	wire [WIDTH-1:0]c12;
+	wire [WIDTH-1:0]c13;
+	wire [WIDTH-1:0]c14;
+	wire [WIDTH-1:0]c15;
+	wire [WIDTH-1:0]c16;
+
+dist2Sorter UUT
+(
+	.clk(clk), 
+	.rst(rst),
+	.inaReal(inaReal),
+	.inaImag(inaImag),
+	.inbReal(inbReal),
+	.inbImag(inbImag),
+	.incReal(incReal),
+	.incImag(incImag),	
+	.indReal(indReal),
+	.indImag(indImag),
+	.load(load),
+	.c1(c1),
+	.c2(c2),
+	.c3(c3),
+	.c4(c4),
+	.c5(c5),
+	.c6(c6),
+	.c7(c7),
+	.c8(c8),
+	.c9(c9),
+	.c10(c10),
+	.c11(c11),
+	.c12(c12),
+	.c13(c13),
+	.c14(c14),
+	.c15(c15),
+	.c16(c16)
+);
+initial clk = 0;
+always#5 clk = ~clk;
+
+initial begin
+	@(posedge clk) rst = 1;
+	@(negedge clk) rst = 0;
+	@(posedge clk) begin 
+		rst = 1;		
+		inaReal = 2;
+		inaImag = 1; 
+		inbReal = 3; 
+		inbImag = 1; 
+		incReal = 1; 
+		incImag = 0; 
+		indReal = 3; 
+		indImag = 2;
+	end
+	@(posedge clk) begin 
+		load = 1;
+		/*
+		inaReal = 2;
+		inaImag = 1; 
+		inbReal = 3; 
+		inbImag = 1; 
+		incReal = 1; 
+		incImag = 0; 
+		indReal = 3; 
+		indImag = 2;
+*/		
+	end
+	@(posedge clk) begin 
+		load = 1;
+		inaReal = 0;
+		inaImag = 0; 
+		inbReal = 0; 
+		inbImag = 0; 
+		incReal = 0; 
+		incImag = 0; 
+		indReal = 0; 
+		indImag = 0; 
+	end
+	@(posedge clk) begin 
+		load = 1;
+		inaReal = 0;
+		inaImag = 0; 
+		inbReal = 0; 
+		inbImag = 0; 
+		incReal = 0; 
+		incImag = 0; 
+		indReal = 0; 
+		indImag = 0; 
+	end
+	@(posedge clk) begin 
+		load = 1;
+		inaReal = 0;
+		inaImag = 0; 
+		inbReal = 0; 
+		inbImag = 0; 
+		incReal = 0; 
+		incImag = 0; 
+		indReal = 0; 
+		indImag = 0; 
+	end	
+	
+end
+endmodule
+

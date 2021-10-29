@@ -1,0 +1,5 @@
+Warning (10273): Verilog HDL warning at bufferTri.v(13): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at bufferTri.v(14): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at bufferTriQAM16.v(13): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at bufferTriQPSK.v(15): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at bufferTriQPSK.v(16): extended using "x" or "z"

@@ -1,0 +1,57 @@
+
+module ctrlUnit_sorter
+(
+	input clk,
+	input rst,
+	input [1:0]M, 
+	output loadQPSK[1:0],
+);
+
+parameter IDLE = 2'b00; 
+parameter LOAD = 2'b01; 
+parameter DONE = 2'b10;  
+
+reg [1:0]state,nextState; 
+
+// current state logic
+always@(posedge clk, negedge rst) 
+	begin 
+		if(!rst)
+				state <= IDLE;
+		else
+			state <= nextState;
+	end
+
+//counter QPSK 
+reg [1:0]countQPSK;
+always@(posedge clk, negedge rst)
+	begin 
+		if(!rst)
+				loadQPSK <= 0;
+		else if(state == LOAD)
+			begin 
+				if(loadQPSK ~= 2'd1)
+					loadQPSK <= 2'd1; 
+				else 
+					loadQPSK <= 2'd2;
+			end
+		else if(state == IDLE)
+			loadQPSK <= 0; 
+		else 
+			loadQPSK <= loadQPSK; 
+	end	
+//next state and ouput logic 
+
+always@(state,start)
+	begin 
+		case(state)
+			case IDLE: if(start)
+								nextState <= COUNT; 
+						  else 
+								nextState <= IDLE;
+			case LOAD: 
+			case DONE:
+			default: nextState <= IDLE; 
+		endcase
+	end
+endmodule

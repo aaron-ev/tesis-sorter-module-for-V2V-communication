@@ -1,0 +1,321 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dotProduct\simulation\qsim
+vctrlUnitDotProduct
+Z1 !s100 BhBDKg91G:E2mhEM6OdQ21
+Z2 ITi3IT[C?EP^iIES_l[VPO3
+Z3 Vh2=_Q`6WA_ZSm5aNSi9gG2
+Z4 dC:\Users\aaron\Desktop\git_tesis\quartusWorkspace\dotProduct\simulation\qsim
+Z5 w1627844536
+Z6 8dotProduct.vo
+Z7 FdotProduct.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|dotProduct.vo|
+Z10 o-work work -O0
+Z11 nctrl@unit@dot@product
+Z12 !s108 1627844537.299000
+Z13 !s107 dotProduct.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vctrlUnitDotProduct_vlg_check_tst
+Z14 !s100 Saki@Dz_GPh`hKOAGFPfb0
+Z15 I7nBfY`_hU^MQ=ATCI=>;U3
+Z16 Vgdj9;2TFY[BG@A6:lf<Jj3
+R4
+Z17 w1627844532
+Z18 8dotProduct.vt
+Z19 FdotProduct.vt
+L0 63
+R8
+r1
+31
+Z20 !s108 1627844537.385000
+Z21 !s107 dotProduct.vt|
+Z22 !s90 -work|work|dotProduct.vt|
+R10
+Z23 nctrl@unit@dot@product_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vctrlUnitDotProduct_vlg_sample_tst
+Z24 !s100 5YPIN1moK_`RY4Xa<HP9k2
+Z25 Ic_N_f:SPWd?g=D7z<XlO11
+Z26 VZ1;HDglPzSDm5oLJh1AR11
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 nctrl@unit@dot@product_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vctrlUnitDotProduct_vlg_vec_tst
+Z28 INO_1nOTkhLCH<7d59REKb3
+Z29 V=25LEFio]_S;=WKHk=JbM1
+R4
+R17
+R18
+R19
+Z30 L0 453
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z31 nctrl@unit@dot@product_vlg_vec_tst
+Z32 !s100 _gof3?JMZ2PE^oGficEVG1
+!i10b 1
+!s85 0
+!s101 -O0
+vdist2
+Z33 !s100 dAX9Q2<<h]29KmL^84jF@3
+Z34 I:A51fn9dQUfif3WLO5aEe1
+Z35 VDf0Q][Kl6_YF3cSE<1NPU0
+R4
+Z36 w1627975663
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+!s85 0
+Z37 !s108 1627975665.180000
+R13
+!s101 -O0
+vdist2_vlg_check_tst
+!i10b 1
+Z38 !s100 _jhV8<SdKVN>PXDz80^SC3
+Z39 I40b3PnRR@^JYmF6hn>SRP2
+Z40 VbUlJ:mdi^;KPAMW;9E8zT0
+R4
+Z41 w1627975658
+R18
+R19
+L0 75
+R8
+r1
+!s85 0
+31
+Z42 !s108 1627975665.439000
+Z43 !s107 dotProduct.vt|
+R22
+!s101 -O0
+R10
+vdist2_vlg_sample_tst
+!i10b 1
+Z44 !s100 6P`@I5>Um;@0B>:bz@b082
+Z45 IFmPkCMb6k5ze06obYG;j`2
+Z46 VF3cX[;90O@7n3h74[[f102
+R4
+R41
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R42
+R43
+R22
+!s101 -O0
+R10
+vdist2_vlg_vec_tst
+!i10b 1
+!s100 :WBCFJefoH@R?lPF=i72>0
+Ib;TiJ:=i0]M;FX1[S_ECf0
+Z47 V8XLV^CHbdEYUHi=?jOB>A1
+R4
+R41
+R18
+R19
+Z48 L0 454
+R8
+r1
+!s85 0
+31
+R42
+R43
+R22
+!s101 -O0
+R10
+vdotProduct
+Z49 IUFNAe5bBSgLcj2a>]6@Kb2
+Z50 Ve[5d9:Ag[Z<BD2U>C6PlP0
+R4
+Z51 w1627762586
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z52 ndot@product
+Z53 !s100 aYRYfioGz0A2z0ij5K8Mh0
+Z54 !s108 1627762588.766000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vdotProduct_vlg_check_tst
+Z55 !s100 LO6O@d;<Qd:5V[S5jf<AD2
+Z56 I3HhP`JC_iB?;JSKQcKzb92
+Z57 Vj]?3?TR>4??<WcB[_hIJf0
+R4
+Z58 w1627762578
+R18
+R19
+L0 81
+R8
+r1
+31
+Z59 !s108 1627762590.103000
+R21
+R22
+R10
+Z60 ndot@product_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vdotProduct_vlg_sample_tst
+Z61 !s100 _Ccz[2Y0Z[KC8SH7k@Jho3
+Z62 I_2`54oV;i[eI<o?X^lRB73
+Z63 V_d=`di5`h?OIkXB<zJ3Oo2
+R4
+R58
+R18
+R19
+L0 29
+R8
+r1
+31
+R59
+R21
+R22
+R10
+Z64 ndot@product_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vdotProduct_vlg_vec_tst
+Z65 I?KRW2n:0]WKX[YS2;LW;F2
+Z66 VJ;ZU0^HhzINe`fZ25ADG50
+R4
+R58
+R18
+R19
+Z67 L0 798
+R8
+r1
+31
+R59
+R21
+R22
+R10
+Z68 ndot@product_vlg_vec_tst
+Z69 !s100 LdO<:RRe4UY5_azB2H;Va0
+!i10b 1
+!s85 0
+!s101 -O0
+vtrueDualPortRam
+Z70 I[^2K8<da9HMe1GN]6LY9m1
+Z71 VXcPF=0NR4AUCB`[@JogCi2
+R4
+Z72 w1627872077
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z73 ntrue@dual@port@ram
+Z74 !s100 V3SgooQ]]OP9gimPeiLk70
+Z75 !s108 1627872081.206000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vtrueDualPortRam_vlg_check_tst
+Z76 I0fDc]`^R;]W>QaQZTn3Vk1
+Z77 V6Qj@cQOgVmUeEXlD00P3j1
+R4
+Z78 w1627872072
+R18
+R19
+L0 73
+R8
+r1
+31
+Z79 !s108 1627872082.276000
+R21
+R22
+R10
+Z80 ntrue@dual@port@ram_vlg_check_tst
+Z81 !s100 _RdYG1L6`1mj``80aAn0R3
+!i10b 1
+!s85 0
+!s101 -O0
+vtrueDualPortRam_vlg_sample_tst
+Z82 Iofe@JUX<kMc2;bFb[nEgH3
+Z83 V9deCZiYCgk`idm`?>Bb<I2
+R4
+R78
+R18
+R19
+L0 29
+R8
+r1
+31
+R79
+R21
+R22
+R10
+Z84 ntrue@dual@port@ram_vlg_sample_tst
+Z85 !s100 9eNAXgS=bXhd2aMT;PHNU3
+!i10b 1
+!s85 0
+!s101 -O0
+vtrueDualPortRam_vlg_vec_tst
+Z86 Igi>EC7[?HjO^`MGX]mZ__0
+Z87 Val<R;nNKVVMA7iGoX<dA20
+R4
+R78
+R18
+R19
+Z88 L0 733
+R8
+r1
+31
+R79
+R21
+R22
+R10
+Z89 ntrue@dual@port@ram_vlg_vec_tst
+Z90 !s100 g?M4_dYin6MM2LG^HbKL83
+!i10b 1
+!s85 0
+!s101 -O0

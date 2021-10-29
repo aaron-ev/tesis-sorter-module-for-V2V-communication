@@ -1,0 +1,1296 @@
+Analysis & Elaboration report for dist2Sorter
+Thu Aug 05 19:28:43 2021
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |dist2Sorter
+  5. Parameter Settings for User Entity Instance: dist2:dist2_0
+  6. Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0
+  7. Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|abs:abs_0
+  8. Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|square:square_0
+  9. Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|square:square_1
+ 10. Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|square:square_2
+ 11. Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|square:square_3
+ 12. Parameter Settings for User Entity Instance: twoTimesMerge1to2:merge1to2
+ 13. Parameter Settings for User Entity Instance: merge:merge_0
+ 14. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0
+ 15. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[0].regLoad_0
+ 16. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[1].regLoad_0
+ 17. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[2].regLoad_0
+ 18. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[3].regLoad_0
+ 19. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0
+ 20. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 21. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 22. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0|comparator:finalComparators[0].comparator_2
+ 23. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[1].merge2to4_0
+ 24. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[1].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 25. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[1].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 26. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[1].merge2to4_0|comparator:finalComparators[0].comparator_2
+ 27. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[2].merge2to4_0
+ 28. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[2].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 29. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[2].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 30. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[2].merge2to4_0|comparator:finalComparators[0].comparator_2
+ 31. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[3].merge2to4_0
+ 32. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[3].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 33. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[3].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 34. Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[3].merge2to4_0|comparator:finalComparators[0].comparator_2
+ 35. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0
+ 36. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0
+ 37. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0
+ 38. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 39. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 40. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2
+ 41. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1
+ 42. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0
+ 43. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1
+ 44. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2
+ 45. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|comparator:finalComparators[1].comparator_0
+ 46. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|comparator:finalComparators[2].comparator_0
+ 47. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|comparator:finalComparators[3].comparator_0
+ 48. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0
+ 49. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0
+ 50. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 51. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 52. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2
+ 53. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1
+ 54. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0
+ 55. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1
+ 56. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2
+ 57. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|comparator:finalComparators[1].comparator_0
+ 58. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|comparator:finalComparators[2].comparator_0
+ 59. Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|comparator:finalComparators[3].comparator_0
+ 60. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0
+ 61. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0
+ 62. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0
+ 63. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0
+ 64. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 65. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 66. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2
+ 67. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1
+ 68. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0
+ 69. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1
+ 70. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2
+ 71. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|comparator:finalComparators[1].comparator_0
+ 72. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|comparator:finalComparators[2].comparator_0
+ 73. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|comparator:finalComparators[3].comparator_0
+ 74. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1
+ 75. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[0].merge2to4_0
+ 76. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0
+ 77. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1
+ 78. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2
+ 79. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[1].merge2to4_1
+ 80. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0
+ 81. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1
+ 82. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2
+ 83. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|comparator:finalComparators[1].comparator_0
+ 84. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|comparator:finalComparators[2].comparator_0
+ 85. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|comparator:finalComparators[3].comparator_0
+ 86. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[1].comparator_0
+ 87. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[2].comparator_0
+ 88. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[3].comparator_0
+ 89. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[4].comparator_0
+ 90. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[5].comparator_0
+ 91. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[6].comparator_0
+ 92. Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[7].comparator_0
+ 93. Analysis & Elaboration Settings
+ 94. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                  ;
++------------------------------------+--------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Thu Aug 05 19:28:43 2021      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; dist2Sorter                                ;
+; Top-level Entity Name              ; dist2Sorter                                ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                  ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                  ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |dist2Sorter ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                     ;
+; n              ; 8     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dist2:dist2_0 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|abs:abs_0 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|square:square_0 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|square:square_1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|square:square_2 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dist2:dist2_0|norm:norm_0|square:square_3 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: twoTimesMerge1to2:merge1to2 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 16    ; Signed Integer                    ;
+; n              ; 8     ; Signed Integer                    ;
+; N2             ; 2     ; Signed Integer                    ;
+; N4             ; 4     ; Signed Integer                    ;
+; R2TO4          ; 4     ; Signed Integer                    ;
+; R4TO8          ; 2     ; Signed Integer                    ;
+; R8TO16         ; 1     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                  ;
+; n              ; 2     ; Signed Integer                                                  ;
+; R              ; 4     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[0].regLoad_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                            ;
+; n              ; 2     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[1].regLoad_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                            ;
+; n              ; 2     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[2].regLoad_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                            ;
+; n              ; 2     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[3].regLoad_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                            ;
+; n              ; 2     ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                         ;
+; n              ; 2     ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[1].merge2to4_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                         ;
+; n              ; 2     ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[1].merge2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[1].merge2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[1].merge2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[2].merge2to4_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                         ;
+; n              ; 2     ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[2].merge2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[2].merge2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[2].merge2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[3].merge2to4_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                         ;
+; n              ; 2     ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[3].merge2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[3].merge2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[3].merge2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                  ;
+; n              ; 4     ; Signed Integer                                                  ;
+; R              ; 2     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                         ;
+; n              ; 4     ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                               ;
+; n              ; 2     ; Signed Integer                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                               ;
+; n              ; 2     ; Signed Integer                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|comparator:finalComparators[1].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|comparator:finalComparators[2].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0|comparator:finalComparators[3].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                         ;
+; n              ; 4     ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                               ;
+; n              ; 2     ; Signed Integer                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                               ;
+; n              ; 2     ; Signed Integer                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|comparator:finalComparators[1].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|comparator:finalComparators[2].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[1].merge4to8_0|comparator:finalComparators[3].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                    ;
+; n              ; 8     ; Signed Integer                                                    ;
+; R              ; 1     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                             ;
+; n              ; 8     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                   ;
+; n              ; 4     ; Signed Integer                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                         ;
+; n              ; 2     ; Signed Integer                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                         ;
+; n              ; 2     ; Signed Integer                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|comparator:finalComparators[1].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|comparator:finalComparators[2].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[0].merge4to8_0|comparator:finalComparators[3].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                   ;
+; n              ; 4     ; Signed Integer                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[0].merge2to4_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                         ;
+; n              ; 2     ; Signed Integer                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[0].merge2to4_0|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[1].merge2to4_1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                         ;
+; n              ; 2     ; Signed Integer                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[0].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:oddEvenMerge[1].comparator_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|merge2to4:oddEvenMerge[1].merge2to4_1|comparator:finalComparators[0].comparator_2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|comparator:finalComparators[1].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|comparator:finalComparators[2].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|merge4to8:oddEvenMerge[1].merge4to8_1|comparator:finalComparators[3].comparator_0 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[1].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[2].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[3].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[4].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[5].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[6].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0|comparator:finalComparators[7].comparator_0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; dist2Sorter        ; dist2Sorter        ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Elaboration
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Aug 05 19:28:39 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dist2Sorter -c dist2Sorter --analysis_and_elaboration
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file twotimesmerge1to2.v
+    Info (12023): Found entity 1: twoTimesMerge1to2
+Info (12021): Found 1 design units, including 1 entities, in source file merge8to16.v
+    Info (12023): Found entity 1: merge8to16
+Warning (10274): Verilog HDL macro warning at merge4to8.v(23): overriding existing definition for macro "a3", which was defined in "merge8to16.v", line 11
+Warning (10274): Verilog HDL macro warning at merge4to8.v(24): overriding existing definition for macro "a4", which was defined in "merge8to16.v", line 12
+Warning (10274): Verilog HDL macro warning at merge4to8.v(26): overriding existing definition for macro "b1", which was defined in "merge8to16.v", line 18
+Warning (10274): Verilog HDL macro warning at merge4to8.v(27): overriding existing definition for macro "b2", which was defined in "merge8to16.v", line 19
+Warning (10274): Verilog HDL macro warning at merge4to8.v(28): overriding existing definition for macro "b3", which was defined in "merge8to16.v", line 20
+Warning (10274): Verilog HDL macro warning at merge4to8.v(29): overriding existing definition for macro "b4", which was defined in "merge8to16.v", line 21
+Info (12021): Found 1 design units, including 1 entities, in source file merge4to8.v
+    Info (12023): Found entity 1: merge4to8
+Warning (10274): Verilog HDL macro warning at merge2to4.v(12): overriding existing definition for macro "b1", which was defined in "merge8to16.v", line 18
+Warning (10274): Verilog HDL macro warning at merge2to4.v(13): overriding existing definition for macro "b2", which was defined in "merge8to16.v", line 19
+Info (12021): Found 1 design units, including 1 entities, in source file merge2to4.v
+    Info (12023): Found entity 1: merge2to4
+Info (12021): Found 1 design units, including 1 entities, in source file square.v
+    Info (12023): Found entity 1: square
+Info (12021): Found 1 design units, including 1 entities, in source file sortingnetwork4.v
+    Info (12023): Found entity 1: sortingNetwork4
+Info (12021): Found 1 design units, including 1 entities, in source file norm.v
+    Info (12023): Found entity 1: norm
+Info (12021): Found 1 design units, including 1 entities, in source file dist2.v
+    Info (12023): Found entity 1: dist2
+Info (12021): Found 1 design units, including 1 entities, in source file comparator.v
+    Info (12023): Found entity 1: comparator
+Info (12021): Found 1 design units, including 1 entities, in source file abs.v
+    Info (12023): Found entity 1: abs
+Info (12021): Found 1 design units, including 1 entities, in source file dist2sorter.v
+    Info (12023): Found entity 1: dist2Sorter
+Info (12021): Found 1 design units, including 1 entities, in source file regload.v
+    Info (12023): Found entity 1: regLoad
+Info (12021): Found 1 design units, including 1 entities, in source file merge2to4_row.v
+    Info (12023): Found entity 1: merge2to4_row
+Info (12021): Found 1 design units, including 1 entities, in source file merge.v
+    Info (12023): Found entity 1: merge
+Info (12021): Found 1 design units, including 1 entities, in source file merge4to8_row.v
+    Info (12023): Found entity 1: merge4to8_row
+Info (12021): Found 1 design units, including 1 entities, in source file merge8to16_row.v
+    Info (12023): Found entity 1: merge8to16_row
+Info (12127): Elaborating entity "dist2Sorter" for the top level hierarchy
+Info (12128): Elaborating entity "dist2" for hierarchy "dist2:dist2_0"
+Info (12128): Elaborating entity "norm" for hierarchy "dist2:dist2_0|norm:norm_0"
+Info (12128): Elaborating entity "abs" for hierarchy "dist2:dist2_0|norm:norm_0|abs:abs_0"
+Info (12128): Elaborating entity "square" for hierarchy "dist2:dist2_0|norm:norm_0|square:square_0"
+Info (12128): Elaborating entity "twoTimesMerge1to2" for hierarchy "twoTimesMerge1to2:merge1to2"
+Info (12128): Elaborating entity "merge" for hierarchy "merge:merge_0"
+Info (12128): Elaborating entity "merge2to4_row" for hierarchy "merge:merge_0|merge2to4_row:merge2to4_row_0"
+Info (12128): Elaborating entity "regLoad" for hierarchy "merge:merge_0|merge2to4_row:merge2to4_row_0|regLoad:regs[0].regLoad_0"
+Info (12128): Elaborating entity "merge2to4" for hierarchy "merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0"
+Info (12128): Elaborating entity "comparator" for hierarchy "merge:merge_0|merge2to4_row:merge2to4_row_0|merge2to4:merge2to4_row[0].merge2to4_0|comparator:oddEvenMerge[0].comparator_0"
+Info (12128): Elaborating entity "merge4to8_row" for hierarchy "merge:merge_0|merge4to8_row:merge4to8_row_0"
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(23): object "c1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(24): object "c2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(25): object "c3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(26): object "c4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(27): object "c5" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(28): object "c6" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(29): object "c7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(30): object "c8" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(31): object "c9" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(32): object "c10" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(33): object "c11" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(34): object "c12" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(35): object "c13" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(36): object "c14" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(37): object "c15" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8_row.v(38): object "c16" assigned a value but never read
+Info (12128): Elaborating entity "merge4to8" for hierarchy "merge:merge_0|merge4to8_row:merge4to8_row_0|merge4to8:merge4to8_row[0].merge4to8_0"
+Warning (10036): Verilog HDL or VHDL warning at merge4to8.v(87): object "c1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8.v(88): object "c2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8.v(89): object "c3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8.v(90): object "c4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8.v(91): object "c5" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8.v(92): object "c6" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8.v(93): object "c7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge4to8.v(94): object "c8" assigned a value but never read
+Info (12128): Elaborating entity "merge8to16_row" for hierarchy "merge:merge_0|merge8to16_row:merge8to16_row_0"
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(23): object "c1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(24): object "c2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(25): object "c3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(26): object "c4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(27): object "c5" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(28): object "c6" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(29): object "c7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(30): object "c8" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(31): object "c9" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(32): object "c10" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(33): object "c11" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(34): object "c12" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(35): object "c13" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(36): object "c14" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(37): object "c15" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16_row.v(38): object "c16" assigned a value but never read
+Info (12128): Elaborating entity "merge8to16" for hierarchy "merge:merge_0|merge8to16_row:merge8to16_row_0|merge8to16:merge8to16_row[0].merge4to8_0"
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(84): object "c1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(85): object "c2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(86): object "c3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(87): object "c4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(88): object "c5" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(89): object "c6" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(90): object "c7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(91): object "c8" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(93): object "c9" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(94): object "c10" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(95): object "c11" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(96): object "c12" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(97): object "c13" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(98): object "c14" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(99): object "c15" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at merge8to16.v(100): object "c16" assigned a value but never read
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 4631 megabytes
+    Info: Processing ended: Thu Aug 05 19:28:43 2021
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

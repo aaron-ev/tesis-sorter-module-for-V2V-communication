@@ -1,0 +1,56 @@
+
+module dist2Sorter#(parameter WIDTH = 8)
+(
+	input clk, 
+	input rst,
+	input [WIDTH-1:0] inaReal,
+	input [WIDTH-1:0] inaImag,
+	input [WIDTH-1:0] inbReal,
+	input [WIDTH-1:0] inbImag,
+	input [WIDTH-1:0] incReal,
+	input [WIDTH-1:0] incImag,	
+	input [WIDTH-1:0] indReal,
+	input [WIDTH-1:0] indImag,
+	
+	output [WIDTH-1:0] y0,
+	output [WIDTH-1:0] y1,
+	output [WIDTH-1:0] y2,
+	output [WIDTH-1:0] y3,
+);
+
+reg [WIDTH-1:0] tempOutaDist;
+reg [WIDTH-1:0] tempOutbDist;
+reg [WIDTH-1:0] tempOutcDist;
+reg [WIDTH-1:0] tempOutdDist;
+
+dist2#(.WIDTH(WIDTH)) dist2_0  
+(
+	.clk(clk), 
+	.rst(rst),
+	.inaReal(inaReal),
+	.inaImag(inaImag),
+	.inbReal(inbReal),
+	.inbImag(inbImag),
+	.incReal(incReal),
+	.incImag(incImag),	
+	.indReal(indReal),
+	.indImag(indImag),
+
+	.outaDist(tempOutaDist),
+	.outbDist(tempOutbDist),	
+	.outcDist(tempOutcDist),
+	.outdDist(tempOutdDist)
+);
+
+sortingNetwork4#(.WIDTH(WIDTH)) sortingNetwork 
+(
+	.a0(tempOutaDist),
+	.a1(tempOutbDist),
+	.a2(tempOutcDist),
+	.a3(tempOutdDist),
+	
+	.y0(y0),
+	.y1(y1),
+	.y2(y2),
+	.y3(y3)
+);
