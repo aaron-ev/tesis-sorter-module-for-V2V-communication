@@ -6,7 +6,7 @@ error = abs(yp(nt) - R(nt,nt)*conste).*abs(yp(nt) - R(nt,nt)*conste);
 [dist,ord] = sort(error);
 
 for k = 1:QRM
-    parent_ode(nt,k) = conste(ord(k));
+    %%parent_ode(nt,k) = conste(ord(k));
     parent_symb(nt,k) = ord(k)-1;
     parent_dist(nt,k) = dist(k);
     parent_yp(:,k) = yp(:,1);
