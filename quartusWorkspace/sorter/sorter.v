@@ -26,6 +26,8 @@ wire [4*WIDTH-1:0]tempd2out;
 
 wire [1:0]loadQPSK;
 wire [1:0]loadQAM16;
+wire [1:0]loadQAM62;
+wire [1:0]loadQAM256;
 
 //sorting network
 sortingNetwork4#(.WIDTH(WIDTH)) sortingNetwork
@@ -43,16 +45,11 @@ merge#(.WIDTH(WIDTH))mergeUnit
 	 .rst(rst),
 	 .loadQPSK(loadQPSK),
 	 .loadQAM16(loadQAM16),
+	 .loadQAM64(loadQAM64),
+	 .loadQAM256(loadQAM256),	 
 	 .inba(tempyQPSK),
+	 
 	 .yQAM16(tempyQAM16)
-);
-
-muxQAM#(.WIDTH(WIDTH)) muxQAM_0 
-(
-	.yQPSK(tempyQPSK), 
-	.yQAM16(tempyQAM16),
-	.M(M), 
-	.y(y)
 );
 
 ctrlUnit_sorter controlUnit 
@@ -63,14 +60,15 @@ ctrlUnit_sorter controlUnit
 	.M(M),
 	.done(done),
 	.loadQPSK(loadQPSK),
-	.loadQAM16(loadQAM16)
+	.loadQAM16(loadQAM16),
+	.loadQAM62(loadQAM62),
+	.loadQAM256(loadQAM256)
 );
-
+/*
 wire [WIDTH-1:0]y1 = y[WIDTH-1:0];
 wire [2*WIDTH-1:WIDTH]y2 = y[2*WIDTH-1:WIDTH];
 wire [3*WIDTH-1:2*WIDTH]y3 = y[3*WIDTH-1:2*WIDTH];
 wire [4*WIDTH-1:3*WIDTH]y4 = y[4*WIDTH-1:3*WIDTH];
-/*
 wire [5*WIDTH-1:4*WIDTH]y5 = tempyQAM16[5*WIDTH-1:4*WIDTH];
 wire [6*WIDTH-1:5*WIDTH]y6 = tempyQAM16[6*WIDTH-1:5*WIDTH];
 wire [7*WIDTH-1:6*WIDTH]y7 = tempyQAM16[7*WIDTH-1:6*WIDTH];
@@ -83,5 +81,6 @@ wire [13*WIDTH-1:12*WIDTH]y13 = tempyQAM16[13*WIDTH-1:12*WIDTH];
 wire [14*WIDTH-1:13*WIDTH]y14 = tempyQAM16[14*WIDTH-1:13*WIDTH];
 wire [15*WIDTH-1:14*WIDTH]y15 = y[15*WIDTH-1:14*WIDTH];
 wire [16*WIDTH-1:15*WIDTH]y16 = y[16*WIDTH-1:15*WIDTH];
+
 */
 endmodule
