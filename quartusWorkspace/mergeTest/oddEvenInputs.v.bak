@@ -1,0 +1,35 @@
+
+
+module oddEvenInputs#(parameter WIDTH = 3,parameter n = 8)
+(
+	input [(WIDTH*n)-1:0]in,
+	output [(WIDTH*(n/2))-1:0]outOdd,
+	output [(WIDTH*(n/2))-1:0]outEven
+);
+
+genvar i;
+generate
+	for(i = 0; i < n; i = i + 1) 
+		begin :blocks
+			if(i == 0)//odd
+				begin 
+					oddEvenUnit#(.WIDTH(WIDTH)) a(in[WIDTH-1:0],outOdd[WIDTH-1:0]);
+				end
+				/*
+			else if(i == 1)
+				begin 
+					oddEvenUnit#(.WIDTH(WIDTH)) b(in[2*WIDTH-1:WIDTH],outEven[WIDTH-1:0);
+				end */
+			else if(i%2 == 0)//odd
+				begin 
+					oddEvenUnit#(.WIDTH(WIDTH)) b(in[(i+1)*WIDTH-1:i*WIDTH],outOdd[((i/2)+1)*WIDTH-1:(i/2)*WIDTH]); 
+				end
+			else //even
+				begin 
+					oddEvenUnit#(.WIDTH(WIDTH)) b(in[(i+1)*WIDTH-1:i*WIDTH],outEven[((i/2)+1)*WIDTH-1:(i/2)*WIDTH]);
+				end
+		end
+endgenerate
+
+endmodule
+
