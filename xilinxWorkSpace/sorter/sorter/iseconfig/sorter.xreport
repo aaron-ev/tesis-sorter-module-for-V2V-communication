@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-08-20T10:13:09</DateModified>
+  <DateModified>2021-11-04T18:10:51</DateModified>
   <ModuleName>sorter</ModuleName>
   <SummaryTimeStamp>2021-08-19T23:14:30</SummaryTimeStamp>
   <SavedFilePath>C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter/iseconfig/sorter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/aaron/Desktop/git_tesis/xilinxWorkSpace/sorter/sorter\</ImplementationReportsDirectory>
   <DateInitialized>2021-08-19T23:08:19</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

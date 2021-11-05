@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/sorter.xst" -ofn "C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/sorter.syr" 
