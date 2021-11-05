@@ -8,7 +8,7 @@ module ctrlUnit_sorter
 	output reg done, 
 	output reg [1:0]loadQPSK,
 	output reg [1:0]loadQAM16,
-	output reg [1:0]loadQAM62,
+	output reg [1:0]loadQAM64,
 	output reg [1:0]loadQAM256
 );
 

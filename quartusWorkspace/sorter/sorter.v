@@ -16,7 +16,7 @@ module sorter#
 	input start, 
 	input [1:0]M,
 	output done,
-	output [NUM_OUTPUTS*WIDTH-1:0]y
+	output [4*WIDTH-1:0]y
 );
 wire [4*WIDTH-1:0]tempyQPSK;
 wire [4*WIDTH-1:0]tempyQAM16;
@@ -26,7 +26,7 @@ wire [4*WIDTH-1:0]tempd2out;
 
 wire [1:0]loadQPSK;
 wire [1:0]loadQAM16;
-wire [1:0]loadQAM62;
+wire [1:0]loadQAM64;
 wire [1:0]loadQAM256;
 
 //sorting network
@@ -49,7 +49,7 @@ merge#(.WIDTH(WIDTH))mergeUnit
 	 .loadQAM256(loadQAM256),	 
 	 .inba(tempyQPSK),
 	 
-	 .yQAM16(tempyQAM16)
+	 .y(y)
 );
 
 ctrlUnit_sorter controlUnit 
@@ -61,7 +61,7 @@ ctrlUnit_sorter controlUnit
 	.done(done),
 	.loadQPSK(loadQPSK),
 	.loadQAM16(loadQAM16),
-	.loadQAM62(loadQAM62),
+	.loadQAM64(loadQAM64),
 	.loadQAM256(loadQAM256)
 );
 /*

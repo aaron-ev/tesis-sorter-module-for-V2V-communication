@@ -47,6 +47,29 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTri_tb.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ../mergeTest/regLoad_tb.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/mux_merge.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_nto2n.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_interface.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_128to256_r.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_64to128_r.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_64to128.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_32to64_r.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_32to64.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_16to32_r.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_16to32.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_8to16_tb.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_8to16_r.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_8to16.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_4to8_tb.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_4to8_r.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_4to8.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/m_2to4.v
+set_global_assignment -name VERILOG_FILE ../mergeTest/cableUnit.v
 set_global_assignment -name VERILOG_FILE bufferTri.v
 set_global_assignment -name VERILOG_FILE ../mergeTest/regLoad.v
 set_global_assignment -name VERILOG_FILE ../mergeTest/merge8to16.v
@@ -61,11 +84,7 @@ set_global_assignment -name VERILOG_FILE sortingNetwork4.v
 set_global_assignment -name VERILOG_FILE sorter.v
 set_global_assignment -name VERILOG_FILE bufferTriQAM16.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE bufferTri_tb.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/aaron/Desktop/git_tesis/quartusWorkspace/sorter/bufferTri_tb.vwf"
 set_global_assignment -name VERILOG_FILE bufferTriQPSK.v
 set_global_assignment -name VERILOG_FILE ctrlUnit_sorter.v
 set_global_assignment -name VERILOG_FILE muxQAM.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
