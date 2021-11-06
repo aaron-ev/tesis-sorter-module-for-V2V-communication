@@ -8,5 +8,92 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/cableUnit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/comparator.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/ctrlUnit_sorter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/halfCleaner.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_128to256_r.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_16to32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_16to32_r.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_2to4.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_32to64.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_32to64_r.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_4to8.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_4to8_r.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_64to128.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_64to128_r.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_8to16.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_8to16_r.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_interface.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/m_nto2n.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/merge.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/merge2to4.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/merge4to8 _r.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/merge4to8.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/merge8to16 _r.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/merge8to16.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/muxQAM.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/mux_merge.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/regLoad.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/sorter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/aaron/Desktop/git_tesis/iseDesignWorkspace/sorter/sortingNetwork4.v&quot; into library work</arg>
+</msg>
+
 </messages>
 
