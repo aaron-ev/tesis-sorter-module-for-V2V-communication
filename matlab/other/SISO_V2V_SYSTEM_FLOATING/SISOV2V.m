@@ -94,7 +94,7 @@ ind=0;
 %Fdir = fi(Fdir,Data_Format, Data_OP);
 %Finv = fi(Finv,Data_Format, Data_OP);
 %% se realiza la simulación para cada SNR de los 1000 simbolos
-for i = 1:100
+for i = 1:250
 
 for ebn0 = minSNR:paso:maxSNR,
     tic
