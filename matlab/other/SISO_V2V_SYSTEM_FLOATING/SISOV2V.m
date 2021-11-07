@@ -29,7 +29,7 @@ errth = 20; % numero m?ximo de errores por SNR a simular
 pot1 = 1; % potencia por antena transmisora
 num_V2V = 48; % numero de portadoras de datos por cada simbolo V2V
 QRM = 4; % numero de sobrevivientes en el esquema NML
-M = 64; % M-QAM -> tamaño de la constelación
+M = 256; % M-QAM -> tamaño de la constelación
 N = log2(M); % número de bits enviados por simbolo por portadora de datos
 tipo = 0; % usa zero-forcing(tipo=0) o MMSE (tipo=1) en la sorted QR
 symbols = 5; % numero de simbolos OFDM por trama enviados
@@ -94,7 +94,7 @@ ind=0;
 %Fdir = fi(Fdir,Data_Format, Data_OP);
 %Finv = fi(Finv,Data_Format, Data_OP);
 %% se realiza la simulación para cada SNR de los 1000 simbolos
-for i = 1:250
+for i = 1:100
 
 for ebn0 = minSNR:paso:maxSNR,
     tic
