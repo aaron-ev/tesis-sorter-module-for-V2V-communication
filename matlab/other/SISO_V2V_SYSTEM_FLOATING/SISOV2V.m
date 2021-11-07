@@ -94,7 +94,7 @@ ind=0;
 %Fdir = fi(Fdir,Data_Format, Data_OP);
 %Finv = fi(Finv,Data_Format, Data_OP);
 %% se realiza la simulación para cada SNR de los 1000 simbolos
-for i = 1:2
+for i = 1:100
 
 for ebn0 = minSNR:paso:maxSNR,
     tic
@@ -224,19 +224,19 @@ hold on
 fprintf("Maximum values\n");
 maxValues
 figure(2);
-variableNames = categorical({'var1','var2','var3','var4'});
+variableNames = categorical({'yp','R','dist'});
 [notUsed indexMaxValue] = max(maxValues);
 subplot(1,2,1); 
 b_obj = bar(variableNames,maxValues);
 b_obj.FaceColor = 'flat';
-b_obj.CData(indexMaxValue,:) = [0 1 0];
+%%b_obj.CData(indexMaxValue,:) = [0 1 0];
 title("Valores máximos de las variables"); 
 fprintf("Minumum values\n");
 minValues
-variableNames = categorical({'var1','var2','var3'});
+variableNames = categorical({'yp','R','conste'});
 [notUsed indexMinValue] = min(minValues); 
 subplot(1,2,2); 
 b_obj = bar(variableNames,minValues);
 b_obj.FaceColor = 'flat';
-b_obj.CData(indexMinValue,:) = [0 1 0];
+%%b_obj.CData(indexMinValue,:) = [0 1 0];
 title("Valores mínimos de las variables"); 

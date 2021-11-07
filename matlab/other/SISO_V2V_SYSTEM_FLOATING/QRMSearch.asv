@@ -5,20 +5,18 @@ global minValues;
 
 dim = length(conste);
 nodos=1;
-minValues(1) = min([real(yp') imag(yp')]);  
-minValues(2) = min([min(min(real(R)));min(min(imag(R)))]); 
-%minValues(3) = min([real(conste) imag(conste)]); 
-
-maxValues(1) = max([real(yp') imag(yp')]);  
-maxValues(2) = max([max(max(real(R)));max(max(imag(R)))]); 
-%maxValues(3) = max([real(conste) imag(conste)]); 
-
+%%minValues(1) = min([real(yp') imag(yp')]);  
+%%minValues(2) = min([min(min(real(R)));min(min(imag(R)))]); 
+%%minValues(3) = min([real(conste) imag(conste)]); 
 % se realiza la detección del nivel Nt
 error = abs(yp(nt) - R(nt,nt)*conste).*abs(yp(nt) - R(nt,nt)*conste);
-%%maxValues(1) = max(error);
+maxValues(1) = max(abs(yp));
+maxValues(2) = max(max(R));
+minValues(1) = min(yp);
+minValues(2) = min(min(R));
 [dist ord] = sort(error);
-maxValues(3) = max(dist);
-minValues(3) = min(conste);
+maxValues(3) = max(abs(dist));
+minValues(3) = min(dist);
 for k=1:QRM,
     parent_node(nt,k) = conste(ord(k));
     parent_symb(nt,k) = ord(k)-1;
@@ -29,7 +27,6 @@ end
 % Se realiza la detección en la Nt-1 capas
 for k=nt-1:-1:1,
     Vth1 = 3*(nt-k+1)*nstd^2; % cota para podar arbol en cada nivel
-    maxValues(3) = max(Vth1);
     %% se realiza la detección de la capa Nt-k capas restantes
     col=1;
     for l=1:QRM,
@@ -42,7 +39,8 @@ for k=nt-1:-1:1,
         error = (abs(rm(k,1) - R(k,k)*conste).*abs(rm(k,1) - R(k,k)*conste));
         distt= distp + error;
         [dist2 ord2] = sort(distt);
-        %maxValues(4) = max(dist2);
+        maxValues(4) = max(abs(dist2));
+        minValues(4) = min(dist2);
         for p=1:QRM, % se guardan las M ramas de cada uno de los QRM puntos por nivel
             parent_node2(k,col)= conste(ord2(p));
             parent_node2(k+1:nt,col)= sest;
